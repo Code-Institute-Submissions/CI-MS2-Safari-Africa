@@ -24,6 +24,9 @@ body {
     font-family: 'ABeeZee', sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
+    background-image: url(../img/zebra-bg.png);
+    /*credit: image- https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
+    background-size: contain
 }
 
 h1,
