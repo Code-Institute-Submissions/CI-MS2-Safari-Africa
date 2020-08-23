@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Crete+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- SITE COLOURS ---*/
+
+:root {
+    /*colours*/
+    --primary1: #f7ebd2;
+    --primary2: #b9b6ae;
+    --secondary1: #639048;
+    --secondary2: #442424;
+    --off-white: #fbf9f1;
+    --box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* --- GENERAL ---*/
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Crete Round', serif;
+}
+
+/* NAVIGATION */
+
+
+
+/* --- NAVIGATION --- */
+
+/* --- SECTIONS --- */
+
+/* --- CONTACT --- */
+
+/* --- FOOTER --- */
+
+/* --- RESPONSIVE RULES --- */
