@@ -43,8 +43,22 @@ h6 {
 
 /* --- SECTIONS --- */
 
+section {
+    height: 100vh;
+}
+
+section h1 {
+    padding-top: 100px;
+}
+
 /* --- CONTACT --- */
 
 /* --- FOOTER --- */
+
+footer {
+    height: 50px;
+    background-color: grey;
+    /*placeholder colour - TO STYLE <===========================================*/
+}
 
 /* --- RESPONSIVE RULES --- */
