@@ -44,6 +44,11 @@ h6 {
 
 /* --- NAVIGATION --- */
 
+.navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
 /* --- SECTIONS --- */
 
 section {
@@ -65,3 +70,10 @@ footer {
 }
 
 /* --- RESPONSIVE RULES --- */
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+}
