@@ -256,6 +256,8 @@ This project has been deployed on GitHub Pages with the following process:
 
 > ##### Media
 >
+> - Main background image from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern)
+>
 > ##### Content
 >
 > ##### Bootstrap 4 CDN Boilerplate
