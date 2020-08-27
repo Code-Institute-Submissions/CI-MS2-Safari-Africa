@@ -1,33 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Crete+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Crete+Round&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
 /* --- SITE COLOURS ---*/
 
 :root {
-    /*colours*/
-    --primary1: #f7ebd2;
-    --primary2: #b9b6ae;
-    --secondary1: #639048;
-    --secondary2: #442424;
-    --off-white: #fbf9f1;
-    --box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  /*colours*/
+  --primary1: #f7ebd2d2;
+  --primary2: #b9b6ae;
+  --secondary1: #62904883;
+  --secondary2: #442424;
+  --off-white: #fbf9f1;
+  --box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* --- GENERAL ---*/
 
 body {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: .8rem;
-    font-weight: 200;
-    letter-spacing: 1px;
-    background-image: url(../img/zebra-bg.png);
-    /*credit: image- https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
-    background-size: contain
+  font-family: "ABeeZee", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: var(--secondary2);
+  letter-spacing: 1px;
+  background-image: url(../img/zebra-bg.png);
+  /*credit: image- https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
+  background-size: contain;
 }
 
 h1,
@@ -36,71 +37,81 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Crete Round', serif;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: "Crete Round", serif;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* --- NAVIGATION --- */
 
 .navbar-brand {
-    font-size: 1.8rem;
-    letter-spacing: 2px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 1rem;
 }
 
 /* --- SECTIONS GLOBAL --- */
 
 section {
-    height: 100vh;
+  height: 100vh;
 }
 
 section h1 {
-    padding-top: 100px;
+  padding-top: 100px;
 }
-
 
 /* --- ABOUT SECTION --- */
 
+.row {
+  --bs-gutter-x: none;
+}
+
+.about-col,
+.country-col {
+  padding: 10px;
+}
+
 .about-container {
-    background-color: var(--primary1);
-    padding: 16px;
+  background-color: var(--primary1);
+  padding: 16px;
+  height: fit-content;
+  border-radius: 10px;
 }
 
-.about-content,
-.webcam-content {
-    min-height: 100px;
-    margin-bottom: 30px;
-    background-color: var(--secondary1);
+iframe {
+  display: block;
+  width: 100%;
+  padding: 5px;
 }
 
-.country-content {
-    min-height: 336px;
-    background-color: var(--secondary1);
+.card {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
 }
 
 /* --- COUNTRY SECTION --- */
 
-
-
-
-
 /* --- CONTACT SECTION--- */
-
-
 
 /* --- FOOTER --- */
 
 footer {
-    height: 50px;
-    background-color: grey;
-    /*placeholder colour - TO STYLE <===========================================*/
+  height: 50px;
+  background-color: grey;
+  /*placeholder colour - TO STYLE <===========================================*/
 }
 
 /* --- RESPONSIVE RULES --- */
 
 @media only screen and (min-width: 768px) {
-    .navbar-brand {
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
+  .navbar-brand {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
 }
