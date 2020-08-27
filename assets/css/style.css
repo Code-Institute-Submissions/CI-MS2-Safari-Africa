@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* --- SITE COLOURS ---*/
@@ -22,6 +22,7 @@
 
 body {
     font-family: 'ABeeZee', sans-serif;
+    font-size: .8rem;
     font-weight: 200;
     letter-spacing: 1px;
     background-image: url(../img/zebra-bg.png);
@@ -36,11 +37,9 @@ h4,
 h5,
 h6 {
     font-family: 'Crete Round', serif;
+    text-transform: uppercase;
+    text-align: center;
 }
-
-/* NAVIGATION */
-
-
 
 /* --- NAVIGATION --- */
 
@@ -49,7 +48,7 @@ h6 {
     letter-spacing: 2px;
 }
 
-/* --- SECTIONS --- */
+/* --- SECTIONS GLOBAL --- */
 
 section {
     height: 100vh;
@@ -59,7 +58,35 @@ section h1 {
     padding-top: 100px;
 }
 
-/* --- CONTACT --- */
+
+/* --- ABOUT SECTION --- */
+
+.about-container {
+    background-color: var(--primary1);
+    padding: 16px;
+}
+
+.about-content,
+.webcam-content {
+    min-height: 100px;
+    margin-bottom: 30px;
+    background-color: var(--secondary1);
+}
+
+.country-content {
+    min-height: 336px;
+    background-color: var(--secondary1);
+}
+
+/* --- COUNTRY SECTION --- */
+
+
+
+
+
+/* --- CONTACT SECTION--- */
+
+
 
 /* --- FOOTER --- */
 
