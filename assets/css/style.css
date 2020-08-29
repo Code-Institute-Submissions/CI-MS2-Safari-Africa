@@ -116,6 +116,10 @@ iframe {
   height: 50px;
 }
 
+.hidden {
+  display: none;
+}
+
 .country-content {
   height: 100%
 }
