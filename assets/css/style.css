@@ -42,6 +42,10 @@ h6 {
   text-align: center;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 /* --- NAVIGATION --- */
 
 .navbar-brand {
@@ -57,7 +61,7 @@ h6 {
 /* --- SECTIONS GLOBAL --- */
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section h1 {
@@ -93,11 +97,18 @@ iframe {
   padding: 10px;
   border: none;
   border-radius: 8px;
+  background: none;
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 /* --- COUNTRY SECTION --- */
 
+
+
 /* --- CONTACT SECTION--- */
+
+
 
 /* --- FOOTER --- */
 
