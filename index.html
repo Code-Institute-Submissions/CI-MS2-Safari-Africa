@@ -10,6 +10,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Safari Africa</title>
 </head>
@@ -197,22 +198,18 @@
         </div>
 
         <div class="container mt-3 country-container">
-
-
-
             <div class="row">
                 <div class="col-sm-4 about-col">
 
                     <!--About box-->
                     <div class="row">
                         <div class="col-12">
-
                             <div class="about-content">
 
                                 <!-------- COUNTRY TEMPLATES -------->
 
                                 <!--South Africa-->
-                                <div id="southafrica" class="country-section hidden">
+                                <div id="southafrica" class="country-section">
                                     <h3>South Africa-COUNTRY API</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque!
@@ -225,17 +222,17 @@
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID AND DATA-->
-                                        <button id="res1-butt" class="reserve-button"
-                                            data-reserve="reserve-1">Reserve1</button>
-                                        <button id="res2-butt" class="reserve-button"
-                                            data-reserve="reserve-2">Reserve2</button>
-                                        <button id="res3-butt" class="reserve-button"
-                                            data-reserve="reserve-3">Reserve3</button>
+                                        <!--NB-PLACEHOLDER ID-->
+                                        <button id="res1-butt" class="reserve-button" data-reserve="reserve-1">Kruger
+                                            National Park</button>
+                                        <button id="res2-butt" class="reserve-button" data-reserve="reserve-2">Tembe
+                                            Elephant Park</button>
+                                        <button id="res3-butt" class="reserve-button" data-reserve="reserve-3">Shamwari
+                                            Game Reserve</button>
                                     </div>
                                 </div>
 
-                                <!--Namibia-->
+                                <!--Botswana-->
                                 <div id="botswana" class="country-section hidden">
                                     <h3>Namibia-COUNTRY API</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
@@ -249,17 +246,17 @@
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID AND DATA-->
-                                        <button id="res4-butt" class="reserve-button"
-                                            data-reserve="reserve-4">Reserve1</button>
-                                        <button id="res5-butt" class="reserve-button"
-                                            data-reserve="reserve-5">Reserve2</button>
-                                        <button id="res6-butt" class="reserve-button"
-                                            data-reserve="reserve-6">Reserve3</button>
+                                        <!--NB-PLACEHOLDER ID-->
+                                        <button id="res4-butt" class="reserve-button" data-reserve="reserve-4">Chobe
+                                            National Park</button>
+                                        <button id="res5-butt" class="reserve-button" data-reserve="reserve-5">Central
+                                            Kalahari Game Reserve</button>
+                                        <button id="res6-butt" class="reserve-button" data-reserve="reserve-6">Moremi
+                                            Game Reserve</button>
                                     </div>
                                 </div>
 
-                                <!--Botswana-->
+                                <!--Namibia-->
                                 <div id="namibia" class="country-section hidden">
                                     <h3>Botswana-COUNTRY API</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
@@ -273,13 +270,13 @@
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID AND DATA-->
-                                        <button id="res7-butt" class="reserve-button"
-                                            data-reserve="reserve-7">Reserve1</button>
-                                        <button id="res8-butt" class="reserve-button"
-                                            data-reserve="reserve-8">Reserve2</button>
-                                        <button id="res9-butt" class="reserve-button"
-                                            data-reserve="reserve-9">Reserve3</button>
+                                        <!--NB-PLACEHOLDER ID-->
+                                        <button id="res7-butt" class="reserve-button" data-reserve="reserve-7">Etosha
+                                            National Park</button>
+                                        <button id="res8-butt" class="reserve-button" data-reserve="reserve-8">Skeleton
+                                            Coast National Park</button>
+                                        <button id="res9-butt" class="reserve-button" data-reserve="reserve-9">Khaudum
+                                            National Park</button>
                                     </div>
                                 </div>
 
@@ -299,12 +296,12 @@
 
                                     <div class="row reserve-btn-group">
                                         <!--NB-PLACEHOLDER ID AND DATA-->
-                                        <button id="res10-butt" class="reserve-button"
-                                            data-reserve="reserve-10">Reserve1</button>
+                                        <button id="res10-butt" class="reserve-button" data-reserve="reserve-10">Maasai
+                                            Mara Game Reserve</button>
                                         <button id="res11-butt" class="reserve-button"
-                                            data-reserve="reserve-11">Reserve2</button>
-                                        <button id="res12-butt" class="reserve-button"
-                                            data-reserve="reserve-12">Reserve3</button>
+                                            data-reserve="reserve-11">Amboseli National Park</button>
+                                        <button id="res12-butt" class="reserve-button" data-reserve="reserve-12">Lake
+                                            Nakuru National Park</button>
                                     </div>
                                 </div>
 
@@ -427,16 +424,9 @@
                 </div>
                 <!--Countries Main box-->
 
-                <div class="col-sm-8 country-col">
-                    <div class="country-content">
-                        <div class="row map-row">
-                            <div class="col-sm d-flex">
-                                <div id="map">
-                                    <!-- <img src="https://media.takealot.com/covers_tsins/47917985/47917985-1-pdpxl.jpg"
-                                        alt=""> -->
-                                </div>
-                            </div>
-                        </div>
+                <!-- SECTION - MAP -->
+                <div class="col-sm-8 map-col">
+                    <div id="map">
                     </div>
                 </div>
             </div>
@@ -447,7 +437,6 @@
 
     <section id="contact">
         <h1>Contact us</h1>
-
     </section>
 
     <!-- FOOTER -->
@@ -456,6 +445,8 @@
 
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="assets/js/map.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js">
