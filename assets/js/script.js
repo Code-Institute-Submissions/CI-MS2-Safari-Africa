@@ -44,4 +44,40 @@ function handleCountrySelect(e) {
       countrySelections1[i].classList.add("hidden");
     }
   }
+  handleReserveReset("reserve-0");
+}
+
+//function to HIDE/SHOW RESERVE info with buttons
+const reserveButton = document.getElementsByClassName("reserve-button");
+for (let i = 0; i < reserveButton.length; i++) {
+  reserveButton[i].addEventListener("click", handleReserveSelect);
+}
+
+function handleReserveSelect(e) {
+  const reserveBtn = e.target.dataset.reserve;
+
+  const reserveSelection = document.getElementsByClassName("reserve-section");
+  for (let i = 0; i < reserveSelection.length; i++) {
+    const reserveID = reserveSelection[i].id;
+    if (reserveID === reserveBtn) {
+      reserveSelection[i].classList.remove("hidden");
+    } else {
+      reserveSelection[i].classList.add("hidden");
+    }
+  }
+}
+
+//function to RESET RESERVE info
+function handleReserveReset(reserve) {
+  const reserveBtn = reserve;
+
+  const reserveSelection = document.getElementsByClassName("reserve-section");
+  for (let i = 0; i < reserveSelection.length; i++) {
+    const reserveID = reserveSelection[i].id;
+    if (reserveID === reserveBtn) {
+      reserveSelection[i].classList.remove("hidden");
+    } else {
+      reserveSelection[i].classList.add("hidden");
+    }
+  }
 }
