@@ -104,20 +104,27 @@ iframe {
 
 /* --- COUNTRY SECTION --- */
 
-.country-btn-group {
+.hidden {
+  display: none;
+}
+
+.country-btn-group,
+.reserve-btn-group {
+
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 .country-button {
-  width: 20%;
-  margin: 0px 5px;
-  height: 50px;
+  width: 35%;
+  margin: 5px 20px;
+  height: 30px;
 }
 
-.hidden {
-  display: none;
+.reserve-button {
+  width: 25%;
+  margin: 10px;
 }
 
 .country-content {
@@ -125,11 +132,18 @@ iframe {
 }
 
 .map-row {
-  height: 100%;
+  display: flex;
+  max-width: fit-content;
+  justify-content: center;
+  margin: auto;
 }
 
 #map {
   height: 100%;
+}
+
+#map img {
+  max-height: 280px;
 }
 
 /* --- CONTACT SECTION--- */
@@ -150,5 +164,23 @@ footer {
   .navbar-brand {
     font-size: 2rem;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #map img {
+    max-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .country-button {
+    width: 20%;
+    margin: 5px 20px;
+    height: 30px;
+  }
+
+  #map img {
+    max-height: 500px;
   }
 }
