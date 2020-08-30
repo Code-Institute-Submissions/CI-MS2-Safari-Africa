@@ -45,6 +45,12 @@ function handleCountrySelect(e) {
     }
   }
   handleReserveReset("reserve-0");
+
+  // click button to show map-country
+  const mapBtn = e.target.dataset.map;
+  //make string into a number to correlate to array position
+  const mapInt = parseInt(mapBtn, 10);
+  changeMapLocation(mapInt);
 }
 
 //function to HIDE/SHOW RESERVE info with buttons
@@ -65,6 +71,12 @@ function handleReserveSelect(e) {
       reserveSelection[i].classList.add("hidden");
     }
   }
+
+  // click button to show map-reserve
+  const mapBtn = e.target.dataset.map;
+  //make string into a number to correlate to array position
+  const mapInt = parseInt(mapBtn, 10);
+  changeMapLocation(mapInt);
 }
 
 //function to RESET RESERVE info
@@ -104,23 +116,25 @@ let map = L.map("map", {
   maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
 
-//Arrays for countries
-let mapLocations = [
+//Arrays for initial locations - ADD PINS - ADD POLYGONS
+const mapLocations = [
   //Start of Initial Country Objects
   {
     //South Africa
     center: [-29.28864, 25.025732],
     zoom: 5,
+    pins: [],
   },
   {
     //Botswana
-    center: [22.179045, 23.858743],
+    center: [-22.179045, 23.726907],
     zoom: 5,
   },
   {
     //Namibia
     center: [-22.101561, 17.195369],
     zoom: 5,
+    pin: [-22.101561, 17.195369],
   },
   {
     //Kenya
@@ -136,16 +150,19 @@ let mapLocations = [
     //Reserve1 - Kruger National Park
     center: [-23.988669, 31.553925],
     zoom: 7,
+    pin: [-23.988669, 31.553925],
   },
   {
     //Reserve2 - Tembe Elephant Park
     center: [-27.048709, 32.422409],
     zoom: 7,
+    pin: [-27.048709, 32.422409],
   },
   {
     ///Reserve3 - Shamwari Game Reserve
     center: [-33.47782, 26.03583],
     zoom: 7,
+    pin: [-33.47782, 26.03583],
   },
 
   //---Botswana Reserves
@@ -153,16 +170,19 @@ let mapLocations = [
     //Reserve4 - Chobe National Park
     center: [-18.788571, 24.386086],
     zoom: 7,
+    pin: [-18.788571, 24.386086],
   },
   {
     //Reserve5 - Central Kalahari Game Reserve
     center: [-22.390486, 23.838411],
     zoom: 7,
+    pin: [-22.390486, 23.838411],
   },
   {
     //Reserve - Moremi Game Reserve
     center: [-19.346062, 22.881495],
     zoom: 7,
+    pin: [-19.346062, 22.881495],
   },
 
   //---Namibia Reserves
@@ -170,16 +190,19 @@ let mapLocations = [
     //Reserve7 - Etosha National Park
     center: [-18.964107, 16.349421],
     zoom: 7,
+    pin: [-18.964107, 16.349421],
   },
   {
     //Reserve8 - Skeleton Coast National Park
     center: [-20.072817, 13.316423],
     zoom: 7,
+    pin: [-20.072817, 13.316423],
   },
   {
     //Reserve9 - Khaudum National Park
     center: [-18.954467, 20.567399],
     zoom: 7,
+    pin: [-18.954467, 20.567399],
   },
 
   //---Kenya Reserves
@@ -187,15 +210,30 @@ let mapLocations = [
     //Reserve10 - Maasai Mara Game Reserve
     center: [-1.371569, 34.93885],
     zoom: 7,
+    pin: [-1.371569, 34.93885],
   },
   {
     //Reserve11 - Amboseli National Park
     center: [-2.652516, 37.260651],
     zoom: 7,
+    pin: [-2.652516, 37.260651],
   },
   {
     //Reserve12 - Lake Nakuru National Park
     center: [-0.366763, 36.089139],
     zoom: 7,
+    pin: [-0.366763, 36.089139],
   },
 ];
+
+// Function to change map display with button click
+function changeMapLocation(locationID) {
+  const newMapLocation = mapLocations[locationID];
+  console.log(newMapLocation);
+  // map.setView(newMapLocation.center, newMapLocation.zoom);
+  map.flyTo(newMapLocation.center, newMapLocation.zoom);
+  //read documentation about pins
+  pinMarker.setLatLng(newMapLocation.pin);
+}
+
+let pinMarker = L.marker([53.34201, -6.286703]).addTo(map);
