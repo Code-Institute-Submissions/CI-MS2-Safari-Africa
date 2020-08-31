@@ -1,4 +1,4 @@
-//Credit: w3schools - smoothy scrolling (using Jquery)
+//CREDIT: Function by W3SCHOOLS - smoothy scrolling (using Jquery)
 $(document).ready(function () {
   $("a").on("click", function (event) {
     if (this.hash !== "") {
@@ -16,11 +16,11 @@ $(document).ready(function () {
     }
   });
 });
-//END Credit: w3schools - smoothy scrolling
+//--- END CREDIT ---
 
 // Close mobile dropdown menu after item clicked
 window.onclick = function (e) {
-  var dropDown = document.getElementById("navbarResponsive");
+  let dropDown = document.getElementById("navbarResponsive");
   if (dropDown.classList.contains("show")) {
     dropDown.classList.remove("show");
   }
@@ -60,8 +60,8 @@ for (let i = 0; i < reserveButton.length; i++) {
 }
 
 function handleReserveSelect(e) {
+  // pinMarker.setLatLng(newMapLocation.pin);
   const reserveBtn = e.target.dataset.reserve;
-
   const reserveSelection = document.getElementsByClassName("reserve-section");
   for (let i = 0; i < reserveSelection.length; i++) {
     const reserveID = reserveSelection[i].id;
@@ -81,8 +81,8 @@ function handleReserveSelect(e) {
 
 //function to RESET RESERVE info
 function handleReserveReset(reserve) {
+  // pinMarker.remove();
   const reserveBtn = reserve;
-
   const reserveSelection = document.getElementsByClassName("reserve-section");
   for (let i = 0; i < reserveSelection.length; i++) {
     const reserveID = reserveSelection[i].id;
@@ -99,9 +99,7 @@ let mapTileLayers = L.tileLayer(
   {}
 );
 
-// --- Open Leaflet JS on map of Africa ---
-
-//Credit: Leaflet JS documentation
+//CREDIT: Function by TIM NELSON/LEAFLET JS
 let map = L.map("map", {
   layers: [mapTileLayers], // variable from above
   center: [-29.28864, 25.025732], // central lat-lng once loaded
@@ -115,6 +113,7 @@ let map = L.map("map", {
   ],
   maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
+//--- END CREDIT ---
 
 //Arrays for initial locations - ADD PINS - ADD POLYGONS
 const mapLocations = [
@@ -123,7 +122,6 @@ const mapLocations = [
     //South Africa
     center: [-29.28864, 25.025732],
     zoom: 5,
-    pins: [],
   },
   {
     //Botswana
@@ -134,7 +132,6 @@ const mapLocations = [
     //Namibia
     center: [-22.101561, 17.195369],
     zoom: 5,
-    pin: [-22.101561, 17.195369],
   },
   {
     //Kenya
@@ -232,8 +229,39 @@ function changeMapLocation(locationID) {
   console.log(newMapLocation);
   // map.setView(newMapLocation.center, newMapLocation.zoom);
   map.flyTo(newMapLocation.center, newMapLocation.zoom);
-  //read documentation about pins
-  pinMarker.setLatLng(newMapLocation.pin);
+  if (newMapLocation.pin) {
+    pinMarker = L.marker(newMapLocation.pin).addTo(map);
+    // pinMarker.setLatLng(newMapLocation.pin);
+    console.log("1\n", newMapLocation.pin);
+  } else {
+    console.log("2\n", newMapLocation.pin);
+    // pinMarker.remove();
+    map.removeLayer(pinMarker);
+  } //read documentation about pins
 }
 
-let pinMarker = L.marker([53.34201, -6.286703]).addTo(map);
+let pinMarker = {};
+
+//CREDIT: Function by TIM NELSON/LEAFLET JS
+// this function will show a pop-up with the exact LatLng coordinates where the user clicks
+let popupClick = L.popup();
+
+function onMapClick(e) {
+  popupClick
+    .setLatLng(e.latlng)
+    .setContent(
+      "latitude: <b>" +
+        e.latlng.lat.toFixed(5) +
+        "</b><br>longitude: <b>" +
+        e.latlng.lng.toFixed(5) +
+        "</b>"
+    )
+    .openOn(map);
+}
+map.on("click", onMapClick); // append pop-up to popupClick variable
+
+//------- SCALE -------
+
+// adds scale/legend in bottom-left corner of map
+L.control.scale().addTo(map);
+//--- END CREDIT ---
