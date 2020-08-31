@@ -213,7 +213,7 @@ I've decided on 'nature/safari' colours to fit in with the theme of wildlife con
 
 ### Project barriers and solutions
 
-> -
+> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - TBC
 
 ---
 
@@ -260,15 +260,17 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > ##### Content
 >
+> - Tim Nelsons documentation on LeafletJS
+>
 > ##### Bootstrap 4 CDN Boilerplate
 >
 > - I've taken advantage of _Simen Daehlin's_ template boilerplate from his [Marketplace](https://marketplace.visualstudio.com/items?itemName=eventyret.bootstrap-4-cdn-snippet)
 >
 > ##### Code Snippets
 >
-> - [CSS-Tricks](https://css-tricks.com/snippets/css/transparent-background-images/) - Background image opacity on Contact page.
-> - [Code Institute](https://codeinstitute.net/) - Inspiration for contact form from 'Love Running' Mini-Project in CSS Module.
-> - [W3.org](https://www.w3.org/2005/10/howto-favicon) - How to add a Favicon to site.
+> -
+> -
+> -
 
 ---
 
@@ -277,6 +279,7 @@ This project has been deployed on GitHub Pages with the following process:
 > I would like to thank:
 >
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
+> - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through some bugs experienced.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
 > - Everyone that takes part in the Slack calls, specifically from the **#In-It-Together** and **#Study-Group** channels.
 
