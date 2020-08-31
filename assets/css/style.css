@@ -79,10 +79,11 @@ section h1 {
   padding: 10px;
 }
 
-.about-container {
+.about-container,
+.country-container {
   background-color: var(--primary1);
   padding: 16px;
-  height: fit-content;
+  min-height: 70vh;
   border-radius: 10px;
 }
 
@@ -138,12 +139,10 @@ iframe {
   margin: auto;
 }
 
-#map {
-  height: 100%;
-}
+/* --- MAIN COUNTRY/RESERVE MAP--- */
 
-#map img {
-  max-height: 280px;
+#map {
+  height: 500px;
 }
 
 /* --- CONTACT SECTION--- */
