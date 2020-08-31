@@ -94,12 +94,15 @@ function handleReserveReset(reserve) {
   }
 }
 
-let mapTileLayers = L.tileLayer(
-  "http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-  {}
+var mapTileLayers = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+  {
+    attribution:
+      "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
+  }
 );
 
-//CREDIT: Function by TIM NELSON/LEAFLET JS
+//CREDIT: Function LeafletJS - to instatiate map
 let map = L.map("map", {
   layers: [mapTileLayers], // variable from above
   center: [-29.28864, 25.025732], // central lat-lng once loaded
@@ -113,7 +116,46 @@ let map = L.map("map", {
   ],
   maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
+
+// this function will show a pop-up with the exact LatLng coordinates where the user clicks
+let popupClick = L.popup();
+
+function onMapClick(e) {
+  popupClick
+    .setLatLng(e.latlng)
+    .setContent(
+      "latitude: <b>" +
+        e.latlng.lat.toFixed(5) +
+        "</b><br>longitude: <b>" +
+        e.latlng.lng.toFixed(5) +
+        "</b>"
+    )
+    .openOn(map);
+}
+map.on("click", onMapClick); // append pop-up to popupClick variable
+
+// adds scale/legend in bottom-left corner of map
+L.control.scale().addTo(map);
 //--- END CREDIT ---
+
+// Function to change map display with button click
+function changeMapLocation(locationID) {
+  const newMapLocation = mapLocations[locationID];
+  console.log(newMapLocation);
+  // map.setView(newMapLocation.center, newMapLocation.zoom);
+  map.flyTo(newMapLocation.center, newMapLocation.zoom);
+  if (newMapLocation.pin) {
+    pinMarker = L.marker(newMapLocation.pin).addTo(map);
+    // pinMarker.remove(); ---------removes all markers
+    console.log("1\n", newMapLocation.pin);
+  } else {
+    console.log("2\n", newMapLocation.pin);
+    pinMarker.remove();
+    map.removeLayer(pinMarker);
+  } //read documentation about pins
+}
+
+let pinMarker = {};
 
 //Arrays for initial locations - ADD PINS - ADD POLYGONS
 const mapLocations = [
@@ -121,22 +163,22 @@ const mapLocations = [
   {
     //South Africa
     center: [-29.28864, 25.025732],
-    zoom: 5,
+    zoom: 5.5,
   },
   {
     //Botswana
     center: [-22.179045, 23.726907],
-    zoom: 5,
+    zoom: 6,
   },
   {
     //Namibia
     center: [-22.101561, 17.195369],
-    zoom: 5,
+    zoom: 6,
   },
   {
     //Kenya
     center: [0.501555, 37.930799],
-    zoom: 5,
+    zoom: 6,
   },
   // end of Initial Country Objects
 
@@ -146,7 +188,7 @@ const mapLocations = [
   {
     //Reserve1 - Kruger National Park
     center: [-23.988669, 31.553925],
-    zoom: 7,
+    zoom: 8,
     pin: [-23.988669, 31.553925],
   },
   {
@@ -222,46 +264,3 @@ const mapLocations = [
     pin: [-0.366763, 36.089139],
   },
 ];
-
-// Function to change map display with button click
-function changeMapLocation(locationID) {
-  const newMapLocation = mapLocations[locationID];
-  console.log(newMapLocation);
-  // map.setView(newMapLocation.center, newMapLocation.zoom);
-  map.flyTo(newMapLocation.center, newMapLocation.zoom);
-  if (newMapLocation.pin) {
-    pinMarker = L.marker(newMapLocation.pin).addTo(map);
-    // pinMarker.setLatLng(newMapLocation.pin);
-    console.log("1\n", newMapLocation.pin);
-  } else {
-    console.log("2\n", newMapLocation.pin);
-    // pinMarker.remove();
-    map.removeLayer(pinMarker);
-  } //read documentation about pins
-}
-
-let pinMarker = {};
-
-//CREDIT: Function by TIM NELSON/LEAFLET JS
-// this function will show a pop-up with the exact LatLng coordinates where the user clicks
-let popupClick = L.popup();
-
-function onMapClick(e) {
-  popupClick
-    .setLatLng(e.latlng)
-    .setContent(
-      "latitude: <b>" +
-        e.latlng.lat.toFixed(5) +
-        "</b><br>longitude: <b>" +
-        e.latlng.lng.toFixed(5) +
-        "</b>"
-    )
-    .openOn(map);
-}
-map.on("click", onMapClick); // append pop-up to popupClick variable
-
-//------- SCALE -------
-
-// adds scale/legend in bottom-left corner of map
-L.control.scale().addTo(map);
-//--- END CREDIT ---
