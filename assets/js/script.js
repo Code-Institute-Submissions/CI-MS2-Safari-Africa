@@ -1,3 +1,13 @@
+//CREDIT: Handle active class with # - https://stackoverflow.com/a/48310836/14197670
+
+window.addEventListener("hashchange", function () {
+  document.querySelector(".active").classList.remove("active");
+  document
+    .querySelector('[href="' + window.location.hash + '"]')
+    .classList.add("active");
+});
+//--- END CREDIT ---
+
 //CREDIT: Function by W3SCHOOLS - smoothy scrolling (using Jquery)
 $(document).ready(function () {
   $("a").on("click", function (event) {
@@ -17,6 +27,7 @@ $(document).ready(function () {
   });
 });
 //--- END CREDIT ---
+
 // Close mobile dropdown menu after item clicked
 window.onclick = function (e) {
   let dropDown = document.getElementById("navbarResponsive");
@@ -24,6 +35,7 @@ window.onclick = function (e) {
     dropDown.classList.remove("show");
   }
 };
+
 //function to HIDE/SHOW country info with buttons
 const countryButton = document.getElementsByClassName("country-button");
 for (let i = 0; i < countryButton.length; i++) {
@@ -41,9 +53,11 @@ function handleCountrySelect(e) {
     }
   }
   handleReserveReset("reserve-0");
+
   // click button to show map-country based on the innerText
   changeMapLocation(e.target.innerText);
 }
+
 //function to HIDE/SHOW RESERVE info with buttons
 const reserveButton = document.getElementsByClassName("reserve-button");
 for (let i = 0; i < reserveButton.length; i++) {
@@ -60,8 +74,8 @@ function handleReserveSelect(e) {
       reserveSelection[i].classList.add("hidden");
     }
   }
-  // click button to show map-country based on the innerText
-  changeMapLocation(e.target.innerText);
+
+  changeMapLocation(e.target.innerText); // click button to show map-country based on the innerText
 }
 
 //function to RESET RESERVE info
@@ -99,21 +113,21 @@ let map = L.map("map", {
 });
 
 // this function will show a pop-up with the exact LatLng coordinates where the user clicks
-let popupClick = L.popup();
+// let popupClick = L.popup();
 
-function onMapClick(e) {
-  popupClick
-    .setLatLng(e.latlng)
-    .setContent(
-      "latitude: <b>" +
-        e.latlng.lat.toFixed(5) +
-        "</b><br>longitude: <b>" +
-        e.latlng.lng.toFixed(5) +
-        "</b>"
-    )
-    .openOn(map);
-}
-map.on("click", onMapClick); // append pop-up to popupClick variable
+// function onMapClick(e) {
+//   popupClick
+//     .setLatLng(e.latlng)
+//     .setContent(
+//       "latitude: <b>" +
+//         e.latlng.lat.toFixed(5) +
+//         "</b><br>longitude: <b>" +
+//         e.latlng.lng.toFixed(5) +
+//         "</b>"
+//     )
+//     .openOn(map);
+// }
+// map.on("click", onMapClick); // append pop-up to popupClick variable
 
 L.control.scale().addTo(map); // adds scale/legend in bottom-left corner of map
 
