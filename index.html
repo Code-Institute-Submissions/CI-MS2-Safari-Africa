@@ -183,16 +183,14 @@
 
     <section id="countries">
         <h1>Top 3 Game Reserves by Country</h1>
-        <!-- Show/Hide each country on click
-        Buttons -->
         <div class="container mt-3">
             <div class="col ">
-                <div class="row country-btn-group">
-                    <button id="saf-butt" class="country-button" data-country="southafrica" data-map="0">South
+                <div class="row btn-group">
+                    <button id="saf-butt" class="country-button" data-country="southafrica">South
                         Africa</button>
-                    <button id="bots-butt" class="country-button" data-country="botswana" data-map="1">Botswana</button>
-                    <button id="nam-butt" class="country-button" data-country="namibia" data-map="2">Namibia</button>
-                    <button id="ken-butt" class="country-button" data-country="kenya" data-map="3">Kenya</button>
+                    <button id="bots-butt" class="country-button" data-country="botswana">Botswana</button>
+                    <button id="nam-butt" class="country-button" data-country="namibia">Namibia</button>
+                    <button id="ken-butt" class="country-button" data-country="kenya">Kenya</button>
                 </div>
             </div>
         </div>
@@ -221,16 +219,13 @@
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
+
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID-->
-                                        <button id="res1-butt" class="reserve-button" data-reserve="reserve-1"
-                                            data-map="4">Kruger
+                                        <button id="res1-butt" class="reserve-button" data-reserve="reserve-1">Kruger
                                             National Park</button>
-                                        <button id="res2-butt" class="reserve-button" data-reserve="reserve-2"
-                                            data-map="5">Tembe
+                                        <button id="res2-butt" class="reserve-button" data-reserve="reserve-2">Tembe
                                             Elephant Park</button>
-                                        <button id="res3-butt" class="reserve-button" data-reserve="reserve-3"
-                                            data-map="6">Shamwari
+                                        <button id="res3-butt" class="reserve-button" data-reserve="reserve-3">Shamwari
                                             Game Reserve</button>
                                     </div>
                                 </div>
@@ -248,16 +243,13 @@
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
+
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID-->
-                                        <button id="res4-butt" class="reserve-button" data-reserve="reserve-4"
-                                            data-map="7">Chobe
+                                        <button id="res4-butt" class="reserve-button" data-reserve="reserve-4">Chobe
                                             National Park</button>
-                                        <button id="res5-butt" class="reserve-button" data-reserve="reserve-5"
-                                            data-map="8">Central
+                                        <button id="res5-butt" class="reserve-button" data-reserve="reserve-5">Central
                                             Kalahari Game Reserve</button>
-                                        <button id="res6-butt" class="reserve-button" data-reserve="reserve-6"
-                                            data-map="9">Moremi
+                                        <button id="res6-butt" class="reserve-button" data-reserve="reserve-6">Moremi
                                             Game Reserve</button>
                                     </div>
                                 </div>
@@ -275,16 +267,13 @@
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
+
                                     <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID-->
-                                        <button id="res7-butt" class="reserve-button" data-reserve="reserve-7"
-                                            data-map="10">Etosha
+                                        <button id="res7-butt" class="reserve-button" data-reserve="reserve-7">Etosha
                                             National Park</button>
-                                        <button id="res8-butt" class="reserve-button" data-reserve="reserve-8"
-                                            data-map="11">Skeleton
+                                        <button id="res8-butt" class="reserve-button" data-reserve="reserve-8">Skeleton
                                             Coast National Park</button>
-                                        <button id="res9-butt" class="reserve-button" data-reserve="reserve-9"
-                                            data-map="12">Khaudum
+                                        <button id="res9-butt" class="reserve-button" data-reserve="reserve-9">Khaudum
                                             National Park</button>
                                     </div>
                                 </div>
@@ -303,15 +292,12 @@
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
 
-                                    <div class="row reserve-btn-group">
-                                        <!--NB-PLACEHOLDER ID AND DATA-->
-                                        <button id="res10-butt" class="reserve-button" data-reserve="reserve-10"
-                                            data-map="13">Maasai
-                                            Mara Game Reserve</button>
-                                        <button id="res11-butt" class="reserve-button" data-reserve="reserve-11"
-                                            data-map="14">Amboseli National Park</button>
-                                        <button id="res12-butt" class="reserve-button" data-reserve="reserve-12"
-                                            data-map="15">Lake
+                                    <div class="row btn-group">
+                                        <button class="reserve-button" data-reserve="reserve-10">Maasai
+                                            Mara Nature Reserve</button>
+                                        <button class="reserve-button" data-reserve="reserve-11">Amboseli
+                                            National Park</button>
+                                        <button class="reserve-button" data-reserve="reserve-12">Lake
                                             Nakuru National Park</button>
                                     </div>
                                 </div>
@@ -319,110 +305,109 @@
                                 <!-------- RESERVE TEMPLATES -------->
 
                                 <div id="reserve-0" class="reserve-section">
-                                    <p>ENTER</p>
+                                    <h6 class="reserve-placeholder">Please select a Reserve Above for more info</h6>
                                 </div>
-
-                                <!--Reserve1-->
                                 <div id="reserve-1" class="reserve-section hidden">
+                                    <h5>Kruger National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 111
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve2-->
                                 <div id="reserve-2" class="reserve-section hidden">
+                                    <h5>Tembe Elephant Park </h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque!RESERVE 222
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve3-->
                                 <div id="reserve-3" class="reserve-section hidden">
+                                    <h5>Shamwari Private Game Reserve</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 333
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve4-->
                                 <div id="reserve-4" class="reserve-section hidden">
+                                    <h5>
+                                        Chobe
+                                        National Park
+                                    </h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 444
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve5-->
                                 <div id="reserve-5" class="reserve-section hidden">
+                                    <h5>Central
+                                        Kalahari Game Reserve</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque!RESERVE 555
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve6-->
                                 <div id="reserve-6" class="reserve-section hidden">
+                                    <h5>Moremi
+                                        Game Reserve</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 666
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve7-->
                                 <div id="reserve-7" class="reserve-section hidden">
+                                    <h5>Etosha
+                                        National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 777
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve8-->
                                 <div id="reserve-8" class="reserve-section hidden">
+                                    <h5>Skeleton
+                                        Coast National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque!RESERVE 888
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve9-->
                                 <div id="reserve-9" class="reserve-section hidden">
+                                    <h5>Khaudum
+                                        National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE 999
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve10-->
                                 <div id="reserve-10" class="reserve-section hidden">
+                                    <h5>Maasai
+                                        Mara Game Reserve</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE -- TENTY
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve11-->
                                 <div id="reserve-11" class="reserve-section hidden">
+                                    <h5>Amboseli
+                                        National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque!RESERVE --EVELENTY
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
                                         similique
                                         saepe molestiae perferendis mollitia quibusdam.</p>
                                 </div>
-
-                                <!--Reserve12-->
                                 <div id="reserve-12" class="reserve-section hidden">
+                                    <h5>Lake
+                                        Nakuru National Park</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
                                         cumque! RESERVE -- TWELVTY
                                         Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
@@ -433,15 +418,13 @@
                         </div>
                     </div>
                 </div>
-                <!--Countries Main box-->
 
-                <!-- SECTION - MAP -->
+                <!-- MAP -->
                 <div class="col-sm-8 map-col">
                     <div id="map">
                     </div>
                 </div>
             </div>
-
     </section>
 
     <!-- SECTION - CONTACT -->
