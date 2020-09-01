@@ -12,7 +12,7 @@
   /*colours*/
   --primary1: #f7ebd2d2;
   --primary2: #b9b6ae;
-  --secondary1: #62904883;
+  --secondary1: #629048;
   --secondary2: #442424;
   --off-white: #fbf9f1;
   --box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
@@ -106,7 +106,7 @@ iframe {
   box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* --- COUNTRY SECTION --- */
+/* --- COUNTRY/RESERVE SECTION --- */
 
 .hidden {
   display: none;
@@ -127,6 +127,18 @@ iframe {
 .reserve-button {
   width: 25%;
   margin: 10px;
+}
+
+.reserve-section a {
+  color: var(--secondary1);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.reserve-section a,
+.reserve-section p {
+  text-align: justify;
 }
 
 .country-content {
@@ -168,8 +180,14 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  #map img {
-    max-height: 700px;
+  #map {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #map {
+    height: 500px;
   }
 }
 
@@ -181,6 +199,6 @@ footer {
   }
 
   #map {
-    min-height: 500px;
+    height: 600px;
   }
 }
