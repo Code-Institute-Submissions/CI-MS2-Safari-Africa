@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = this.hash;
+      let hash = this.hash;
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top,
@@ -17,7 +17,6 @@ $(document).ready(function () {
   });
 });
 //--- END CREDIT ---
-
 // Close mobile dropdown menu after item clicked
 window.onclick = function (e) {
   let dropDown = document.getElementById("navbarResponsive");
@@ -25,16 +24,13 @@ window.onclick = function (e) {
     dropDown.classList.remove("show");
   }
 };
-
 //function to HIDE/SHOW country info with buttons
 const countryButton = document.getElementsByClassName("country-button");
 for (let i = 0; i < countryButton.length; i++) {
   countryButton[i].addEventListener("click", handleCountrySelect);
 }
-
 function handleCountrySelect(e) {
   const countryBtn = e.target.dataset.country;
-
   const countrySelections1 = document.getElementsByClassName("country-section");
   for (let i = 0; i < countrySelections1.length; i++) {
     const sectionID = countrySelections1[i].id;
@@ -45,22 +41,15 @@ function handleCountrySelect(e) {
     }
   }
   handleReserveReset("reserve-0");
-
-  // click button to show map-country
-  const mapBtn = e.target.dataset.map;
-  //make string into a number to correlate to array position
-  const mapInt = parseInt(mapBtn, 10);
-  changeMapLocation(mapInt);
+  // click button to show map-country based on the innerText
+  changeMapLocation(e.target.innerText);
 }
-
 //function to HIDE/SHOW RESERVE info with buttons
 const reserveButton = document.getElementsByClassName("reserve-button");
 for (let i = 0; i < reserveButton.length; i++) {
   reserveButton[i].addEventListener("click", handleReserveSelect);
 }
-
 function handleReserveSelect(e) {
-  // pinMarker.setLatLng(newMapLocation.pin);
   const reserveBtn = e.target.dataset.reserve;
   const reserveSelection = document.getElementsByClassName("reserve-section");
   for (let i = 0; i < reserveSelection.length; i++) {
@@ -71,17 +60,11 @@ function handleReserveSelect(e) {
       reserveSelection[i].classList.add("hidden");
     }
   }
-
-  // click button to show map-reserve
-  const mapBtn = e.target.dataset.map;
-  //make string into a number to correlate to array position
-  const mapInt = parseInt(mapBtn, 10);
-  changeMapLocation(mapInt);
+  // click button to show map-country based on the innerText
+  changeMapLocation(e.target.innerText);
 }
-
 //function to RESET RESERVE info
 function handleReserveReset(reserve) {
-  // pinMarker.remove();
   const reserveBtn = reserve;
   const reserveSelection = document.getElementsByClassName("reserve-section");
   for (let i = 0; i < reserveSelection.length; i++) {
@@ -94,25 +77,22 @@ function handleReserveReset(reserve) {
   }
 }
 
-var mapTileLayers = L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-  {
-    attribution:
-      "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
-  }
+let mapTileLayers = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", //Attribution for map tiles import
+  { attribution: "Powered by Esri" }
 );
 
-//CREDIT: Function LeafletJS - to instatiate map
+//CREDIT: Tim Nelson - SHowing only map tiles for Southern Africa (avoid loading world map)
 let map = L.map("map", {
   layers: [mapTileLayers], // variable from above
   center: [-29.28864, 25.025732], // central lat-lng once loaded
   zoom: 6, // smaller numbers = zoomOut // larger numbers = zoomIn
-  minZoom: 2, // max zoomOut permitted
+  minZoom: 4, // max zoomOut permitted
   maxZoom: 18, // max zoomIn permitted
   maxBounds: [
     // stops map from infinite scrolling at edges
-    [-75, -190],
-    [90, 190],
+    [-38, -2],
+    [6, 57],
   ],
   maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
@@ -134,18 +114,22 @@ function onMapClick(e) {
 }
 map.on("click", onMapClick); // append pop-up to popupClick variable
 
-// adds scale/legend in bottom-left corner of map
-L.control.scale().addTo(map);
+L.control.scale().addTo(map); // adds scale/legend in bottom-left corner of map
+
 //--- END CREDIT ---
 
 // Function to change map display with button click
 
-function changeMapLocation(locationID) {
-  const newMapLocation = mapLocations[locationID];
-  console.log(newMapLocation);
+let pinMarker = {};
+
+function changeMapLocation(location) {
+  // .find() by location in array of objects: https://stackoverflow.com/a/35398031/13484385
+  const newMapLocation = mapLocations.find(
+    (name) => name.location === location
+  );
+  // map.setView(newMapLocation.center, newMapLocation.zoom);
   map.flyTo(newMapLocation.center, newMapLocation.zoom);
   if (newMapLocation.pin) {
-    //Credit to Tim Nelson for helping fix this bug with markers not removing with button clicks!!!
     map.removeLayer(pinMarker);
     pinMarker = L.marker(newMapLocation.pin).addTo(map);
   } else {
