@@ -139,20 +139,18 @@ L.control.scale().addTo(map);
 //--- END CREDIT ---
 
 // Function to change map display with button click
+
 function changeMapLocation(locationID) {
   const newMapLocation = mapLocations[locationID];
   console.log(newMapLocation);
-  // map.setView(newMapLocation.center, newMapLocation.zoom);
   map.flyTo(newMapLocation.center, newMapLocation.zoom);
   if (newMapLocation.pin) {
-    pinMarker = L.marker(newMapLocation.pin).addTo(map);
-    // pinMarker.remove(); ---------removes all markers
-    console.log("1\n", newMapLocation.pin);
-  } else {
-    console.log("2\n", newMapLocation.pin);
-    pinMarker.remove();
+    //Credit to Tim Nelson for helping fix this bug with markers not removing with button clicks!!!
     map.removeLayer(pinMarker);
-  } //read documentation about pins
+    pinMarker = L.marker(newMapLocation.pin).addTo(map);
+  } else {
+    map.removeLayer(pinMarker);
+  }
 }
 
 let pinMarker = {};
