@@ -95,6 +95,7 @@ iframe {
   display: block;
   width: 100%;
   padding: 5px;
+  height: 180px;
 }
 
 .card {
@@ -116,18 +117,55 @@ iframe {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  padding: 8px;
+  /* box-shadow: 0 0 black; */
+  box-shadow: var(--box-shadow);
+  border: 2px solid brown;
+  border-radius: 8px;
 }
 
-.country-button {
+.country-button,
+.reserve-button {
   width: 35%;
-  margin: 5px 20px;
-  height: 30px;
+  margin: 5px 0px;
 }
 
 .reserve-button {
   width: 25%;
-  margin: 10px;
 }
+
+/*Credit-Button styling-https://www.bestcssbuttongenerator.com/#/11*/
+button {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+  background-color: #7d5d3b;
+  border-radius: 3px;
+  border: 1px solid #54381e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
+}
+button:hover {
+  background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+  background-color: #634b30;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* .reserve-button {
+  width: 25%;
+  margin: 10px;
+  min-width: min-content;
+  max-height: min-content;
+  padding: 5px;
+} */
 
 .reserve-section a {
   color: var(--secondary1);
@@ -145,11 +183,16 @@ iframe {
   height: 100%;
 }
 
-.map-row {
+/* .map-row {
   display: flex;
   max-width: fit-content;
   justify-content: center;
   margin: auto;
+} */
+
+.reserve-info {
+  padding: 15px;
+  align-self: center;
 }
 
 /* --- MAIN COUNTRY/RESERVE MAP--- */
@@ -172,10 +215,9 @@ footer {
 
 /* --- RESPONSIVE RULES --- */
 
-@media only screen and (min-width: 768px) {
-  .navbar-brand {
-    font-size: 2rem;
-    letter-spacing: 2px;
+@media only screen and (min-width: 375px) {
+  iframe {
+    height: 200px;
   }
 }
 
@@ -183,11 +225,17 @@ footer {
   #map {
     height: 400px;
   }
+  iframe {
+    height: 220px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   #map {
     height: 500px;
+  }
+  iframe {
+    height: 200px;
   }
 }
 
@@ -195,10 +243,13 @@ footer {
   .country-button {
     width: 20%;
     margin: 5px 20px;
-    height: 30px;
+    height: 50px;
   }
 
   #map {
     height: 600px;
+  }
+  iframe {
+    height: 250px;
   }
 }
