@@ -63,6 +63,7 @@ function handleReserveSelect(e) {
   // click button to show map-country based on the innerText
   changeMapLocation(e.target.innerText);
 }
+
 //function to RESET RESERVE info
 function handleReserveReset(reserve) {
   const reserveBtn = reserve;
@@ -191,23 +192,23 @@ const mapLocations = [
     website:
       '<a href="http://www.krugerpark.co.za/" target="_blank">krugerpark.co.za</a>',
     center: [-23.988669, 31.553925],
-    zoom: 8,
+    zoom: 7.5,
     pin: [-23.988669, 31.553925],
   },
   {
     location: "Tembe Elephant Park",
     website: '<a href="https://tembe.co.za/" target="_blank">tembe.co.za</a>',
     center: [-26.965, 32.45],
-    zoom: 11,
-    pin: [-26.95145, 32.45967],
+    zoom: 10,
+    pin: [-27.048843, 32.422914],
   },
   {
     location: "Shamwari Game Reserve",
     website:
       '<a href="https://www.shamwari.com/" target="_blank">shamwari.com</a>',
-    center: [-33.47782, 26.03583],
-    zoom: 7,
-    pin: [-33.47782, 26.03583],
+    center: [-33.47, 26.1],
+    zoom: 11,
+    pin: [-33.477947, 26.036215],
   },
   //---Botswana Reserves
   {
@@ -215,7 +216,7 @@ const mapLocations = [
     website:
       '<a href="https://chobenationalpark.co.za/" target="_blank">chobenationalpark.co.za</a>',
     center: [-18.5, 24.5],
-    zoom: 8.9,
+    zoom: 8,
     pin: [-18.788571, 24.386086],
   },
   {
@@ -223,14 +224,14 @@ const mapLocations = [
     website:
       '<a href="https://kalaharinationalpark.com/display-view/Central-Kalahari-Game-Reserve/" target="_blank">kalaharinationalpark.com</a>',
     center: [-22.2, 24],
-    zoom: 8,
+    zoom: 7,
     pin: [-22.390486, 23.838411],
   },
   {
     location: "Moremi Game Reserve",
     website: '<a href="https://www.moremi.com/" target="_blank">moremi.com</a>',
     center: [-19.33, 23.2],
-    zoom: 10,
+    zoom: 8.5,
     pin: [-19.272781, 22.959351],
   },
   //---Namibia Reserves
@@ -238,15 +239,15 @@ const mapLocations = [
     location: "Etosha National Park",
     website:
       '<a href="http://www.met.gov.na/national-parks/etosha-national-park/217/" target="_blank">met.gov.na</a>',
-    center: [-18.964107, 16.349421],
-    zoom: 7,
+    center: [-18.964107, 15.8],
+    zoom: 7.2,
     pin: [-18.964107, 16.349421],
   },
   {
     location: "Skeleton Coast National Park",
     website:
       '<a href="http://www.met.gov.na/national-parks/skeleton-coast-park/227/" target="_blank">met.gov.na</a>',
-    center: [-20.072817, 13.316423],
+    center: [-19.5, 13],
     zoom: 7,
     pin: [-20.072817, 13.316423],
   },
@@ -254,8 +255,8 @@ const mapLocations = [
     location: "Khaudum National Park",
     website:
       '<a href="http://www.met.gov.na/national-parks/khaudum-national-park/220/" target="_blank">met.gov.na</a>',
-    center: [-18.954467, 20.567399],
-    zoom: 7,
+    center: [-18.78, 20.7],
+    zoom: 9,
     pin: [-18.954467, 20.567399],
   },
   //---Kenya Reserves
@@ -264,7 +265,7 @@ const mapLocations = [
     website:
       '<a href="http://www.maasaimara.com/" target="_blank">maasaimara.com</a>',
     center: [-1.371569, 34.93885],
-    zoom: 7,
+    zoom: 8.5,
     pin: [-1.371569, 34.93885],
   },
   {
@@ -272,7 +273,7 @@ const mapLocations = [
     website:
       '<a href="http://www.kws.go.ke/amboseli-national-park" target="_blank">kws.go.ke</a>',
     center: [-2.652516, 37.260651],
-    zoom: 7,
+    zoom: 10.5,
     pin: [-2.652516, 37.260651],
   },
   {
@@ -280,7 +281,7 @@ const mapLocations = [
     website:
       '<a href="http://www.kws.go.ke/lake-nakuru-national-park" target="_blank">kws.go.ke</a>',
     center: [-0.366763, 36.089139],
-    zoom: 7,
+    zoom: 11,
     pin: [-0.366763, 36.089139],
   },
 ];
