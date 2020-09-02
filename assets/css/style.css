@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 /* --- SITE COLOURS ---*/
@@ -78,10 +78,16 @@ section h1 {
   --bs-gutter-x: none;
 }
 
-.about-col,
+/* .about-col,
 .country-col {
   padding: 10px;
-}
+} */
+
+/* .col-sm-8,
+.col-sm-6 {
+  text-align: justify;
+  padding: 20px 10px;
+} */
 
 .about-container,
 .country-container {
@@ -113,29 +119,29 @@ iframe {
   display: none;
 }
 
+/*--Buttons--*/
 .btn-group {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding: 8px;
-  /* box-shadow: 0 0 black; */
   box-shadow: var(--box-shadow);
-  border: 2px solid brown;
+  border: 2px auto var(--secondary1);
   border-radius: 8px;
 }
 
-.country-button,
-.reserve-button {
+.country-button {
   width: 35%;
-  margin: 5px 0px;
 }
 
-.reserve-button {
-  width: 25%;
+button.reserve-button {
+  padding: 5px;
+  width: 28%;
 }
 
 /*Credit-Button styling-https://www.bestcssbuttongenerator.com/#/11*/
 button {
+  margin: 5px;
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
   background-color: #7d5d3b;
@@ -144,28 +150,24 @@ button {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
-  font-size: 13px;
-  padding: 6px 24px;
+  font-family: "Crete Round", serif;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #4d3534;
+  padding: 5px;
 }
+
 button:hover {
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
   background-color: #634b30;
 }
 button:active {
   position: relative;
-  top: 1px;
+  top: 5px;
 }
+/*End Credit*/
 
-/* .reserve-button {
-  width: 25%;
-  margin: 10px;
-  min-width: min-content;
-  max-height: min-content;
-  padding: 5px;
-} */
+button:focus {
+  outline: 5px auto orange;
+}
 
 .reserve-section a {
   color: var(--secondary1);
@@ -182,13 +184,6 @@ button:active {
 .country-content {
   height: 100%;
 }
-
-/* .map-row {
-  display: flex;
-  max-width: fit-content;
-  justify-content: center;
-  margin: auto;
-} */
 
 .reserve-info {
   padding: 15px;
@@ -227,6 +222,10 @@ footer {
   }
   iframe {
     height: 220px;
+  }
+  body {
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
 }
 
