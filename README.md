@@ -210,8 +210,9 @@ This website project will target a large demographic of individuals and families
 
 ### Project barriers and solutions
 
-> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Upodated: Tim found a fix for the existing code without necessitating marker clusters.
-> - Exisiting layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. (ENTER RESOLUTION WHEN DONE)
+> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Updated: Tim found a fix for the existing code without necessitating marker clusters.
+> - Exisiting layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for country and reserve main buttons.
+> - As above, found that when selecting a reserve (and then trying to scroll down to the info (under map)) was tricky on mbile as the map is touch-responsive. This was interfering with usability and UX and became fiddly. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 
 ---
 
