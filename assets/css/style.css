@@ -10,7 +10,8 @@
 
 :root {
   /*colours*/
-  --primary1: #f7ebd2d2;
+  --primary1: #f7ebd2;
+  --prim-opaque: #f7ebd2d2;
   --primary2: #b9b6ae;
   --secondary1: #629048;
   --secondary2: #442424;
@@ -78,20 +79,9 @@ section h1 {
   --bs-gutter-x: none;
 }
 
-/* .about-col,
-.country-col {
-  padding: 10px;
-} */
-
-/* .col-sm-8,
-.col-sm-6 {
-  text-align: justify;
-  padding: 20px 10px;
-} */
-
 .about-container,
 .country-container {
-  background-color: var(--primary1);
+  background-color: var(--prim-opaque);
   padding: 16px;
   min-height: 70vh;
   border-radius: 10px;
@@ -120,55 +110,71 @@ iframe {
 }
 
 /*--Buttons--*/
-.btn-group {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 8px;
-  box-shadow: var(--box-shadow);
-  border: 2px auto var(--secondary1);
-  border-radius: 8px;
+
+.dropdown-menu {
+  position: absolute;
+  transform: translate3d(5px, 29px, 0px);
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  background-color: var(--primary1);
+  width: 95%; /*Change with .dropdown-main width for mobile*/
+  padding: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
 }
 
-.country-button {
-  width: 35%;
+.dropdown-main {
+  text-align: center;
+  width: 70%;
+  margin: auto;
 }
 
-button.reserve-button {
-  padding: 5px;
-  width: 28%;
+.dropdown {
+  text-align: center;
 }
 
-/*Credit-Button styling-https://www.bestcssbuttongenerator.com/#/11*/
-button {
-  margin: 5px;
+.dropdown-main span {
+  font-size: 1.2rem;
+}
+
+.dropdown-item,
+.dropdown-main {
+  display: block;
+  font-family: "Crete Round", serif;
+  font-size: 0.9rem;
+  color: #fff;
+  width: 95%;
+  margin: 12px auto;
+  padding: 0.25rem 1rem;
   box-shadow: inset 0px 1px 0px 0px #a6827e;
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
   background-color: #7d5d3b;
   border-radius: 3px;
   border: 1px solid #54381e;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Crete Round", serif;
-  text-decoration: none;
-  padding: 5px;
+  box-shadow: var(--box-shadow);
 }
 
-button:hover {
+.dropdown-main:hover {
+  color: var(--off-white);
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
   background-color: #634b30;
-}
-button:active {
-  position: relative;
-  top: 5px;
-}
-/*End Credit*/
-
-button:focus {
   outline: 5px auto orange;
 }
 
+.dropdown-main:focus {
+  outline: 5px auto orange;
+}
+
+.dropdown-item:hover {
+  color: yellow;
+}
+
+/*--- Reserve Section ---*/
 .reserve-section a {
   color: var(--secondary1);
   text-decoration: none;
@@ -196,6 +202,7 @@ button:focus {
   height: 300px;
   box-shadow: var(--box-shadow);
   border: 2px solid tan;
+  z-index: 0;
 }
 
 /* --- CONTACT SECTION--- */
@@ -239,12 +246,6 @@ footer {
 }
 
 @media only screen and (min-width: 1023px) {
-  .country-button {
-    width: 20%;
-    margin: 5px 20px;
-    height: 50px;
-  }
-
   #map {
     height: 600px;
   }
