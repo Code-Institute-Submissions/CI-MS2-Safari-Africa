@@ -196,8 +196,11 @@
                             </div>
                         </div>
                         <!-------- COUNTRY TEMPLATES -------->
+                        <div id="default" class="country-section">
+
+                        </div>
                         <!--South Africa-->
-                        <div id="southafrica" class="country-section">
+                        <div id="southafrica" class="country-section hidden">
                             <div class="row">
                                 <div class="col-sm-8">
                                     <h3>South Africa-COUNTRY API</h3>
@@ -374,18 +377,13 @@
 
 
             <div class="row">
-                <!-------- MAP -------->
-                <div class="col-sm-6">
-                    <div id="map">
-                    </div>
-                </div>
-                <!-- *end* MAP -->
-
                 <!-------- RESERVE INFO -------->
                 <div class="col-sm-6 reserve-info">
+                    <!--Reserve info placeholder-->
                     <div id="reserve-0" class="reserve-section">
-                        <h6 class="reserve-placeholder">Please select a Reserve Above for more info</h6>
+                        <h6 class="reserve-placeholder">- Please make a selection above for more info -</h6>
                     </div>
+                    <!--South Africa Reserves-->
                     <div id="reserve-1" class="reserve-section hidden">
                         <h5>Kruger National Park</h5>
                         <p>
@@ -485,6 +483,7 @@
                             </em>
                         </p>
                     </div>
+                    <!--Botswana Reserves-->
                     <div id="reserve-4" class="reserve-section hidden">
                         <h5>
                             Chobe
@@ -602,6 +601,7 @@
                             </em>
                         </p>
                     </div>
+                    <!--Namibia Reserves-->
                     <div id="reserve-7" class="reserve-section hidden">
                         <h5>Etosha
                             National Park</h5>
@@ -698,7 +698,7 @@
                             </em>
                         </p>
                     </div>
-
+                    <!--Kenya Reserves-->
                     <div id="reserve-10" class="reserve-section hidden">
                         <h5>
                             Maasai Mara Game Reserve
@@ -797,6 +797,12 @@
                     </div>
                 </div>
                 <!-------- *end* RESERVE INFO -------->
+                <!-------- MAP -------->
+                <div class="col-sm-6">
+                    <div id="map">
+                    </div>
+                </div>
+                <!-- *end* MAP -->
             </div>
         </div>
     </section>
