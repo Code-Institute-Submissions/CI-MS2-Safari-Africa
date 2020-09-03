@@ -18,7 +18,7 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!--NAVIGATION-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="siteNav">
         <div class="container">
@@ -46,13 +46,13 @@
         </div>
     </nav>
 
-    <!-- SECTION INTRO -->
+    <!--INTRO-SECTION-->
 
     <section id="intro">
         <h1>Intro</h1>
     </section>
 
-    <!-- SECTION ABOUT -->
+    <!--ABOUT-SECTION-->
 
     <section id="about">
         <h1>About Us</h1>
@@ -99,13 +99,14 @@
                                         <div class="col-md d-flex">
                                             <div class="card card-body flex-fill">
                                                 <img src="https://www.safariprofessionals.org/wp-content/uploads/home_4.jpg"
-                                                    class="card-img-top"
-                                                    alt="-------------------------------------------------------------------------------------" />
+                                                    class="card-img-top" alt="---" />
                                                 <div class="card-body">
                                                     <h2>South Africa</h2>
-                                                    <!-- <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p> -->
+                                                    <p>
+                                                        South Africa South Africa South Africa South Africa South Africa
+                                                        South Africa South Africa South Africa South Africa South Africa
+                                                        South Africa South Africa
+                                                    </p>
 
                                                 </div>
                                             </div>
@@ -113,13 +114,13 @@
                                         <div class="col-md d-flex">
                                             <div class="card card-body flex-fill">
                                                 <img src="https://www.safariprofessionals.org/wp-content/uploads/home_4.jpg"
-                                                    class="card-img-top"
-                                                    alt="-------------------------------------------------------------------------------------" />
+                                                    class="card-img-top" alt="---" />/>
                                                 <div class="card-body">
-                                                    <h2> Namibia</h2>
-                                                    <!-- <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p> -->
+                                                    <h2>Namibia</h2>
+                                                    <p>
+                                                        Namibia Namibia Namibia Namibia Namibia Namibia Namibia Namibia
+                                                        Namibia Namibia Namibia
+                                                    </p>
 
                                                 </div>
                                             </div>
@@ -129,15 +130,15 @@
                                         <div class="col-sm d-flex">
                                             <div class="card card-body flex-fill">
                                                 <img src="https://www.safariprofessionals.org/wp-content/uploads/home_4.jpg"
-                                                    class="card-img-top"
-                                                    alt="-------------------------------------------------------------------------------------" />
+                                                    class="card-img-top" alt="---" />
                                                 <div class="card-body">
                                                     <h2>
                                                         Botswana
                                                     </h2>
-                                                    <!-- <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p> -->
+                                                    <p>
+                                                        Botswana Botswana Botswana Botswana Botswana Botswana Botswana
+                                                        Botswana Botswana Botswana
+                                                    </p>
 
                                                 </div>
                                             </div>
@@ -145,15 +146,15 @@
                                         <div class="col-sm d-flex">
                                             <div class="card card-body flex-fill">
                                                 <img src="https://www.safariprofessionals.org/wp-content/uploads/home_4.jpg"
-                                                    class="card-img-top"
-                                                    alt="-------------------------------------------------------------------------------------" />
+                                                    class="card-img-top" alt="---" />
                                                 <div class="card-body">
                                                     <h2>
                                                         Kenya
                                                     </h2>
-                                                    <!-- <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p> -->
+                                                    <p>
+                                                        Kenya Kenya Kenya Kenya Kenya Kenya Kenya Kenya Kenya Kenya
+                                                        Kenya
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,653 +168,658 @@
         </div>
     </section>
 
-    <!-- SECTION - COUNTRIES -->
+    <!---SECTION-COUNTRIES--->
 
     <section id="countries">
         <h1>Top 3 Game Reserves by Country</h1>
 
-
         <div class="container country-container">
-            <!-------- COUNTRY INFO -------->
+            <!---COUNTRY INFO--->
             <div class="row">
                 <div class="col-sm-12 about-col">
-
-                    <div class="country-content">
+                    <div class="dropdown">
+                        <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><span>1. Select a Country</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="countries">
+                            <button class="dropdown-item country-button" type="button" data-country="southafrica">South
+                                Africa</button>
+                            <button class="dropdown-item country-button" type="button"
+                                data-country="botswana">Botswana</button>
+                            <button class="dropdown-item country-button" type="button"
+                                data-country="namibia">Namibia</button>
+                            <button class="dropdown-item country-button" type="button"
+                                data-country="kenya">Kenya</button>
+                        </div>
+                    </div>
+                    <!---COUNTRY TEMPLATES--->
+                    <div id="default" class="country-section">
+                    </div>
+                    <!---South Africa--->
+                    <div id="southafrica" class="country-section hidden">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>South Africa-COUNTRY API</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <iframe src="https://www.youtube.com/embed/wXYQo09Y2kc" allowfullscreen></iframe>
+                            </div>
+                        </div>
                         <div class="dropdown">
-                            <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><span>1. Select a Country</span>
+                            <button class="dropdown-reserve dropdown-main dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>2. Select a
+                                    Reserve</span>
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="country-dropdown">
-                                <button class="dropdown-item country-button" type="button"
-                                    data-country="southafrica">South
-                                    Africa</button>
-                                <button class="dropdown-item country-button" type="button"
-                                    data-country="botswana">Botswana</button>
-                                <button class="dropdown-item country-button" type="button"
-                                    data-country="namibia">Namibia</button>
-                                <button class="dropdown-item country-button" type="button"
-                                    data-country="kenya">Kenya</button>
-                            </div>
-                        </div>
-                        <!-------- COUNTRY TEMPLATES -------->
-                        <div id="default" class="country-section">
-
-                        </div>
-                        <!--South Africa-->
-                        <div id="southafrica" class="country-section hidden">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <h3>South Africa-COUNTRY API</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                </div>
-                                <div class="col-sm-4">
-                                    <iframe src="https://www.youtube.com/embed/wXYQo09Y2kc"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false"><span>2. Select a Reserve</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="reserve-dropdown">
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-1">Kruger
-                                        National Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-2">Tembe
-                                        Elephant Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-3">Shamwari
-                                        Game Reserve</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Botswana-->
-                        <div id="botswana" class="country-section hidden">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <h3>Botswana-COUNTRY API</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                </div>
-                                <div class="col-sm-4">
-                                    <iframe src="https://www.youtube.com/embed/sqAdEAH2q_g"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false"><span>2. Select a Reserve</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="reserve-dropdown">
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-4">Chobe
-                                        National Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-5">Central
-                                        Kalahari Game Reserve</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-6">Moremi
-                                        Game Reserve</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Namibia-->
-                        <div id="namibia" class="country-section hidden">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <h3>Namibia-COUNTRY API</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                </div>
-                                <div class="col-sm-4">
-                                    <iframe
-                                        src="https://balticlivecam.com/wild-animals/wild-animals-online/namib-naukluft-national-park/?embed"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false"><span>2. Select a Reserve</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="reserve-dropdown">
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-7">Etosha
-                                        National Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-8">Skeleton
-                                        Coast National Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-9">Khaudum
-                                        National Park</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Kenya-->
-                        <div id="kenya" class="country-section hidden">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <h3>Kenya-COUNTRY API</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
-                                        quisquam
-                                        cumque!
-                                        Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
-                                        dolor
-                                        similique
-                                        saepe molestiae perferendis mollitia quibusdam.</p>
-                                </div>
-                                <div class="col-sm-4">
-                                    <iframe src="https://www.youtube.com/embed/6NIt6ibAD6I"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="dropdown">
-                                <button class="dropdown-main dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false"><span>2. Select a Reserve</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="reserve-dropdown">
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-10">Maasai
-                                        Mara Nature Reserve</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-11">Amboseli
-                                        National Park</button>
-                                    <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-12">Lake
-                                        Nakuru National Park</button>
-                                </div>
+                            <div class="reserve-menu dropdown-menu" aria-labelledby="southafrica">
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-1">Kruger
+                                    National Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-2">Tembe
+                                    Elephant Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-3">Shamwari
+                                    Game Reserve</button>
                             </div>
                         </div>
                     </div>
-
+                    <!---Botswana--->
+                    <div id="botswana" class="country-section hidden">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>Botswana-COUNTRY API</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <iframe src="https://www.youtube.com/embed/sqAdEAH2q_g" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-reserve dropdown-main dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>2. Select a
+                                    Reserve</span>
+                            </button>
+                            <div class="reserve-menu dropdown-menu" aria-labelledby="botswana">
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-4">Chobe
+                                    National Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-5">Central
+                                    Kalahari Game Reserve</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-6">Moremi
+                                    Game Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Namibia--->
+                    <div id="namibia" class="country-section hidden">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>Namibia-COUNTRY API</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <iframe
+                                    src="https://balticlivecam.com/wild-animals/wild-animals-online/namib-naukluft-national-park/?embed"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-reserve dropdown-main dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>2. Select a
+                                    Reserve</span>
+                            </button>
+                            <div class="reserve-menu dropdown-menu" aria-labelledby="namibia">
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-7">Etosha
+                                    National Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-8">Skeleton
+                                    Coast National Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-9">Khaudum
+                                    National Park</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!---Kenya--->
+                    <div id="kenya" class="country-section hidden">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>Kenya-COUNTRY API</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non alias
+                                    quisquam
+                                    cumque!
+                                    Iusto tempora beatae, quia perspiciatis enim quaerat ea soluta quisquam
+                                    dolor
+                                    similique
+                                    saepe molestiae perferendis mollitia quibusdam.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <iframe src="https://www.youtube.com/embed/6NIt6ibAD6I" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-reserve dropdown-main dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>2. Select a
+                                    Reserve</span>
+                            </button>
+                            <div class="reserve-menu dropdown-menu" aria-labelledby="kenya">
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-10">Maasai
+                                    Mara Nature Reserve</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-11">Amboseli
+                                    National Park</button>
+                                <button type="button" class="dropdown-item reserve-button"
+                                    data-reserve="reserve-12">Lake
+                                    Nakuru National Park</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-------- *end* COUNTRY INFO -------->
+            <!---*end* COUNTRY INFO--->
 
 
-            <div class="row">
-                <!-------- RESERVE INFO -------->
+            <div class="maprow row">
+                <!---RESERVE INFO--->
                 <div class="col-sm-6 reserve-info">
-                    <!--Reserve info placeholder-->
+                    <!---Reserve info placeholder--->
                     <div id="reserve-0" class="reserve-section">
                         <h6 class="reserve-placeholder">- Please make a selection above for more info -</h6>
                     </div>
-                    <!--South Africa Reserves-->
+                    <!---South Africa Reserves--->
                     <div id="reserve-1" class="reserve-section hidden">
                         <h5>Kruger National Park</h5>
-                        <p>
-                            Where nearly 2 million hectares of unrivaled diversity of life forms fuses
-                            with
-                            historical and archaeological sights - this is real Africa.</p>
-                        <p>
-                            The world-renownedKruger National Park offers a wildlife experience that
-                            ranks
-                            with the best in Africa.
-                        </p>
-                        <p>
-                            Steeped in legend and history, the iconic Kruger National Park in South
-                            Africa
-                            is waiting for you to explore its vast landscapes and spectacular African
-                            wildlife.
-                        </p>
-                        <p>
-                            Plan your Kruger Park safari trip from our recommended safari tour options,
-                            which
-                            range from exclusive private safaris to affordable group safaris. Take a
-                            journey
-                            of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard
-                            and
-                            Buffalo, you will discover unique wildlife on a real safari in Africa.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.krugerpark.co.za/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Where nearly 2 million hectares of unrivaled diversity of life forms fuses
+                                with
+                                historical and archaeological sights - this is real Africa.</p>
+                            <p>
+                                The world-renowned Kruger National Park offers a wildlife experience that
+                                ranks
+                                with the best in Africa.
+                            </p>
+                            <p>
+                                Steeped in legend and history, the iconic Kruger National Park in South
+                                Africa
+                                is waiting for you to explore its vast landscapes and spectacular African
+                                wildlife.
+                            </p>
+                            <p>
+                                Plan your Kruger Park safari trip from our recommended safari tour options,
+                                which
+                                range from exclusive private safaris to affordable group safaris. Take a
+                                journey
+                                of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard
+                                and
+                                Buffalo, you will discover unique wildlife on a real safari in Africa.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.krugerpark.co.za/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-2" class="reserve-section hidden">
                         <h5>Tembe Elephant Park </h5>
-
-                        <p>
-                            Tembe Elephant Park offers intimate encounters with some of the largest
-                            elephants in Africa.
-                        </p>
-                        <p>
-                            The 300km2 reserve, located in the Republic of South Africa between Kwa-Zulu
-                            Natal and Mozambique, is the ancestral home of the Tembe tribe who own and
-                            co-manage both the Park and the Tembe Elephant Lodge.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://tembe.co.za/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Tembe Elephant Park offers intimate encounters with some of the largest
+                                elephants in Africa.
+                            </p>
+                            <p>
+                                The 300km2 reserve, located in the Republic of South Africa between Kwa-Zulu
+                                Natal and Mozambique, is the ancestral home of the Tembe tribe who own and
+                                co-manage both the Park and the Tembe Elephant Lodge.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://tembe.co.za/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-3" class="reserve-section hidden">
                         <h5>Shamwari Private Game Reserve</h5>
-
-                        <p>
-                            Shamwari Private Game Reserve is a luxury safari and game lodge destination
-                            in
-                            South Africa’s ecologically and culturally significant Eastern Cape
-                            Province.
-                        </p>
-                        <p>
-                            At the pinnacle of private game reserves, you will find Shamwari (meaning
-                            “my
-                            friend” in Shona) Private Game Reserve in the Eastern Cape, South Africa –
-                            home
-                            to the coveted Big 5 and luxurious experiences. It’s a place where guests
-                            can
-                            exist in harmony with nature, however fleeting the moment, where wildlife
-                            roam
-                            the landscape under the relentless African sun at one of the best Eastern
-                            Cape
-                            Game Reserves.
-                        </p>
-                        <p>
-                            Shamwari has 7 lodges and 1 explorer camp; each providing distinct
-                            experiences.
-                            From exclusive tranquility, effortless family enjoyment or the
-                            back-to-nature
-                            appeal of a luxury tented camp. We invite you to come and experience wild
-                            Africa
-                            at Shamwari, one of the best Private Game Reserves in South Africa.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://www.shamwari.com/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Shamwari Private Game Reserve is a luxury safari and game lodge destination
+                                in
+                                South Africa’s ecologically and culturally significant Eastern Cape
+                                Province.
+                            </p>
+                            <p>
+                                At the pinnacle of private game reserves, you will find Shamwari (meaning
+                                “my
+                                friend” in Shona) Private Game Reserve in the Eastern Cape, South Africa –
+                                home
+                                to the coveted Big 5 and luxurious experiences. It’s a place where guests
+                                can
+                                exist in harmony with nature, however fleeting the moment, where wildlife
+                                roam
+                                the landscape under the relentless African sun at one of the best Eastern
+                                Cape
+                                Game Reserves.
+                            </p>
+                            <p>
+                                Shamwari has 7 lodges and 1 explorer camp; each providing distinct
+                                experiences.
+                                From exclusive tranquility, effortless family enjoyment or the
+                                back-to-nature
+                                appeal of a luxury tented camp. We invite you to come and experience wild
+                                Africa
+                                at Shamwari, one of the best Private Game Reserves in South Africa.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://www.shamwari.com/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
-                    <!--Botswana Reserves-->
+                    <!---Botswana Reserves--->
                     <div id="reserve-4" class="reserve-section hidden">
                         <h5>
                             Chobe
                             National Park
                         </h5>
-
-                        <p>
-                            Chobe National Park is a true wildlife paradise and one of the best national
-                            parks in Southern Africa. Just one peek at the variety of wildlife and lush
-                            vegetation and you will be mesmerized forever!
-                        </p>
-                        <p>
-                            The gateway to Chobe is Kasane, a small town near the borders of Zimbabwe,
-                            Zambia and Namibia.
-                            <a href="https://chobenationalpark.co.za/kasane-accommodation/" target="_blank">
-                                Kasane accommodation
-                            </a>
-                            offers hotels, tented camps and luxury lodge accommodation.
-                        </p>
-                        <p>
-                            Chobe National Park is extremely lush because of the many waterways. The
-                            Chobe
-                            River flows through the park and draws many animals and birds during the dry
-                            season.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://chobenationalpark.co.za/" target="_blank">
-                                    Official Park Website.
+                        <div>
+                            <p>
+                                Chobe National Park is a true wildlife paradise and one of the best national
+                                parks in Southern Africa. Just one peek at the variety of wildlife and lush
+                                vegetation and you will be mesmerized forever!
+                            </p>
+                            <p>
+                                The gateway to Chobe is Kasane, a small town near the borders of Zimbabwe,
+                                Zambia and Namibia.
+                                <a href="https://chobenationalpark.co.za/kasane-accommodation/" target="_blank">
+                                    Kasane accommodation
                                 </a>
-                                ]
-                            </em>
-                        </p>
+                                offers hotels, tented camps and luxury lodge accommodation.
+                            </p>
+                            <p>
+                                Chobe National Park is extremely lush because of the many waterways. The
+                                Chobe
+                                River flows through the park and draws many animals and birds during the dry
+                                season.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://chobenationalpark.co.za/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
+
                     <div id="reserve-5" class="reserve-section hidden">
                         <h5>Central
                             Kalahari Game Reserve
                         </h5>
-
-                        <p>
-                            Visiting the kalahari desert of central kalahari in Botswana. This is the
-                            largest and by far the most remote reserve in southern africa. It covers and
-                            area of 52000 sqaure km and makes the central kalahari the second largest
-                            reserve in the world.
-                        </p>
-                        <p>
-                            There are five reserves that was set aside as part of the Kgalagadi or
-                            Kalahari
-                            desert of Botswana.
-                        </p>
-                        <ul>
-                            <li>Central Kalahari Game Reserve </li>
-                            <li>Khutse Game Reserve </li>
-                            <li>Nxai Pans</li>
-                            <li>Makgadigadi pans</li>
-                            <li>Kgalagadi Transfrontier Park / Mabuasehube</li>
-                        </ul>
-                        <p>
-                            The vastness of the kalahari desert of Central Kalahari is overwhelming on
-                            your
-                            first visit and every visitor should be well prepared on their visit to
-                            Central
-                            Kalahari. Knowledge of the park is important and well maintained and
-                            equipped
-                            vehicles are recommended on your visit to Central Kalahari.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://kalaharinationalpark.com/display-view/Central-Kalahari-Game-Reserve/"
-                                    target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Visiting the kalahari desert of central kalahari in Botswana. This is the
+                                largest and by far the most remote reserve in southern africa. It covers and
+                                area of 52000 sqaure km and makes the central kalahari the second largest
+                                reserve in the world.
+                            </p>
+                            <p>
+                                There are five reserves that was set aside as part of the Kgalagadi or
+                                Kalahari
+                                desert of Botswana.
+                            </p>
+                            <ul>
+                                <li>Central Kalahari Game Reserve </li>
+                                <li>Khutse Game Reserve </li>
+                                <li>Nxai Pans</li>
+                                <li>Makgadigadi pans</li>
+                                <li>Kgalagadi Transfrontier Park / Mabuasehube</li>
+                            </ul>
+                            <p>
+                                The vastness of the kalahari desert of Central Kalahari is overwhelming on
+                                your
+                                first visit and every visitor should be well prepared on their visit to
+                                Central
+                                Kalahari. Knowledge of the park is important and well maintained and
+                                equipped
+                                vehicles are recommended on your visit to Central Kalahari.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://kalaharinationalpark.com/display-view/Central-Kalahari-Game-Reserve/"
+                                        target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-6" class="reserve-section hidden">
                         <h5>Moremi
                             Game Reserve</h5>
-
-                        <p>
-                            A 100 years after explorer David Livingstone called this land ‘country full
-                            of
-                            rivers’, the environment and wildlife in the Moremi area were under threat.
-                            It
-                            is because of the bold, local Batawana people that this area was proclaimed
-                            Moremi Game Reserve in 1963, making Moremi the oldest and first protected
-                            reserve of the Okavango Delta.
-                        </p>
-                        <p>
-                            As a sign of gratitude, the reserve is named after Batawana tribe members,
-                            Chief
-                            Moremi III and his wife. Now, the Moremi Game Reserve is one of the most
-                            diverse
-                            reserves with surprises everywhere, even for the most seasoned
-                            Africa-travelers.
-                        </p>
-                        <p>
-                            A striking number of wildlife species, birdlife and a diverse landscape;
-                            combining mopane woodland, floodplains, fairytale like lagoons, papyrus
-                            rivers
-                            and acacia forests. There is no other place in Africa where so many
-                            ecosystems
-                            seamlessly coalesce.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://www.moremi.com/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                A 100 years after explorer David Livingstone called this land ‘country full
+                                of
+                                rivers’, the environment and wildlife in the Moremi area were under threat.
+                                It
+                                is because of the bold, local Batawana people that this area was proclaimed
+                                Moremi Game Reserve in 1963, making Moremi the oldest and first protected
+                                reserve of the Okavango Delta.
+                            </p>
+                            <p>
+                                As a sign of gratitude, the reserve is named after Batawana tribe members,
+                                Chief
+                                Moremi III and his wife. Now, the Moremi Game Reserve is one of the most
+                                diverse
+                                reserves with surprises everywhere, even for the most seasoned
+                                Africa-travelers.
+                            </p>
+                            <p>
+                                A striking number of wildlife species, birdlife and a diverse landscape;
+                                combining mopane woodland, floodplains, fairytale like lagoons, papyrus
+                                rivers
+                                and acacia forests. There is no other place in Africa where so many
+                                ecosystems
+                                seamlessly coalesce.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://www.moremi.com/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
-                    <!--Namibia Reserves-->
+                    <!---Namibia Reserves--->
                     <div id="reserve-7" class="reserve-section hidden">
                         <h5>Etosha
                             National Park</h5>
-
-                        <p>
-                            Etosha National Park is unique in Africa. The park’s main characteristic is
-                            a
-                            salt pan so large it can be seen from space. Yet there is abundant wildlife
-                            that
-                            congregates around the waterholes, giving you almost guaranteed game
-                            sightings.
-                        </p>
-                        <p>
-                            At the same time Etosha National Park is one of the most accessible game
-                            reserves in Namibia and Southern Africa.
-                        </p>
-                        <p>
-                            The park is malaria free, accessible in a regular sedan car and the rest
-                            camps
-                            provide a range of accommodation as well as restaurants, viewing decks,
-                            shops
-                            and petrol stations. Luxurious camps in Etosha’s remote areas have now added
-                            top
-                            end accommodation to the park’s offerings.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="https://www.etoshanationalpark.org/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Etosha National Park is unique in Africa. The park’s main characteristic is
+                                a
+                                salt pan so large it can be seen from space. Yet there is abundant wildlife
+                                that
+                                congregates around the waterholes, giving you almost guaranteed game
+                                sightings.
+                            </p>
+                            <p>
+                                At the same time Etosha National Park is one of the most accessible game
+                                reserves in Namibia and Southern Africa.
+                            </p>
+                            <p>
+                                The park is malaria free, accessible in a regular sedan car and the rest
+                                camps
+                                provide a range of accommodation as well as restaurants, viewing decks,
+                                shops
+                                and petrol stations. Luxurious camps in Etosha’s remote areas have now added
+                                top
+                                end accommodation to the park’s offerings.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="https://www.etoshanationalpark.org/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-8" class="reserve-section hidden">
                         <h5>Skeleton
                             Coast National Park</h5>
-
-                        <p>
-                            The Skeleton Coast Park, is now acknowledged as one of Namibia’s greatest
-                            treasures, in that it is one of the world’s last great wildernesses.
-                        </p>
-                        <p>
-                            nitially proclaimed in 1971, in its present form in 1973, extends from the
-                            Ugab
-                            River in the south for 500 km to the Kunene River in the north and about 40
-                            km
-                            inland. Dense coastal fogs and cold sea breezes caused by the cold Benguela
-                            Current add atmosphere to the windswept beaches that are littered with
-                            shipwrecks, bones and other debris.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.met.gov.na/national-parks/skeleton-coast-park/227/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                The Skeleton Coast Park, is now acknowledged as one of Namibia’s greatest
+                                treasures, in that it is one of the world’s last great wildernesses.
+                            </p>
+                            <p>
+                                nitially proclaimed in 1971, in its present form in 1973, extends from the
+                                Ugab
+                                River in the south for 500 km to the Kunene River in the north and about 40
+                                km
+                                inland. Dense coastal fogs and cold sea breezes caused by the cold Benguela
+                                Current add atmosphere to the windswept beaches that are littered with
+                                shipwrecks, bones and other debris.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.met.gov.na/national-parks/skeleton-coast-park/227/"
+                                        target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-9" class="reserve-section hidden">
                         <h5>Khaudum
                             National Park</h5>
-
-                        <p>
-                            Wilderness is indeed the Khaudum’s comparative advantage. The park, situated
-                            in
-                            north-eastern Namibia bordering Botswana, has less than 3 000 visitors
-                            annually
-                            and there are few tracks through the deep Kalahari sand.
-                        </p>
-                        <p>
-                            More elephants than people are seen around the park. It is a refuge for
-                            African
-                            Wild dog and Roan antelope, Lion, Cheetah and Leopard are also found here.
-                        </p>
-                        <p>
-                            The park is unfenced except along the Botswana border, so game are able to
-                            move
-                            freely between neighbouring conservancies and small scale farms. Hence, Park
-                            staff co-operate with the conservancies in the joint management of the
-                            wildlife.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.met.gov.na/national-parks/khaudum-national-park/220/"
-                                    target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Wilderness is indeed the Khaudum’s comparative advantage. The park, situated
+                                in
+                                north-eastern Namibia bordering Botswana, has less than 3 000 visitors
+                                annually
+                                and there are few tracks through the deep Kalahari sand.
+                            </p>
+                            <p>
+                                More elephants than people are seen around the park. It is a refuge for
+                                African
+                                Wild dog and Roan antelope, Lion, Cheetah and Leopard are also found here.
+                            </p>
+                            <p>
+                                The park is unfenced except along the Botswana border, so game are able to
+                                move
+                                freely between neighbouring conservancies and small scale farms. Hence, Park
+                                staff co-operate with the conservancies in the joint management of the
+                                wildlife.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.met.gov.na/national-parks/khaudum-national-park/220/"
+                                        target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
-                    <!--Kenya Reserves-->
+                    <!---Kenya Reserves--->
                     <div id="reserve-10" class="reserve-section hidden">
                         <h5>
                             Maasai Mara Game Reserve
                         </h5>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.maasaimara.com/" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
-                        <p>
-                            Maasai Mara (Masai Mara) is situated in south-west Kenya and is one of
-                            Africa’s
-                            Greatest Wildlife Reserves. </p>
-                        <p>Together with the
-                            <a href="http://www.serengetinationalpark.com/" target="_blank">
-                                Serengeti National Park
-                            </a> in Tanzania it forms Africa’s most diverse, incredible and most
-                            spectacular
-                            eco-systems
-                            and possibly the world’s top safari big game viewing eco-system.
-                        </p>
-                        <p>
-                            The
-                            <a href="http://maasaimara.com/entries/great-wildebeest-migration-maasai-mara"
-                                target="_blank">
-                                Great Wildebeest Migration
-                            </a> is not to be missed!
-                        </p>
-
+                        <div>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.maasaimara.com/" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                            <p>
+                                Maasai Mara (Masai Mara) is situated in south-west Kenya and is one of
+                                Africa’s
+                                Greatest Wildlife Reserves. </p>
+                            <p>Together with the
+                                <a href="http://www.serengetinationalpark.com/" target="_blank">
+                                    Serengeti National Park
+                                </a> in Tanzania it forms Africa’s most diverse, incredible and most
+                                spectacular
+                                eco-systems
+                                and possibly the world’s top safari big game viewing eco-system.
+                            </p>
+                            <p>
+                                The
+                                <a href="http://maasaimara.com/entries/great-wildebeest-migration-maasai-mara"
+                                    target="_blank">
+                                    Great Wildebeest Migration
+                                </a> is not to be missed!
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-11" class="reserve-section hidden">
                         <h5>Amboseli
                             National Park</h5>
-
-                        <p>
-                            Crowned by Mount Kilimanjaro, Africa's highest peak, the Amboseli National
-                            Parks
-                            is one of Kenya's most popular parks.
-                        </p>
-                        <p>
-                            The name "Amboseli" comes from a Maasai word meaning "salty dust", and it is
-                            one
-                            of the best places in Africa to view large herds of elephants up close.
-                            and possibly the world’s top safari big game viewing eco-system.
-                        </p>
-                        <p>
-                            Nature lovers can explore five different habitats here ranging from the
-                            dried-up
-                            bed of Lake Amboseli, wetlands with sulphur springs, the savannah and
-                            woodlands.
-                            They can also visit the local Maasai community who live around the park and
-                            experience their authentic culture.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.kws.go.ke/amboseli-national-park" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                Crowned by Mount Kilimanjaro, Africa's highest peak, the Amboseli National
+                                Parks
+                                is one of Kenya's most popular parks.
+                            </p>
+                            <p>
+                                The name "Amboseli" comes from a Maasai word meaning "salty dust", and it is
+                                one
+                                of the best places in Africa to view large herds of elephants up close.
+                                and possibly the world’s top safari big game viewing eco-system.
+                            </p>
+                            <p>
+                                Nature lovers can explore five different habitats here ranging from the
+                                dried-up
+                                bed of Lake Amboseli, wetlands with sulphur springs, the savannah and
+                                woodlands.
+                                They can also visit the local Maasai community who live around the park and
+                                experience their authentic culture.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.kws.go.ke/amboseli-national-park" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                     <div id="reserve-12" class="reserve-section hidden">
                         <h5>Lake
                             Nakuru National Park</h5>
-
-                        <p>
-                            On the floor of the Great Rift Valley, surrounded by wooded and bushy
-                            grassland,
-                            lies the beautiful Lake Nakuru National Park.
-                        </p>
-                        <p>
-                            Visitors can enjoy the wide ecological diversity and varied habitats that
-                            range
-                            from Lake Nakuru itself to the surrounding escarpment and picturesque
-                            ridges.
-                        </p>
-                        <p>
-                            Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game
-                            drives.
-                        </p>
-                        <p>
-                            <em>
-                                [Excerpt from
-                                <a href="http://www.kws.go.ke/lake-nakuru-national-park" target="_blank">
-                                    Official Park Website.
-                                </a>
-                                ]
-                            </em>
-                        </p>
+                        <div>
+                            <p>
+                                On the floor of the Great Rift Valley, surrounded by wooded and bushy
+                                grassland,
+                                lies the beautiful Lake Nakuru National Park.
+                            </p>
+                            <p>
+                                Visitors can enjoy the wide ecological diversity and varied habitats that
+                                range
+                                from Lake Nakuru itself to the surrounding escarpment and picturesque
+                                ridges.
+                            </p>
+                            <p>
+                                Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game
+                                drives.
+                            </p>
+                            <p>
+                                <em>
+                                    [Excerpt from
+                                    <a href="http://www.kws.go.ke/lake-nakuru-national-park" target="_blank">
+                                        Official Park Website.
+                                    </a>
+                                    ]
+                                </em>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-------- *end* RESERVE INFO -------->
-                <!-------- MAP -------->
+                <!---*end* RESERVE INFO--->
+                <!---MAP--->
                 <div class="col-sm-6">
                     <div id="map">
                     </div>
                 </div>
-                <!-- *end* MAP -->
+                <!---*end* MAP--->
             </div>
         </div>
     </section>
 
-    <!-- SECTION - CONTACT -->
+    <!---SECTION-CONTACT--->
 
     <section id="contact">
         <h1>Contact us</h1>
     </section>
 
-    <!-- FOOTER -->
+    <!---FOOTER--->
 
     <footer class="fixed-bottom">
 
