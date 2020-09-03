@@ -109,6 +109,11 @@ iframe {
   display: none;
 }
 
+.country-section {
+  width: 95%;
+  margin: 12px auto;
+}
+
 /*--Buttons--*/
 
 .dropdown-menu {
@@ -128,10 +133,8 @@ iframe {
   border-radius: 0.25rem;
 }
 
-.dropdown-main {
-  text-align: center;
-  width: 70%;
-  margin: auto;
+.reserve-menu {
+  width: 100%;
 }
 
 .dropdown {
@@ -143,7 +146,7 @@ iframe {
 }
 
 .dropdown-item,
-.dropdown-main {
+.dropdown-toggle {
   display: block;
   font-family: "Crete Round", serif;
   font-size: 0.9rem;
@@ -159,6 +162,15 @@ iframe {
   box-shadow: var(--box-shadow);
 }
 
+.dropdown-country {
+  text-align: center;
+  margin: auto;
+}
+
+.dropdown-reserve {
+  width: 100%;
+}
+
 .dropdown-main:hover {
   color: var(--off-white);
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
@@ -172,6 +184,11 @@ iframe {
 
 .dropdown-item:hover {
   color: yellow;
+}
+
+.maprow {
+  width: 95%;
+  margin: 0px auto;
 }
 
 /*--- Reserve Section ---*/
@@ -191,7 +208,7 @@ iframe {
   height: 100%;
 }
 
-.reserve-info {
+.reserve-section div {
   padding: 15px;
   align-self: center;
 }
@@ -246,9 +263,6 @@ footer {
 }
 
 @media only screen and (min-width: 1023px) {
-  #map {
-    height: 600px;
-  }
   iframe {
     height: 250px;
   }
