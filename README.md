@@ -9,7 +9,6 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 ### Table of Contents
 
 > - Overview
-> - Description
 > - User Stories
 > - UX
 > - Features
@@ -30,19 +29,14 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 
 ### Overview
 
-> The aim of this project is to showcase Safari and Game Reserves to promote tourism back to the areas after the Covid lockdowns.
-
----
-
-### Description
-
-> ....
+> The aim of this project is to showcase Safari and Game Reserve destinations to promote tourism back to the areas after the Covid lockdowns.
 
 ---
 
 #### User Stories
 
 > - _"I don't have a PC or Laptop at home and generally do all my online searches on my mobile"_
+> - _"I want to get an idea of where the best reserves are"_
 > - _"I want to be able to subscribe to a mailing list about future projects"_
 > - _"I want to get in touch with some unanswered questions about reserves"_
 > - _"I want to be able to join a community forum or social media group to see some of the past safaris run, and get regular updates"_
@@ -70,6 +64,7 @@ This website project will target a large demographic of individuals and families
 > ##### Customer Goals:
 >
 > - Designed site with Mobile-first approach.
+> - Display interactive maps for each country and each reserve within each country
 > - Email Contact form provided with option to sign up for mailing list.
 > - Easy reference to Social Media from anywhere on the site.
 > - Relevant Social Media icons in the footer and links in reserve pages.
@@ -81,12 +76,12 @@ This website project will target a large demographic of individuals and families
 
 > - Provides a clean UX for users with easy navigation.
 > - Fits in with my current skill-set of HTML, CSS, Javascript and API use.
-> - Quickly defines the content and focus on getting in touch via email or social media.
+> - Quickly defines the content and focus on the maps, subscribing to a mailing list and getting in touch via email or social media.
 > - I've included some Javascript animations to subtly enhance the overall experience without overpowering the page.
 
 #### 3. Structure
 
-> The main focus of the structure is to allow Users to quickly assimilate the information and imagery.
+> The main focus of the structure is to allow Users to quickly assimilate the information, maps and imagery.
 > Short, focused paragraphs of content information to provide enough information, yet not overwhelm.
 > A selection of quality images to showcase the game reserves.
 > Points of contact are provided via email contact form and links to Social Media in Footer.
@@ -94,17 +89,15 @@ This website project will target a large demographic of individuals and families
 #### 4. Skeleton
 
 > - [Wireframes](assets/docs/wireframes.pdf): One-page website with **4** main sections.
-> - Game reserves navigation dropdown to 4 additional sections, 1 for each reserve.
-> - Home, About, Volunteer (with 3 sub-menu items) , Contact and Donate pages
 > - Fixed navigation bar - Menu headings pointing to each of the 4 pages.
+> - Home, About, Countries and Contact pages> -
 > - Footer with Copyright info and Social Media icons
+> - (Add Country info via API - stretch goal dependant on time)
 > - (Review API section - stretch goal)
 
 ---
 
 #### 5. Surface
-
-I've decided on 'nature/safari' colours to fit in with the theme of wildlife conservation.
 
 > ###### Colours
 >
@@ -120,6 +113,11 @@ I've decided on 'nature/safari' colours to fit in with the theme of wildlife con
 > ###### Images
 >
 > The image selection has been carefully considered to best showcase each reserve.
+>
+> ###### Maps
+>
+> Interactive maps with smooth transitions to each location
+> Additional reserve info on map markers
 
 ---
 
@@ -128,7 +126,7 @@ I've decided on 'nature/safari' colours to fit in with the theme of wildlife con
 ##### Existing Features
 
 > - Designed with HTML5, CSS3, Javascript and Bootstrap.
-> - Home/Landing page with 6 pages in total.
+> - Home/Landing page with 4 pages in total.
 > - Fixed navigation allows the user to easily navigate, regardless of which page visited.
 > - Fixed footer allows the user quick accessibility to social media links.
 > - Contact Form with radio buttons.
@@ -200,7 +198,6 @@ I've decided on 'nature/safari' colours to fit in with the theme of wildlife con
 > - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 > - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 > - [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
-> - [Kevin Powell](https://www.youtube.com/watch?v=PHO6TBq_auI) Video tutorial on CSS Variables.
 > - [Bootsrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
 
 ---
@@ -213,7 +210,8 @@ I've decided on 'nature/safari' colours to fit in with the theme of wildlife con
 
 ### Project barriers and solutions
 
-> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - TBC
+> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Upodated: Tim found a fix for the existing code without necessitating marker clusters.
+> - Exisiting layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. (ENTER RESOLUTION WHEN DONE)
 
 ---
 
@@ -260,7 +258,7 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > ##### Content
 >
-> - Tim Nelsons documentation on LeafletJS
+> - Tim Nelsons's extensive documentation on LeafletJS Maps from his MS2 project
 >
 > ##### Bootstrap 4 CDN Boilerplate
 >
@@ -268,9 +266,10 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > ##### Code Snippets
 >
-> -
-> -
-> -
+> - CSS: Main Country and Reserve Button styling - https://www.bestcssbuttongenerator.com/#/11*
+> - Handle active class with # - https://stackoverflow.com/a/48310836/14197670
+> - Function by W3SCHOOLS - smoothy scrolling (using Jquery)
+> - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
 
 ---
 
@@ -279,7 +278,7 @@ This project has been deployed on GitHub Pages with the following process:
 > I would like to thank:
 >
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
-> - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through some bugs experienced.
+> - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through bugs experienced.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
 > - Everyone that takes part in the Slack calls, specifically from the **#In-It-Together** and **#Study-Group** channels.
 
