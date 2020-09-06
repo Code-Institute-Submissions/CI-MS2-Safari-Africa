@@ -1,4 +1,5 @@
-//CREDIT: Handle active class with # - https://stackoverflow.com/a/48310836/14197670
+/*CREDIT: Handle active class with # 
+https://stackoverflow.com/a/48310836/14197670*/
 
 window.addEventListener("hashchange", function () {
   document.querySelector(".active").classList.remove("active");
@@ -8,8 +9,8 @@ window.addEventListener("hashchange", function () {
 });
 //--- END CREDIT ---
 
-//CREDIT: Function by W3SCHOOLS - smoothy scrolling (using Jquery)
 $(document).ready(function () {
+  //CREDIT: Function by W3SCHOOLS - smoothy scrolling (using Jquery)
   $("a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -25,6 +26,18 @@ $(document).ready(function () {
       );
     }
   });
+
+  /*CREDIT: Image slideshow inspiration from 
+  https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/*/
+  $(".img-container:gt(0)").hide();
+  setInterval(function () {
+    $(".img-container:first")
+      .fadeOut(2000)
+      .next()
+      .fadeIn(2000)
+      .end()
+      .appendTo("#intro-gallery");
+  }, 3000);
 });
 //--- END CREDIT ---
 
@@ -97,7 +110,8 @@ let mapTileLayers = L.tileLayer(
   { attribution: "Powered by Esri" }
 );
 
-//CREDIT: Tim Nelson - SHowing only map tiles for Southern Africa (avoid loading world map)
+/*CREDIT: 
+Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)*/
 let map = L.map("map", {
   layers: [mapTileLayers], // variable from above
   center: [-29.28864, 25.025732], // central lat-lng once loaded
@@ -138,10 +152,13 @@ L.control.scale().addTo(map); // adds scale/legend in bottom-left corner of map
 let pinMarker = {};
 
 function changeMapLocation(location) {
-  // .find() by location in array of objects: https://stackoverflow.com/a/35398031/13484385
+  /* CREDIT: .find() by location in array of objects: 
+https://stackoverflow.com/a/35398031/13484385*/
   const newMapLocation = mapLocations.find(
     (name) => name.location === location
   );
+  //--- END CREDIT ---
+
   // map.setView(newMapLocation.center, newMapLocation.zoom);
   map.flyTo(newMapLocation.center, newMapLocation.zoom);
   if (newMapLocation.pin) {
