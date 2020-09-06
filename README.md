@@ -240,9 +240,9 @@ This website project will target a large demographic of individuals and families
 
 This project has been deployed on GitHub Pages with the following process:
 
-> - All code was written on Gitpod, an online IDE.
-> - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/JimLynx/CI-MS1-Explore-Ireland).
-> - Under the [settings](https://github.com/JimLynx/CI-MS1-Explore-Ireland/settings) section of the GitHub repository, scrolled down to GitHub Pages section.
+> - All code was written on VSCode, a local IDE (Integrated Development Environment).
+> - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/JimLynx/CI-MS2-Safari-Africa).
+> - Under the Settings section of the GitHub repository, scrolled down to GitHub Pages section.
 > - Under 'Source' drop-down, the 'Master branch' was selected.
 > - Once selected, this publishes the project to GitHub Pages and displays the site url.
 > - There is no difference between the deployed version and the development version.
@@ -255,7 +255,8 @@ This project has been deployed on GitHub Pages with the following process:
 
 > ##### Media
 >
-> - Main background image from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern)
+> - Site background image from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern)
+> - Intro carousel images from [Unsplash](https://unsplash.com/)
 >
 > ##### Content
 >
@@ -268,9 +269,11 @@ This project has been deployed on GitHub Pages with the following process:
 > ##### Code Snippets
 >
 > - CSS: Main Country and Reserve Button styling - https://www.bestcssbuttongenerator.com/#/11*
-> - Handle active class with # - https://stackoverflow.com/a/48310836/14197670
+> - Javascript: Handle active class with # - https://stackoverflow.com/a/48310836/14197670
 > - Function by W3SCHOOLS - smoothy scrolling (using Jquery)
 > - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
+> - HTML, CSS & Javascript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
+> - Javascript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
 
 ---
 
