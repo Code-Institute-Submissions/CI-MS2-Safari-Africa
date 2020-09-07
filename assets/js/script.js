@@ -32,12 +32,12 @@ $(document).ready(function () {
   $(".img-container:gt(0)").hide();
   setInterval(function () {
     $(".img-container:first")
-      .fadeOut(2000)
+      .fadeOut(5000)
       .next()
-      .fadeIn(2000)
+      .fadeIn(5000)
       .end()
       .appendTo("#intro-gallery");
-  }, 3000);
+  }, 8000);
 });
 //--- END CREDIT ---
 
@@ -125,23 +125,6 @@ let map = L.map("map", {
   ],
   maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
 });
-
-// this function will show a pop-up with the exact LatLng coordinates where the user clicks
-// let popupClick = L.popup();
-
-// function onMapClick(e) {
-//   popupClick
-//     .setLatLng(e.latlng)
-//     .setContent(
-//       "latitude: <b>" +
-//         e.latlng.lat.toFixed(5) +
-//         "</b><br>longitude: <b>" +
-//         e.latlng.lng.toFixed(5) +
-//         "</b>"
-//     )
-//     .openOn(map);
-// }
-// map.on("click", onMapClick); // append pop-up to popupClick variable
 
 L.control.scale().addTo(map); // adds scale/legend in bottom-left corner of map
 
