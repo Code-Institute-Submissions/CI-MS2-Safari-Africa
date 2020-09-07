@@ -97,29 +97,38 @@
         <h1></h1>
         <div class="container mt-3 about-container">
             <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
+                <h1>About Safari Africa</h1>
                 <p class="lead">
-                    About para - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-                    repellendus deleniti, labore odit sint perferendis natus eveniet aliquid maxime quis rerum quae et
-                    alias explicabo ipsa fugiat dolore suscipit aut!
+                    Welcome! This site aims to boost awareness of the incredible experience of authentic African
+                    Safaris. </p>
+                <p class="lead">Not only is this an amazing adventure to embark on, but every time you visit
+                    and support a Game Reserve, the funds raised from your stay contributes to the ongoing preservation
+
+                    of African Wildlife through ethical conservation.
                 </p>
                 <hr class="my-4">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus est numquam ipsam quae enim
-                    sit incidunt itaque voluptate eius provident exercitationem aperiam, perspiciatis, nesciunt
-                    similique sunt quibusdam nulla autem animi!
+                    Checkout some really interesing info below on each of the coutries we cover:
                 </p>
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="btn-container"></div>
+
+                <div class="card mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="..." class="card-img" alt="...">
+                            <img src='' class="card-img container-image" />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title countryheading"></h5>
+                                <p class="card-text">
+                                    <p><strong>Population: </strong><span class="poptext"></span></p>
+                                    <p><strong>Capital: </strong><span class="capitaltext"></span></p>
+                                    <p><strong>Languages: </strong>
+                                        <ul class="langList"></ul>
+                                    </p>
+                                </p>
+                                <p class="card-text"><small class="text-muted">Info supplied by <a
+                                            href="https://restcountries.eu/">REST Countries API</a></small></p>
                             </div>
                         </div>
                     </div>
@@ -262,454 +271,457 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--*end* COUNTRY INFO-->
+
+                    <!--*end* COUNTRY INFO-->
 
 
-                <div class="maprow row">
-                    <!--RESERVE INFO-->
-                    <div class="col-sm-6 reserve-info">
-                        <!--Reserve info placeholder-->
-                        <div id="reserve-0" class="reserve-section">
-                            <h6 class="reserve-placeholder">- Please make a selection above for more info -</h6>
-                        </div>
-                        <!--South Africa Reserves-->
-                        <div id="reserve-1" class="reserve-section hidden">
-                            <h5>Kruger National Park</h5>
-                            <div>
-                                <p>
-                                    Where nearly 2 million hectares of unrivaled diversity of life forms fuses
-                                    with
-                                    historical and archaeological sights - this is real Africa.</p>
-                                <p>
-                                    The world-renowned Kruger National Park offers a wildlife experience that
-                                    ranks
-                                    with the best in Africa.
-                                </p>
-                                <p>
-                                    Steeped in legend and history, the iconic Kruger National Park in South
-                                    Africa
-                                    is waiting for you to explore its vast landscapes and spectacular African
-                                    wildlife.
-                                </p>
-                                <p>
-                                    Plan your Kruger Park safari trip from our recommended safari tour options,
-                                    which
-                                    range from exclusive private safaris to affordable group safaris. Take a
-                                    journey
-                                    of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard
-                                    and
-                                    Buffalo, you will discover unique wildlife on a real safari in Africa.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.krugerpark.co.za/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
+                    <div class="maprow row">
+                        <!--RESERVE INFO-->
+                        <div class="col-sm-6 reserve-info">
+                            <!--Reserve info placeholder-->
+                            <div id="reserve-0" class="reserve-section">
+                                <h6 class="reserve-placeholder">- Please make a selection above for more info -</h6>
                             </div>
-                        </div>
-                        <div id="reserve-2" class="reserve-section hidden">
-                            <h5>Tembe Elephant Park </h5>
-                            <div>
-                                <p>
-                                    Tembe Elephant Park offers intimate encounters with some of the largest
-                                    elephants in Africa.
-                                </p>
-                                <p>
-                                    The 300km2 reserve, located in the Republic of South Africa between Kwa-Zulu
-                                    Natal and Mozambique, is the ancestral home of the Tembe tribe who own and
-                                    co-manage both the Park and the Tembe Elephant Lodge.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://tembe.co.za/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
+                            <!--South Africa Reserves-->
+                            <div id="reserve-1" class="reserve-section hidden">
+                                <h5>Kruger National Park</h5>
+                                <div>
+                                    <p>
+                                        Where nearly 2 million hectares of unrivaled diversity of life forms fuses
+                                        with
+                                        historical and archaeological sights - this is real Africa.</p>
+                                    <p>
+                                        The world-renowned Kruger National Park offers a wildlife experience that
+                                        ranks
+                                        with the best in Africa.
+                                    </p>
+                                    <p>
+                                        Steeped in legend and history, the iconic Kruger National Park in South
+                                        Africa
+                                        is waiting for you to explore its vast landscapes and spectacular African
+                                        wildlife.
+                                    </p>
+                                    <p>
+                                        Plan your Kruger Park safari trip from our recommended safari tour options,
+                                        which
+                                        range from exclusive private safaris to affordable group safaris. Take a
+                                        journey
+                                        of exploration to find Africa's Big Five : Elephant, Lion, Rhino, Leopard
+                                        and
+                                        Buffalo, you will discover unique wildlife on a real safari in Africa.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.krugerpark.co.za/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div id="reserve-3" class="reserve-section hidden">
-                            <h5>Shamwari Private Game Reserve</h5>
-                            <div>
-                                <p>
-                                    Shamwari Private Game Reserve is a luxury safari and game lodge destination
-                                    in
-                                    South Africa’s ecologically and culturally significant Eastern Cape
-                                    Province.
-                                </p>
-                                <p>
-                                    At the pinnacle of private game reserves, you will find Shamwari (meaning
-                                    “my
-                                    friend” in Shona) Private Game Reserve in the Eastern Cape, South Africa –
-                                    home
-                                    to the coveted Big 5 and luxurious experiences. It’s a place where guests
-                                    can
-                                    exist in harmony with nature, however fleeting the moment, where wildlife
-                                    roam
-                                    the landscape under the relentless African sun at one of the best Eastern
-                                    Cape
-                                    Game Reserves.
-                                </p>
-                                <p>
-                                    Shamwari has 7 lodges and 1 explorer camp; each providing distinct
-                                    experiences.
-                                    From exclusive tranquility, effortless family enjoyment or the
-                                    back-to-nature
-                                    appeal of a luxury tented camp. We invite you to come and experience wild
-                                    Africa
-                                    at Shamwari, one of the best Private Game Reserves in South Africa.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://www.shamwari.com/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
+                            <div id="reserve-2" class="reserve-section hidden">
+                                <h5>Tembe Elephant Park </h5>
+                                <div>
+                                    <p>
+                                        Tembe Elephant Park offers intimate encounters with some of the largest
+                                        elephants in Africa.
+                                    </p>
+                                    <p>
+                                        The 300km2 reserve, located in the Republic of South Africa between Kwa-Zulu
+                                        Natal and Mozambique, is the ancestral home of the Tembe tribe who own and
+                                        co-manage both the Park and the Tembe Elephant Lodge.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://tembe.co.za/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!--Botswana Reserves-->
-                        <div id="reserve-4" class="reserve-section hidden">
-                            <h5>
-                                Chobe
-                                National Park
-                            </h5>
-                            <div>
-                                <p>
-                                    Chobe National Park is a true wildlife paradise and one of the best national
-                                    parks in Southern Africa. Just one peek at the variety of wildlife and lush
-                                    vegetation and you will be mesmerized forever!
-                                </p>
-                                <p>
-                                    The gateway to Chobe is Kasane, a small town near the borders of Zimbabwe,
-                                    Zambia and Namibia.
-                                    <a href="https://chobenationalpark.co.za/kasane-accommodation/" target="_blank">
-                                        Kasane accommodation
-                                    </a>
-                                    offers hotels, tented camps and luxury lodge accommodation.
-                                </p>
-                                <p>
-                                    Chobe National Park is extremely lush because of the many waterways. The
+                            <div id="reserve-3" class="reserve-section hidden">
+                                <h5>Shamwari Private Game Reserve</h5>
+                                <div>
+                                    <p>
+                                        Shamwari Private Game Reserve is a luxury safari and game lodge destination
+                                        in
+                                        South Africa’s ecologically and culturally significant Eastern Cape
+                                        Province.
+                                    </p>
+                                    <p>
+                                        At the pinnacle of private game reserves, you will find Shamwari (meaning
+                                        “my
+                                        friend” in Shona) Private Game Reserve in the Eastern Cape, South Africa –
+                                        home
+                                        to the coveted Big 5 and luxurious experiences. It’s a place where guests
+                                        can
+                                        exist in harmony with nature, however fleeting the moment, where wildlife
+                                        roam
+                                        the landscape under the relentless African sun at one of the best Eastern
+                                        Cape
+                                        Game Reserves.
+                                    </p>
+                                    <p>
+                                        Shamwari has 7 lodges and 1 explorer camp; each providing distinct
+                                        experiences.
+                                        From exclusive tranquility, effortless family enjoyment or the
+                                        back-to-nature
+                                        appeal of a luxury tented camp. We invite you to come and experience wild
+                                        Africa
+                                        at Shamwari, one of the best Private Game Reserves in South Africa.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://www.shamwari.com/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Botswana Reserves-->
+                            <div id="reserve-4" class="reserve-section hidden">
+                                <h5>
                                     Chobe
-                                    River flows through the park and draws many animals and birds during the dry
-                                    season.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://chobenationalpark.co.za/" target="_blank">
-                                            Official Park Website.
+                                    National Park
+                                </h5>
+                                <div>
+                                    <p>
+                                        Chobe National Park is a true wildlife paradise and one of the best national
+                                        parks in Southern Africa. Just one peek at the variety of wildlife and lush
+                                        vegetation and you will be mesmerized forever!
+                                    </p>
+                                    <p>
+                                        The gateway to Chobe is Kasane, a small town near the borders of Zimbabwe,
+                                        Zambia and Namibia.
+                                        <a href="https://chobenationalpark.co.za/kasane-accommodation/" target="_blank">
+                                            Kasane accommodation
                                         </a>
-                                        ]
-                                    </em>
-                                </p>
+                                        offers hotels, tented camps and luxury lodge accommodation.
+                                    </p>
+                                    <p>
+                                        Chobe National Park is extremely lush because of the many waterways. The
+                                        Chobe
+                                        River flows through the park and draws many animals and birds during the dry
+                                        season.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://chobenationalpark.co.za/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div id="reserve-5" class="reserve-section hidden">
-                            <h5>Central
-                                Kalahari Game Reserve
-                            </h5>
-                            <div>
-                                <p>
-                                    Visiting the kalahari desert of central kalahari in Botswana. This is the
-                                    largest and by far the most remote reserve in southern africa. It covers and
-                                    area of 52000 sqaure km and makes the central kalahari the second largest
-                                    reserve in the world.
-                                </p>
-                                <p>
-                                    There are five reserves that was set aside as part of the Kgalagadi or
-                                    Kalahari
-                                    desert of Botswana.
-                                </p>
-                                <ul>
-                                    <li>Central Kalahari Game Reserve </li>
-                                    <li>Khutse Game Reserve </li>
-                                    <li>Nxai Pans</li>
-                                    <li>Makgadigadi pans</li>
-                                    <li>Kgalagadi Transfrontier Park / Mabuasehube</li>
-                                </ul>
-                                <p>
-                                    The vastness of the kalahari desert of Central Kalahari is overwhelming on
-                                    your
-                                    first visit and every visitor should be well prepared on their visit to
-                                    Central
-                                    Kalahari. Knowledge of the park is important and well maintained and
-                                    equipped
-                                    vehicles are recommended on your visit to Central Kalahari.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://kalaharinationalpark.com/display-view/Central-Kalahari-Game-Reserve/"
+                            <div id="reserve-5" class="reserve-section hidden">
+                                <h5>Central
+                                    Kalahari Game Reserve
+                                </h5>
+                                <div>
+                                    <p>
+                                        Visiting the kalahari desert of central kalahari in Botswana. This is the
+                                        largest and by far the most remote reserve in southern africa. It covers and
+                                        area of 52000 sqaure km and makes the central kalahari the second largest
+                                        reserve in the world.
+                                    </p>
+                                    <p>
+                                        There are five reserves that was set aside as part of the Kgalagadi or
+                                        Kalahari
+                                        desert of Botswana.
+                                    </p>
+                                    <ul>
+                                        <li>Central Kalahari Game Reserve </li>
+                                        <li>Khutse Game Reserve </li>
+                                        <li>Nxai Pans</li>
+                                        <li>Makgadigadi pans</li>
+                                        <li>Kgalagadi Transfrontier Park / Mabuasehube</li>
+                                    </ul>
+                                    <p>
+                                        The vastness of the kalahari desert of Central Kalahari is overwhelming on
+                                        your
+                                        first visit and every visitor should be well prepared on their visit to
+                                        Central
+                                        Kalahari. Knowledge of the park is important and well maintained and
+                                        equipped
+                                        vehicles are recommended on your visit to Central Kalahari.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://kalaharinationalpark.com/display-view/Central-Kalahari-Game-Reserve/"
+                                                target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reserve-6" class="reserve-section hidden">
+                                <h5>Moremi
+                                    Game Reserve</h5>
+                                <div>
+                                    <p>
+                                        A 100 years after explorer David Livingstone called this land ‘country full
+                                        of
+                                        rivers’, the environment and wildlife in the Moremi area were under threat.
+                                        It
+                                        is because of the bold, local Batawana people that this area was proclaimed
+                                        Moremi Game Reserve in 1963, making Moremi the oldest and first protected
+                                        reserve of the Okavango Delta.
+                                    </p>
+                                    <p>
+                                        As a sign of gratitude, the reserve is named after Batawana tribe members,
+                                        Chief
+                                        Moremi III and his wife. Now, the Moremi Game Reserve is one of the most
+                                        diverse
+                                        reserves with surprises everywhere, even for the most seasoned
+                                        Africa-travelers.
+                                    </p>
+                                    <p>
+                                        A striking number of wildlife species, birdlife and a diverse landscape;
+                                        combining mopane woodland, floodplains, fairytale like lagoons, papyrus
+                                        rivers
+                                        and acacia forests. There is no other place in Africa where so many
+                                        ecosystems
+                                        seamlessly coalesce.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://www.moremi.com/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Namibia Reserves-->
+                            <div id="reserve-7" class="reserve-section hidden">
+                                <h5>Etosha
+                                    National Park</h5>
+                                <div>
+                                    <p>
+                                        Etosha National Park is unique in Africa. The park’s main characteristic is
+                                        a
+                                        salt pan so large it can be seen from space. Yet there is abundant wildlife
+                                        that
+                                        congregates around the waterholes, giving you almost guaranteed game
+                                        sightings.
+                                    </p>
+                                    <p>
+                                        At the same time Etosha National Park is one of the most accessible game
+                                        reserves in Namibia and Southern Africa.
+                                    </p>
+                                    <p>
+                                        The park is malaria free, accessible in a regular sedan car and the rest
+                                        camps
+                                        provide a range of accommodation as well as restaurants, viewing decks,
+                                        shops
+                                        and petrol stations. Luxurious camps in Etosha’s remote areas have now added
+                                        top
+                                        end accommodation to the park’s offerings.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="https://www.etoshanationalpark.org/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reserve-8" class="reserve-section hidden">
+                                <h5>Skeleton
+                                    Coast National Park</h5>
+                                <div>
+                                    <p>
+                                        The Skeleton Coast Park, is now acknowledged as one of Namibia’s greatest
+                                        treasures, in that it is one of the world’s last great wildernesses.
+                                    </p>
+                                    <p>
+                                        nitially proclaimed in 1971, in its present form in 1973, extends from the
+                                        Ugab
+                                        River in the south for 500 km to the Kunene River in the north and about 40
+                                        km
+                                        inland. Dense coastal fogs and cold sea breezes caused by the cold Benguela
+                                        Current add atmosphere to the windswept beaches that are littered with
+                                        shipwrecks, bones and other debris.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.met.gov.na/national-parks/skeleton-coast-park/227/"
+                                                target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reserve-9" class="reserve-section hidden">
+                                <h5>Khaudum
+                                    National Park</h5>
+                                <div>
+                                    <p>
+                                        Wilderness is indeed the Khaudum’s comparative advantage. The park, situated
+                                        in
+                                        north-eastern Namibia bordering Botswana, has less than 3 000 visitors
+                                        annually
+                                        and there are few tracks through the deep Kalahari sand.
+                                    </p>
+                                    <p>
+                                        More elephants than people are seen around the park. It is a refuge for
+                                        African
+                                        Wild dog and Roan antelope, Lion, Cheetah and Leopard are also found here.
+                                    </p>
+                                    <p>
+                                        The park is unfenced except along the Botswana border, so game are able to
+                                        move
+                                        freely between neighbouring conservancies and small scale farms. Hence, Park
+                                        staff co-operate with the conservancies in the joint management of the
+                                        wildlife.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.met.gov.na/national-parks/khaudum-national-park/220/"
+                                                target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Kenya Reserves-->
+                            <div id="reserve-10" class="reserve-section hidden">
+                                <h5>
+                                    Maasai Mara Game Reserve
+                                </h5>
+                                <div>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.maasaimara.com/" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                    <p>
+                                        Maasai Mara (Masai Mara) is situated in south-west Kenya and is one of
+                                        Africa’s
+                                        Greatest Wildlife Reserves. </p>
+                                    <p>Together with the
+                                        <a href="http://www.serengetinationalpark.com/" target="_blank">
+                                            Serengeti National Park
+                                        </a> in Tanzania it forms Africa’s most diverse, incredible and most
+                                        spectacular
+                                        eco-systems
+                                        and possibly the world’s top safari big game viewing eco-system.
+                                    </p>
+                                    <p>
+                                        The
+                                        <a href="http://maasaimara.com/entries/great-wildebeest-migration-maasai-mara"
                                             target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
+                                            Great Wildebeest Migration
+                                        </a> is not to be missed!
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reserve-11" class="reserve-section hidden">
+                                <h5>Amboseli
+                                    National Park</h5>
+                                <div>
+                                    <p>
+                                        Crowned by Mount Kilimanjaro, Africa's highest peak, the Amboseli National
+                                        Parks
+                                        is one of Kenya's most popular parks.
+                                    </p>
+                                    <p>
+                                        The name "Amboseli" comes from a Maasai word meaning "salty dust", and it is
+                                        one
+                                        of the best places in Africa to view large herds of elephants up close.
+                                        and possibly the world’s top safari big game viewing eco-system.
+                                    </p>
+                                    <p>
+                                        Nature lovers can explore five different habitats here ranging from the
+                                        dried-up
+                                        bed of Lake Amboseli, wetlands with sulphur springs, the savannah and
+                                        woodlands.
+                                        They can also visit the local Maasai community who live around the park and
+                                        experience their authentic culture.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.kws.go.ke/amboseli-national-park" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reserve-12" class="reserve-section hidden">
+                                <h5>Lake
+                                    Nakuru National Park</h5>
+                                <div>
+                                    <p>
+                                        On the floor of the Great Rift Valley, surrounded by wooded and bushy
+                                        grassland,
+                                        lies the beautiful Lake Nakuru National Park.
+                                    </p>
+                                    <p>
+                                        Visitors can enjoy the wide ecological diversity and varied habitats that
+                                        range
+                                        from Lake Nakuru itself to the surrounding escarpment and picturesque
+                                        ridges.
+                                    </p>
+                                    <p>
+                                        Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game
+                                        drives.
+                                    </p>
+                                    <p>
+                                        <em>
+                                            [Excerpt from
+                                            <a href="http://www.kws.go.ke/lake-nakuru-national-park" target="_blank">
+                                                Official Park Website.
+                                            </a>
+                                            ]
+                                        </em>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div id="reserve-6" class="reserve-section hidden">
-                            <h5>Moremi
-                                Game Reserve</h5>
-                            <div>
-                                <p>
-                                    A 100 years after explorer David Livingstone called this land ‘country full
-                                    of
-                                    rivers’, the environment and wildlife in the Moremi area were under threat.
-                                    It
-                                    is because of the bold, local Batawana people that this area was proclaimed
-                                    Moremi Game Reserve in 1963, making Moremi the oldest and first protected
-                                    reserve of the Okavango Delta.
-                                </p>
-                                <p>
-                                    As a sign of gratitude, the reserve is named after Batawana tribe members,
-                                    Chief
-                                    Moremi III and his wife. Now, the Moremi Game Reserve is one of the most
-                                    diverse
-                                    reserves with surprises everywhere, even for the most seasoned
-                                    Africa-travelers.
-                                </p>
-                                <p>
-                                    A striking number of wildlife species, birdlife and a diverse landscape;
-                                    combining mopane woodland, floodplains, fairytale like lagoons, papyrus
-                                    rivers
-                                    and acacia forests. There is no other place in Africa where so many
-                                    ecosystems
-                                    seamlessly coalesce.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://www.moremi.com/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
+                        <!--*end* RESERVE INFO-->
+                        <!--MAP-->
+                        <div class="col-sm-6">
+                            <div id="map">
                             </div>
                         </div>
-                        <!--Namibia Reserves-->
-                        <div id="reserve-7" class="reserve-section hidden">
-                            <h5>Etosha
-                                National Park</h5>
-                            <div>
-                                <p>
-                                    Etosha National Park is unique in Africa. The park’s main characteristic is
-                                    a
-                                    salt pan so large it can be seen from space. Yet there is abundant wildlife
-                                    that
-                                    congregates around the waterholes, giving you almost guaranteed game
-                                    sightings.
-                                </p>
-                                <p>
-                                    At the same time Etosha National Park is one of the most accessible game
-                                    reserves in Namibia and Southern Africa.
-                                </p>
-                                <p>
-                                    The park is malaria free, accessible in a regular sedan car and the rest
-                                    camps
-                                    provide a range of accommodation as well as restaurants, viewing decks,
-                                    shops
-                                    and petrol stations. Luxurious camps in Etosha’s remote areas have now added
-                                    top
-                                    end accommodation to the park’s offerings.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="https://www.etoshanationalpark.org/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                            </div>
-                        </div>
-                        <div id="reserve-8" class="reserve-section hidden">
-                            <h5>Skeleton
-                                Coast National Park</h5>
-                            <div>
-                                <p>
-                                    The Skeleton Coast Park, is now acknowledged as one of Namibia’s greatest
-                                    treasures, in that it is one of the world’s last great wildernesses.
-                                </p>
-                                <p>
-                                    nitially proclaimed in 1971, in its present form in 1973, extends from the
-                                    Ugab
-                                    River in the south for 500 km to the Kunene River in the north and about 40
-                                    km
-                                    inland. Dense coastal fogs and cold sea breezes caused by the cold Benguela
-                                    Current add atmosphere to the windswept beaches that are littered with
-                                    shipwrecks, bones and other debris.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.met.gov.na/national-parks/skeleton-coast-park/227/"
-                                            target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                            </div>
-                        </div>
-                        <div id="reserve-9" class="reserve-section hidden">
-                            <h5>Khaudum
-                                National Park</h5>
-                            <div>
-                                <p>
-                                    Wilderness is indeed the Khaudum’s comparative advantage. The park, situated
-                                    in
-                                    north-eastern Namibia bordering Botswana, has less than 3 000 visitors
-                                    annually
-                                    and there are few tracks through the deep Kalahari sand.
-                                </p>
-                                <p>
-                                    More elephants than people are seen around the park. It is a refuge for
-                                    African
-                                    Wild dog and Roan antelope, Lion, Cheetah and Leopard are also found here.
-                                </p>
-                                <p>
-                                    The park is unfenced except along the Botswana border, so game are able to
-                                    move
-                                    freely between neighbouring conservancies and small scale farms. Hence, Park
-                                    staff co-operate with the conservancies in the joint management of the
-                                    wildlife.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.met.gov.na/national-parks/khaudum-national-park/220/"
-                                            target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                            </div>
-                        </div>
-                        <!--Kenya Reserves-->
-                        <div id="reserve-10" class="reserve-section hidden">
-                            <h5>
-                                Maasai Mara Game Reserve
-                            </h5>
-                            <div>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.maasaimara.com/" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                                <p>
-                                    Maasai Mara (Masai Mara) is situated in south-west Kenya and is one of
-                                    Africa’s
-                                    Greatest Wildlife Reserves. </p>
-                                <p>Together with the
-                                    <a href="http://www.serengetinationalpark.com/" target="_blank">
-                                        Serengeti National Park
-                                    </a> in Tanzania it forms Africa’s most diverse, incredible and most
-                                    spectacular
-                                    eco-systems
-                                    and possibly the world’s top safari big game viewing eco-system.
-                                </p>
-                                <p>
-                                    The
-                                    <a href="http://maasaimara.com/entries/great-wildebeest-migration-maasai-mara"
-                                        target="_blank">
-                                        Great Wildebeest Migration
-                                    </a> is not to be missed!
-                                </p>
-                            </div>
-                        </div>
-                        <div id="reserve-11" class="reserve-section hidden">
-                            <h5>Amboseli
-                                National Park</h5>
-                            <div>
-                                <p>
-                                    Crowned by Mount Kilimanjaro, Africa's highest peak, the Amboseli National
-                                    Parks
-                                    is one of Kenya's most popular parks.
-                                </p>
-                                <p>
-                                    The name "Amboseli" comes from a Maasai word meaning "salty dust", and it is
-                                    one
-                                    of the best places in Africa to view large herds of elephants up close.
-                                    and possibly the world’s top safari big game viewing eco-system.
-                                </p>
-                                <p>
-                                    Nature lovers can explore five different habitats here ranging from the
-                                    dried-up
-                                    bed of Lake Amboseli, wetlands with sulphur springs, the savannah and
-                                    woodlands.
-                                    They can also visit the local Maasai community who live around the park and
-                                    experience their authentic culture.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.kws.go.ke/amboseli-national-park" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                            </div>
-                        </div>
-                        <div id="reserve-12" class="reserve-section hidden">
-                            <h5>Lake
-                                Nakuru National Park</h5>
-                            <div>
-                                <p>
-                                    On the floor of the Great Rift Valley, surrounded by wooded and bushy
-                                    grassland,
-                                    lies the beautiful Lake Nakuru National Park.
-                                </p>
-                                <p>
-                                    Visitors can enjoy the wide ecological diversity and varied habitats that
-                                    range
-                                    from Lake Nakuru itself to the surrounding escarpment and picturesque
-                                    ridges.
-                                </p>
-                                <p>
-                                    Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game
-                                    drives.
-                                </p>
-                                <p>
-                                    <em>
-                                        [Excerpt from
-                                        <a href="http://www.kws.go.ke/lake-nakuru-national-park" target="_blank">
-                                            Official Park Website.
-                                        </a>
-                                        ]
-                                    </em>
-                                </p>
-                            </div>
-                        </div>
+                        <!--*end* MAP-->
                     </div>
-                    <!--*end* RESERVE INFO-->
-                    <!--MAP-->
-                    <div class="col-sm-6">
-                        <div id="map">
-                        </div>
-                    </div>
-                    <!--*end* MAP-->
                 </div>
             </div>
+
+        </div>
     </section>
 
     <!--SECTION CONTACT-->
