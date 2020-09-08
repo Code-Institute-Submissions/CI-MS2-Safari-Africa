@@ -11,3 +11,12 @@ axios.get(`${API_URL}?codes=zaf;bwa;nam;ken;`).then((res) => {
     container.insertAdjacentHTML("beforeend", button);
   }
 });
+
+const buttons = document.querySelectorAll(".button");
+
+for (button in buttons) {
+  // add a click event listener to the button
+  this.addEventListener("click", () => {
+    // console.log(this.event.target.parentElement);
+  });
+}
