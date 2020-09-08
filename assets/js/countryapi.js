@@ -33,14 +33,24 @@ for (button in buttons) {
         document.querySelector(".capitaltext").innerHTML = res.data["capital"];
 
         // Population
-        console.log(res.data["population"]);
+        // console.log(res.data["population"]);
         // document.querySelector(".poptext").innerHTML = res.data["population"];
 
-        //CREDIT: Refactored population number with Intl.NumberFormat() constructor - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+        //CREDIT: Refactored population number with Intl.NumberFormat() constructor - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
         let population = `${Intl.NumberFormat().format(
           res.data["population"]
         )} (2018) World Bank`;
         document.querySelector(".poptext").innerHTML = population;
+
+        // Languages
+        const langlist = document.querySelector(".langList");
+        langData = res.data["languages"];
+        langlist.innerHTML = "";
+        console.log(langData);
+        for (language in langData) {
+          let language_item = `<li>${langData[language]["name"]}</li>`;
+          langlist.insertAdjacentHTML("beforeend", language_item);
+        }
       });
   });
 }
