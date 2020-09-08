@@ -283,6 +283,7 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
 > - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through bugs experienced.
+> - **James Lowe** for his help and patience in helping me with the country API.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
 > - Everyone that takes part in the Slack calls, specifically from the **#In-It-Together** and **#Study-Group** channels.
 
