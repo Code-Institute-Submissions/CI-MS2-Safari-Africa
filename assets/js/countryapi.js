@@ -17,24 +17,18 @@ const buttons = document.querySelectorAll(".button");
 for (button in buttons) {
   // add a click event listener to the button
   this.addEventListener("click", () => {
-    // console.log(this.event.target.parentElement);
-
     // send an api request that uses the 'data-country' data attr
     axios
       .get(`${API_URL}${this.event.target.parentElement.dataset["country"]}`)
       // Then when the data is recieved
       .then((res) => {
         // Name
-        // console.log(res.data["name"]);
         document.querySelector(".countryheading").innerHTML = res.data["name"];
 
         // Capital
-        // console.log(res.data["capital"]);
         document.querySelector(".capitaltext").innerHTML = res.data["capital"];
 
         // Population
-        // console.log(res.data["population"]);
-        // document.querySelector(".poptext").innerHTML = res.data["population"];
 
         //CREDIT: Refactored population number with Intl.NumberFormat() constructor - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
         let population = `${Intl.NumberFormat().format(
@@ -46,13 +40,13 @@ for (button in buttons) {
         const langlist = document.querySelector(".langList");
         langData = res.data["languages"];
         langlist.innerHTML = "";
-        console.log(langData);
+
         for (language in langData) {
           let language_item = `<li>${langData[language]["name"]}</li>`;
           langlist.insertAdjacentHTML("beforeend", language_item);
         }
 
-        // Flag
+        // Flags
         document
           .querySelector(".container-image")
           .setAttribute("src", res.data["flag"]);
