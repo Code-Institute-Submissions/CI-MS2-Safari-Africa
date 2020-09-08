@@ -51,6 +51,11 @@ for (button in buttons) {
           let language_item = `<li>${langData[language]["name"]}</li>`;
           langlist.insertAdjacentHTML("beforeend", language_item);
         }
+
+        // Flag
+        document
+          .querySelector(".container-image")
+          .setAttribute("src", res.data["flag"]);
       });
   });
 }
