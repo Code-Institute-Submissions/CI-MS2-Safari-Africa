@@ -34,7 +34,13 @@ for (button in buttons) {
 
         // Population
         console.log(res.data["population"]);
-        document.querySelector(".poptext").innerHTML = res.data["population"];
+        // document.querySelector(".poptext").innerHTML = res.data["population"];
+
+        //CREDIT: Refactored population number with Intl.NumberFormat() constructor - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
+        let population = `${Intl.NumberFormat().format(
+          res.data["population"]
+        )} (2018) World Bank`;
+        document.querySelector(".poptext").innerHTML = population;
       });
   });
 }
