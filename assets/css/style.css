@@ -132,6 +132,20 @@ iframe {
   box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
+.jumbotron p {
+  text-align: center;
+}
+
+.card-body p {
+  text-align: left;
+}
+
+/* to overwrite bootstrap setting for bold text */
+b,
+strong {
+  font-weight: bold;
+}
+
 /* --- COUNTRY/RESERVE SECTION --- */
 
 .hidden {
@@ -279,6 +293,9 @@ footer {
   body {
     font-size: 1rem;
     letter-spacing: 2px;
+  }
+  .flag-container img {
+    margin-top: 62px;
   }
 }
 
