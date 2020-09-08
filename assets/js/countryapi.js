@@ -17,6 +17,20 @@ const buttons = document.querySelectorAll(".button");
 for (button in buttons) {
   // add a click event listener to the button
   this.addEventListener("click", () => {
-    // console.log(this.event.target.parentElement);
+    console.log(this.event.target.parentElement);
+
+    // send an api request that uses the 'data-country' data attr
+    axios
+      .get(`${API_URL}${this.event.target.parentElement.dataset["country"]}`)
+      // Then when the data is recieved
+      .then((res) => {
+        // Name
+        console.log(res.data["name"]);
+        document.querySelector(".countryheading").innerHTML = res.data["name"];
+
+        // Capital
+        console.log(res.data["capital"]);
+        document.querySelector(".capitaltext").innerHTML = res.data["capital"];
+      });
   });
 }
