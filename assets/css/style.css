@@ -115,7 +115,8 @@ https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
 }
 
 .about-container,
-.country-container {
+.country-container,
+.contact-container {
   background-color: var(--prim-opaque);
   padding: 16px;
   min-height: 70vh;
@@ -130,18 +131,13 @@ https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
 }
 
 .align {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  /* height: 100%; */
   border: 1px solid var(--secondary2);
   padding: 10px;
   margin: 5px 10px;
-}
-
-iframe {
-  display: block;
-  padding: 5px;
-  height: 180px;
-  width: auto;
+  max-height: 220px;
+  max-width: inherit;
 }
 
 .card {
@@ -224,8 +220,13 @@ strong {
   width: 100%;
 }
 
+.reserve-button {
+  width: 200px;
+}
+
 .dropdown {
   text-align: center;
+  /* width: 300px; */
 }
 
 .dropdown-main span {
@@ -238,6 +239,7 @@ strong {
   font-family: "Crete Round", serif;
   font-size: 0.9rem;
   color: #fff;
+  text-align: center;
   width: 95%;
   margin: 12px auto;
   padding: 0.25rem 1rem;
@@ -247,15 +249,6 @@ strong {
   border-radius: 3px;
   border: 1px solid #54381e;
   box-shadow: var(--box-shadow);
-}
-
-.dropdown-country {
-  text-align: center;
-  margin: auto;
-}
-
-.dropdown-reserve {
-  width: 100%;
 }
 
 .dropdown-main:hover {
@@ -271,6 +264,14 @@ strong {
 
 .dropdown-item:hover {
   color: yellow;
+}
+
+.dropdown-item {
+  width: 250px;
+}
+
+.dropdown-reserve {
+  width: 100%;
 }
 
 .maprow {
@@ -295,18 +296,30 @@ strong {
   height: 100%;
 }
 
-.reserve-section div {
+/* .reserve-section div {
   padding: 15px;
   align-self: center;
-}
+} */
 
 /* --- MAIN COUNTRY/RESERVE MAP--- */
 
-#map {
-  height: 300px;
+#map,
+.reserve-placeholder img {
+  height: 275px;
+  width: 275px;
+  margin: 10px auto;
+  padding: 0;
   box-shadow: var(--box-shadow);
   border: 2px solid tan;
   z-index: 0;
+}
+
+.reserve-placeholder {
+  text-align: center;
+}
+
+.maprow h5 {
+  margin: 25px auto;
 }
 
 /* --- CONTACT SECTION--- */
@@ -316,7 +329,6 @@ strong {
 footer {
   height: 50px;
   background-color: #343a40;
-  /*placeholder colour - TO STYLE <===========================================*/
 }
 
 /* --- RESPONSIVE RULES --- */
@@ -325,12 +337,14 @@ footer {
   iframe {
     height: 200px;
   }
+  #map,
+  .reserve-placeholder img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  #map {
-    height: 400px;
-  }
   iframe {
     height: 220px;
   }
@@ -342,16 +356,22 @@ footer {
     margin: 62px 0px;
   }
   .dropdown {
-    width: 30%;
     margin: auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #map {
-    height: 500px;
+  #map,
+  .reserve-placeholder img {
+    height: 400px;
+    width: 400px;
   }
 }
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1200px) {
+  #map,
+  .reserve-placeholder img {
+    height: 450px;
+    width: 450px;
+  }
 }
