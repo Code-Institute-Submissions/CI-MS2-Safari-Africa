@@ -257,7 +257,10 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > - Site background image from [Public Domain Pictures](https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern)
 > - Intro carousel images from [Unsplash](https://unsplash.com/)
->
+> - About page image from [Graham Springer Fine Art](http://www.grahamspringer.com/)
+> - Africa outline image from [Pintrest](https://www.pinterest.ie/pin/77616793558531466/)
+> - Combination of above 2 images into final product - self-made on Photoshop
+
 > ##### Content
 >
 > - Tim Nelsons's extensive documentation on LeafletJS Maps from his MS2 project
