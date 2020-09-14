@@ -219,7 +219,6 @@ strong {
 
 .dropdown {
   text-align: center;
-  /* width: 300px; */
 }
 
 .dropdown-main span {
@@ -300,12 +299,11 @@ strong {
 
 .align {
   width: auto;
-  /* height: 100%; */
+  height: auto;
+  max-width: inherit;
   border: 1px solid var(--secondary2);
   padding: 10px;
   margin: 5px 10px;
-  max-height: 220px;
-  max-width: inherit;
 }
 
 #map,
@@ -339,9 +337,6 @@ footer {
 /* --- RESPONSIVE RULES --- */
 
 @media only screen and (min-width: 375px) {
-  iframe {
-    height: 200px;
-  }
   #map,
   .reserve-placeholder img {
     height: 300px;
@@ -367,9 +362,6 @@ footer {
     padding: 5px 20px;
   }
 
-  iframe {
-    height: 220px;
-  }
   body {
     font-size: 1rem;
     letter-spacing: 2px;
@@ -381,6 +373,9 @@ footer {
     font-size: 1rem;
     min-width: 150px;
   }
+  .align {
+    max-width: 95%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -388,6 +383,13 @@ footer {
   .reserve-placeholder img {
     height: 400px;
     width: 400px;
+  }
+
+  .img-contain img {
+    margin-right: auto;
+  }
+  .cam-contain img {
+    margin-left: auto;
   }
 }
 
