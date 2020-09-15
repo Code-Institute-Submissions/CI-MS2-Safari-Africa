@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Jeq5zw3EDsSsfZu4lu7eA");
+        })();
+    </script>
 
     <title>Safari Africa</title>
 </head>
@@ -768,7 +775,7 @@
             <h1>Contact us</h1>
         </div>
         <div class="container mt-3 contact-container">
-            <form>
+            <form onsubmit="return sendMail(this);" method="POST">
                 <!-- Form entries -->
                 <label for="fname">First Name:</label>
                 <input class="text-input" type="text" id="fname" name="first_name" required />
@@ -795,6 +802,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sendemail.js"></script>
     <script src="assets/js/countryapi.js"></script>
 </body>
 
