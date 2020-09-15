@@ -69,7 +69,7 @@ section {
 }
 
 .about-container,
-.country-container,
+.reserve-container,
 .contact-container {
   background-color: var(--prim-opaque);
   padding: 16px;
@@ -179,7 +179,11 @@ strong {
   text-align: left;
 }
 
-/* --- COUNTRY/RESERVE SECTION --- */
+.country-row {
+  margin-bottom: 50px;
+}
+
+/* --- RESERVE SECTION --- */
 
 .hidden {
   display: none;
@@ -268,7 +272,12 @@ strong {
 
 .maprow {
   width: 95%;
-  margin: 0px auto;
+  margin: 30px auto;
+}
+
+.map-col {
+  display: flex;
+  justify-content: end;
 }
 
 /*--- Reserve Section ---*/
@@ -310,7 +319,7 @@ strong {
 .reserve-placeholder img {
   height: 275px;
   width: 275px;
-  margin: 10px auto;
+  margin: 25px auto;
   padding: 0;
   box-shadow: var(--box-shadow);
   border: 2px solid tan;
@@ -398,5 +407,8 @@ footer {
   .reserve-placeholder img {
     height: 450px;
     width: 450px;
+  }
+  .align {
+    max-width: 100%;
   }
 }
