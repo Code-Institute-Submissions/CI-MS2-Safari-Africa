@@ -15,7 +15,6 @@ axios
   })
   .then(() => {
     const buttons = document.querySelectorAll(".button");
-    console.log("test", buttons);
     for (i = 0; i < buttons.length; i++) {
       // add a click event listener to the button
 
