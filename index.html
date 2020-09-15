@@ -775,20 +775,19 @@
             <h1>Contact us</h1>
         </div>
         <div class="container mt-3 contact-container">
-            <form onsubmit="return sendMail(this);" method="POST">
-                <!-- Form entries -->
-                <label for="fname">First Name:</label>
-                <input class="text-input" type="text" id="fname" name="first_name" required />
-                <label for="lname">Last Name:</label>
-                <input class="text-input" type="text" id="lname" name="last_name" required />
+            <form onsubmit="return sendMail(this);">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required/>
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" class="form-control" id="surname" placeholder="Surname" required/>
                 <label for="email">Email Address:</label>
-                <input class="text-input" id="email" type="email" name="email_address" required />
-                <!-- Submit button -->
-                <hr class="send-hr" />
-                <input class="send-btn" type="submit" value="Send!" />
-                <hr class="send-hr" />
+                <input type="text" name="email" class="form-control" id="emailaddress" placeholder="Email Address" required/>
+                <label for="to_name">Let us know your request below:</label>
+                <textarea rows="5" name="message" class="form-control" id="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-secondary center-block">Submit</button>
             </form>
         </div>
+  
     </section>
 
     <!--FOOTER-->
