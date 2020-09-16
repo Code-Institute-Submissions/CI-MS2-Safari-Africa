@@ -279,6 +279,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - HTML, CSS & Javascript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
 > - Javascript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
 > - Contact form 'success' popup Modal (HTML & CSS) taken from [Tutorial Republic's CodeLab](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup)
+> - iframe element 'stop on click' function help from John Traas (CI student) and final solution (due to stopVideo method no longer working on iframes) from [Stack Overflow](https://stackoverflow.com/a/30358006/14197670)
 
 ---
 
@@ -289,6 +290,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
 > - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through bugs experienced.
 > - **James Lowe** for his help and patience in helping me with the country API.
+> - **John Traas** for his help with overcominmg the barrier with videos not stopping on button click and contact modal apperaring after invalid form entries.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
 > - Everyone that takes part in the Slack calls, specifically from the **#In-It-Together** and **#Study-Group** channels.
 
