@@ -278,6 +278,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
 > - HTML, CSS & Javascript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
 > - Javascript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
+> - Contact form 'success' popup Modal (HTML & CSS) taken from [Tutorial Republic's CodeLab](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup)
 
 ---
 
