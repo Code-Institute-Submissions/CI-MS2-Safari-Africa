@@ -1,5 +1,5 @@
-/*CREDIT: Handle active class with # 
-https://stackoverflow.com/a/48310836/14197670*/
+/*CREDIT: Handle active class with #
+https://stackoverflow.com/a/48310836/14197670 */
 
 window.addEventListener("hashchange", function () {
   document.querySelector(".active").classList.remove("active");
@@ -38,6 +38,16 @@ $(document).ready(function () {
       .end()
       .appendTo("#intro-gallery");
   }, 8000);
+
+  // Function to stop iframe videos playing when button is clicked
+  $('.country-button').click(function(){
+    console.log("This Works");
+    $('.video-player').each(function () {
+      /*CREDIT: https://stackoverflow.com/a/30358006/14197670 
+      stopVideo method no longer supported */
+      this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    });
+  });
 });
 //--- END CREDIT ---
 
