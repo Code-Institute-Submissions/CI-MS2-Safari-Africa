@@ -13,11 +13,14 @@ function sendMail(contactForm) {
             },
             // On error, using standard browser alert
             function (error) {
-                alert("FAILED", error)
+                alert("Sorry it seems we have a problem. Please fill out the form and Submit again", error)
             })
+            // Clear form after submission
+            document.getElementById('contactForm').reset();
     return false;
 }
 
+// Function to show success modal
 function successModal(e) {
     $("#emailSuccess").modal("show");
 }
