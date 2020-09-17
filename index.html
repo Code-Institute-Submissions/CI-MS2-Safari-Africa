@@ -781,6 +781,7 @@
         </div>
         <div class="container mt-3 contact-container">
             <form id=contactForm onsubmit="return sendMail(this);">
+                <!--Form entry-->
                 <label for="firstname">First Name:</label>
                 <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name"
                     required />
@@ -793,8 +794,20 @@
                 <label for="to_name">Let us know your request below:</label>
                 <textarea rows="5" name="message" class="form-control" id="message" placeholder="Message"
                     required></textarea>
-                <button type="submit" class="btn btn-secondary center-block">Submit</button>
+                <!--Subscribe/Radio Buttons-->
+                <p>Would you like to subscribe to our newsletter?</p>
+                <div class="radio-btn">
+                    <input type="radio" name="subscribe" id="true" value="true" required />
+                    <label for="true">Yes, I'd love to!</label><br />
+                    <input type="radio" name="subscribe" id="false" value="false" />
+                    <label for="false">Not at the moment</label><br />
+                </div>
+                <!--Privacy Statement-->
+                <p class="contact-privacy"><em>* We will never share your personal info</em></p>
+                <!--Submit Button-->
+                <button id="submit-btn" type="submit" class="btn btn-secondary center-block">Submit</button>
             </form>
+
             <!--CREDIT Modal Success popup taken from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup -->
             <div id="emailSuccess" class="modal fade">
                 <div class="modal-dialog modal-confirm">
@@ -822,6 +835,7 @@
     <footer>
 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
