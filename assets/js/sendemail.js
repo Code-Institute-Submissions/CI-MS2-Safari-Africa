@@ -4,7 +4,8 @@ function sendMail(contactForm) {
         "from_firstname": contactForm.firstname.value,
         "from_lastname": contactForm.lastname.value,
         "from_email": contactForm.email.value,
-        "request_message": contactForm.message.value
+        "request_message": contactForm.message.value,
+        "subscribe": contactForm.subscribe.value
     })
         .then(
             // Function to activate success modal
@@ -24,4 +25,3 @@ function sendMail(contactForm) {
 function successModal(e) {
     $("#emailSuccess").modal("show");
 }
-
