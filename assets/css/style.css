@@ -371,10 +371,10 @@ label {
 }
 
 
-/* CREDIT - Success modal popup - https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup */
+/* CREDIT - (customised) Success modal popup - https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup */
 .modal-confirm {		
-  color: #636363;
-  width: 325px;
+  /* color: #636363; */
+  width: 300px;
   margin: 30px auto;
 }
 .modal-confirm .modal-content {
@@ -382,6 +382,10 @@ label {
   border-radius: 5px;
   border: none;
 }
+.modal-header {
+  justify-content: center;
+}
+
 .modal-confirm .modal-header {
   border-bottom: none;   
   position: relative;
@@ -407,7 +411,7 @@ label {
   font-size: 13px;
 }	
 .modal-confirm .icon-box {
-  color: #fff;		
+  color: var(--off-white);		
   position: absolute;
   margin: 0 auto;
   left: 0;
@@ -426,12 +430,13 @@ label {
   font-size: 58px;
   position: relative;
   top: 3px;
+  color: var(--off-white);
 }
 .modal-confirm.modal-dialog {
   margin-top: 80px;
 }
 .modal-confirm .btn {
-  color: #fff;
+  color: var(--off-white);
   border-radius: 4px;
   background: #82ce34;
   text-decoration: none;
@@ -443,11 +448,23 @@ label {
   background: #6fb32b;
   outline: none;
 }
+
+.text-center {
+  margin: 0;
+}
+
+.modal-content {
+  
+  background-color: var(--primary1);
+}
+/* END CREDIT */
+
 /* --- FOOTER --- */
 
 footer {
   height: 50px;
   background-color: #343a40;
+  margin-top: 25px;
 }
 
 /* --- RESPONSIVE RULES --- */
