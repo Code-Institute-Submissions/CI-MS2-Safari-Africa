@@ -31,6 +31,7 @@ body {
   /*CREDIT: Background Image
   https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
   background-size: contain;
+  max-width: 100vw;
   overflow-x: hidden!important;
 }
 
@@ -345,6 +346,30 @@ strong {
   background: var(--primary1) url(../img/contact.png) no-repeat bottom right;
   background-size: cover;
 }
+
+label {
+  margin: 10px 5px 5px;
+}
+
+.contact-privacy {
+  margin: 5px 0 0;
+}
+
+.contact-privacy em {
+  font-size: 80%;
+  color: red;
+}
+
+.radio-btn input,
+.radio-btn label {
+  margin: 10px 0 0 0;
+}
+
+#submit-btn{
+  margin-top: 15px;
+  width: 100px;
+}
+
 
 /* CREDIT - Success modal popup - https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup */
 .modal-confirm {		
