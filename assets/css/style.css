@@ -31,7 +31,7 @@ body {
   /*CREDIT: Background Image
   https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
   background-size: contain;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 h1,
@@ -336,6 +336,16 @@ strong {
 
 /* --- CONTACT SECTION--- */
 
+#contactForm {
+  width: 100%;
+  margin: 35px auto;
+}
+
+.contact-container {
+  background: var(--primary1) url(../img/contact.png) no-repeat bottom right;
+  background-size: cover;
+}
+
 /* CREDIT - Success modal popup - https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup */
 .modal-confirm {		
   color: #636363;
@@ -456,6 +466,10 @@ footer {
   }
   .align {
     max-width: 95%;
+  }
+  #contactForm {
+    width: 75%;
+    margin: 50px auto;
   }
 }
 
