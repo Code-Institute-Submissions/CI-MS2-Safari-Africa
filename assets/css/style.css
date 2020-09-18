@@ -329,12 +329,14 @@ strong {
   height: 275px;
   width: 275px;
   margin: 25px auto;
-  padding: 0;
-  box-shadow: var(--box-shadow);
-  border: 2px solid tan;
+  padding: 0; 
   z-index: 0;
 }
 
+#map {
+  box-shadow: var(--box-shadow);
+  border: 2px solid tan;
+}
 .reserve-placeholder {
   text-align: center;
 }
