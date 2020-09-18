@@ -32,7 +32,7 @@ body {
   https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
   background-size: contain;
   max-width: 100vw;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 h1,
@@ -52,14 +52,14 @@ h6 {
 
 /* --- NAVIGATION --- */
 
-.navbar-brand {
+.navbar .navbar-brand {
   font-size: 1.8rem;
   letter-spacing: 2px;
-  color: var(--primary1)!important;
+  color: var(--primary1);
 }
 
-.active {
-  color: var(--primary1)!important;
+.navbar .navbar-nav .nav-item .active {
+  color: var(--primary1);
 }
 
 .nav-link,
