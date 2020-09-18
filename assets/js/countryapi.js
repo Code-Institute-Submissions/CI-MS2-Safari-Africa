@@ -8,13 +8,13 @@ axios
     const container = document.querySelector(".btn-container");
 
     for (i in res.data) {
-      let button = `<div class="button" type="button" data-country="${res.data[i]["alpha2Code"]}">${res.data[i]["name"]}</div>`;
+      let button = `<div class="api-button" type="button" data-country="${res.data[i]["alpha2Code"]}">${res.data[i]["name"]}</div>`;
       // CREDIT: "insertAdjacentHTML & beforeend" parameters from Element.insertAdjacentHTML() - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
       container.insertAdjacentHTML("beforeend", button);
     }
   })
   .then(() => {
-    const buttons = document.querySelectorAll(".button");
+    const buttons = document.querySelectorAll(".api-button");
     for (i = 0; i < buttons.length; i++) {
       // add a click event listener to the button
 
