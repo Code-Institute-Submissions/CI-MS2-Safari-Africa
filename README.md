@@ -261,6 +261,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - About page image from [Graham Springer Fine Art](http://www.grahamspringer.com/)
 > - Africa outline image from [Pintrest](https://www.pinterest.ie/pin/77616793558531466/)
 > - Combination of above 2 images into final product - self-made on Photoshop
+> - Reserve placeholder image and footer taken image from [PNGFuel](https://www.pngfuel.com/)
 
 > ##### Content
 >
