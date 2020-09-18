@@ -55,6 +55,11 @@ h6 {
 .navbar-brand {
   font-size: 1.8rem;
   letter-spacing: 2px;
+  color: var(--primary1)!important;
+}
+
+.active {
+  color: var(--primary1)!important;
 }
 
 .nav-link,
@@ -147,7 +152,7 @@ strong {
   text-align: center;
   font-family: "Crete Round", serif;
   font-size: 0.7rem;
-  color: #fff;
+  color: var(--off-white);
   min-width: 120px;
   margin: 7px;
   padding: 0.25rem 1rem;
@@ -235,7 +240,7 @@ strong {
   display: block;
   font-family: "Crete Round", serif;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--off-white);
   text-align: center;
   width: 95%;
   margin: 12px auto;
@@ -483,12 +488,12 @@ footer {
   width: 50%;
   margin: auto 8px;
   font-size: 0.8rem;
-  color: var(--off-white);
+  color: var(--primary1);
 }
 
 .copyright i {
   margin-right: 5px;
-  color: var(--off-white);
+  color: var(--primary1);
 }
 
 .copyright img {
@@ -503,17 +508,17 @@ footer {
 .social {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 50%;
-  margin: auto 5%;
+  width: 35vw;
+  margin: auto 10px;
 }
 
 .social i {
   font-size: 1rem;
   margin: 5px;
   padding: 5px;
-  color: var(--off-white);
+  color: var(--primary1);
 }
 
 /* --- RESPONSIVE RULES --- */
