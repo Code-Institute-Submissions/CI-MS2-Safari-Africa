@@ -1,6 +1,7 @@
-/*CREDIT: Handle active class with #
-https://stackoverflow.com/a/48310836/14197670 */
-
+/*
+CREDIT: Handle active class with #
+https://stackoverflow.com/a/48310836/14197670 
+*/
 window.addEventListener("hashchange", function () {
   document.querySelector(".active").classList.remove("active");
   document
@@ -28,8 +29,10 @@ $(document).ready(function () {
   });
   //--- END CREDIT ---
 
-  /*CREDIT: Image slideshow inspiration from 
-  https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/*/
+  /*
+  CREDIT: Image slideshow inspiration from 
+  https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ 
+  */
   $(".img-container:gt(0)").hide();
   setInterval(function () {
     $(".img-container:first")
@@ -42,12 +45,16 @@ $(document).ready(function () {
   //--- END CREDIT ---
 
   // Function to stop iframe videos playing when button is clicked
-  $('.country-button').click(function(){
-    console.log("This Works");
-    $('.video-player').each(function () {
-      /*CREDIT: https://stackoverflow.com/a/30358006/14197670 
-      stopVideo method no longer supported */
-      this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+  $(".country-button, .navbar-toggler, .btn, .nav-link").click(function () {
+    $(".video-player").each(function () {
+      /*
+      CREDIT: https://stackoverflow.com/a/30358006/14197670 
+      stopVideo method no longer supported (below)
+      */
+      this.contentWindow.postMessage(
+        '{"event":"command","func":"stopVideo","args":""}',
+        "*"
+      );
       //--- END CREDIT ---
     });
   });
@@ -62,7 +69,7 @@ window.onclick = function (e) {
   }
 };
 
-//function to HIDE/SHOW country info with buttons
+// Function to HIDE/SHOW country info with buttons
 const countryButton = document.getElementsByClassName("country-button");
 for (let i = 0; i < countryButton.length; i++) {
   countryButton[i].addEventListener("click", handleCountrySelect);
@@ -79,11 +86,11 @@ function handleCountrySelect(e) {
     }
   }
   handleReserveReset("reserve-0");
-  // click button to show map-country based on the innerText
+  // Click button to show map-country based on the innerText
   changeMapLocation(e.target.innerText);
 }
 
-//function to HIDE/SHOW RESERVE info with buttons
+// Function to HIDE/SHOW RESERVE info with buttons
 const reserveButton = document.getElementsByClassName("reserve-button");
 for (let i = 0; i < reserveButton.length; i++) {
   reserveButton[i].addEventListener("click", handleReserveSelect);
@@ -102,7 +109,7 @@ function handleReserveSelect(e) {
   changeMapLocation(e.target.innerText); // click button to show map-country based on the innerText
 }
 
-//function to RESET RESERVE info
+// Function to RESET RESERVE info
 function handleReserveReset(reserve) {
   const reserveBtn = reserve;
   const reserveSelection = document.getElementsByClassName("reserve-section");
