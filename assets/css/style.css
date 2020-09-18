@@ -22,6 +22,8 @@
 /* --- GENERAL ---*/
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "ABeeZee", sans-serif;
   font-size: 0.8rem;
   font-weight: 200;
@@ -32,6 +34,7 @@ body {
   https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
   background-size: contain;
   max-width: 100vw;
+
   overflow-x: hidden;
 }
 
@@ -348,7 +351,8 @@ strong {
 }
 
 .contact-container {
-  background: var(--primary1) url(../img/contact.png) no-repeat 80% 75%;
+  /* background: var(--primary1) url(../img/contact.png) no-repeat 80% 75%; */
+  background-color: var(--prim-opaque);
   background-size: cover;
 }
 
@@ -467,26 +471,30 @@ label,
 
 /* --- FOOTER --- */
 
+.footer-img {
+  width: 100%;
+  margin-top: -25px;
+  margin-bottom: -5px;
+}
+
 footer {
-  height: 2.5rem;
+  height: 2.8rem;
   background-color: #343a40;
   display: flex;
-  align-items: center;
   overflow: hidden;
-  margin-top: 35px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
 }
 
 /*--- Copyright ---*/
 .copyright {
   display: flex;
   align-items: center;
-  width: 50%;
-  margin: auto 8px;
+  width: 60%;
   font-size: 0.8rem;
   color: var(--primary1);
 }
@@ -510,8 +518,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 35vw;
-  margin: auto 10px;
+  width: 40%;
 }
 
 .social i {
@@ -567,8 +574,18 @@ footer {
     width: 75%;
     margin: 50px auto;
   }
-  .social i {
+  footer {
+    height: 3.2rem;
+  }
+  .footer-img {
+    margin-bottom: -15px;
+  }
+  .copyright,
+  .copyright i {
     font-size: 1.1rem;
+  }
+  .social i {
+    font-size: 1.6rem;
   }
 }
 
@@ -578,22 +595,11 @@ footer {
     height: 400px;
     width: 400px;
   }
-
   .img-contain img {
     margin-right: auto;
   }
   .cam-contain img {
     margin-left: auto;
-  }
-  .social i {
-    font-size: 1.3rem;
-  }
-  .text-input {
-    height: 30px;
-  }
-  .copyright {
-    font-size: 1rem;
-    margin-left: 30px;
   }
 }
 
@@ -601,8 +607,14 @@ footer {
   form {
     padding: 40px 120px;
   }
-  footer {
-    height: 2.8rem;
+  .social i {
+    font-size: 1.9rem;
+  }
+  .footer-container {
+    padding-bottom: 1.4rem;
+  }
+  .footer-img {
+    margin-top: -50px;
   }
 }
 
@@ -614,5 +626,10 @@ footer {
   }
   .align {
     max-width: 100%;
+  }
+
+  .footer-img {
+    margin-top: -85px;
+    margin-bottom: -50px;
   }
 }
