@@ -23,7 +23,7 @@ The aim of this project is to highlight a selection of Game Reserves in each of 
 > - [Acknowledgments](#acknowledgments)
 > - [Support](#support)
 
-![Image]()
+![Image](assets/img/responsive.png)
 
 **Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.**
 
@@ -101,7 +101,7 @@ This website project will target a large demographic of individuals and families
 >
 > Nature/Safari colours to fit in with the theme of wildlife conservation
 >
-> - Insert Colour palette
+> - ![Image](assets/img/palette.png)
 >
 > ###### Typography
 >
@@ -260,7 +260,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - About page image from [Graham Springer Fine Art](http://www.grahamspringer.com/)
 > - Africa outline image from [Pintrest](https://www.pinterest.ie/pin/77616793558531466/)
 > - Combination of above 2 images into final product - self-made on Photoshop
-> - Reserve placeholder image and footer taken image from [PNGFuel](https://www.pngfuel.com/)
+> - Reserve placeholder image and footer (edited for needs) taken image from [PNGFuel](https://www.pngfuel.com/)
 
 > ##### Content
 >
