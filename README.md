@@ -101,7 +101,7 @@ This website project will target a large demographic of individuals and families
 >
 > Nature/Safari colours to fit in with the theme of wildlife conservation
 >
-> - ![Image](assets/img/palette.png)
+> ![Image](assets/img/palette.png)
 >
 > ###### Typography
 >
@@ -205,8 +205,14 @@ This website project will target a large demographic of individuals and families
 
 ### Testing
 
-> -
-
+> * Ran HTML code through [HTML Validator](https://validator.w3.org/) 
+>   * Received error messages for p-tags inside iframes not being permitted. - TBA -
+>   * Warning for Intro section lacking heading. As this is an image gallery, no heading is required.  
+>   * Warning for "empty heading" for the About section. The H3 tag with class of "countryheading" pulls in the relevant heading from the REST country API so this can be ignored.
+>   * Two warnings for "The type attribute is unnecessary for JavaScript resources", safe to ignore
+>
+> * 
+>   *  
 ---
 
 ### Project barriers and solutions
