@@ -211,16 +211,38 @@ This website project will target a large demographic of individuals and families
 >   * Warning for "empty heading" for the About section. The H3 tag with class of "countryheading" pulls in the relevant heading from the REST country API so this can be ignored.
 >   * Two warnings for "The type attribute is unnecessary for JavaScript resources", safe to ignore
 >
-> * 
->   *  
----
+> * Ran CSS code through [CSS Validator](https://jigsaw.w3.org/css-validator/)
+>   *  No errors found.
+>
+> * Site Testing on live page:
+>   * Navigation
+>     * Clicked Navigation bar Logo/Text and confirmed it returns to Home/Intro.
+>     * Clicked About on the navbar and scrolls to correct section.
+>     * Clicked Game Reserves on the navbar and scrolls to correct section.
+>     * Clicked Contact on the navbar and scrolls to correct section.
+>   * About Section
+>     * Clicked each country button and relevant country flag and API info replaces the placeholder image and text as expected.
+>     * Clicked URL href from "Info supplied by **REST Countries API**" and site opened on the same tab in the browser. Added target="_blank" (which was missing). Retested and opens in a new tab in the browser as desired.
+>   * Game Reserve section
+>     * Clicked "1. Select a Country" button and dropdown list of country buttons appears as expected.
+>     * Clicked each country button from the dropdown and relevant image, webcam and map focus appears as expected.
+>     * Clicked "2. Select a Reserve button and dropdown list of reserve buttons appears as expected.
+>     * Clicked each reserve button from the dropdown and the relevant information and map focus as expected for all reserves on each country.
+>     * Clicked on each link for "[Excerpt from Official Park Website.]" and all are opening in a new tab in the browser as expected.
+>     * Clicked all markers in the map (for each reserve in each country) and all display relevant information expected.
+>     * Further to above, each website URL on marker info opens in a new tab in the browser as expected.
+>   * Contact section
+>     * Clicked Submit button without any form entries. Expected warning popup retuned of "Please fill out this field". Further tested all required form fields for same.
+>     * Checked that Radio buttons give option for either/or selection, and not both.
+>     * Tested completed form submission and modal appears confirming email has been sent.
+>     * Confirmed that form resets to blank fields after form submission has been completed.
 
 ### Project barriers and solutions
 
-> - Map pins were not removing after clicking reserve, then country. Had a screen-share session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Updated: Tim found a fix for the existing code without necessitating marker clusters.
-> - Existing layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for country and reserve main buttons.
-> - As above, found that when selecting a reserve (and then trying to scroll down to the info (under map)) was tricky on mobile as the map is touch-responsive. This was interfering with usability and UX and became fiddly. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
-> - Was having issues with the live webcam player for Namibia, (which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section.
+> - Map pins were not removing after clicking reserve button, and then clicking a new country button. Had a screen-share session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Updated: Tim found a fix for the existing code without necessitating marker clusters.
+> - Existing layout for Country/Reserve section with maps was not as expected on mobile view as the UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for the main country and reserve buttons.
+> - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
+> - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
 
 ---
 
