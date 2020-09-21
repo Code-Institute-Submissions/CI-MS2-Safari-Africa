@@ -9,19 +9,19 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 ### Table of Contents
 
 > - [Overview](#overview)
-> - User Stories
-> - UX
-> - Features
-> - Technologies Used
-> - References for learning
-> - Testing
-> - Project barriers and the solutions
-> - Code validity
-> - Version Control
-> - Deployment
-> - Credits
-> - Acknowledgments
-> - Support
+> - [User Stories](#user-stories)
+> - [UX](#ux)
+> - [Features](#features)
+> - [Technologies Used](#technologies-used)
+> - [References for learning](#references-for-learning)
+> - [Testing](#testing)
+> - [Project barriers and solutions](#project-barriers-and-solutions)
+> - [Code validity](#code-validity)
+> - [Version Control](#version-control)
+> - [Deployment](#deployment)
+> - [Credits](#credits)
+> - [Acknowledgments](#acknowledgements)
+> - [Support](#support)
 
 ![Image]()
 
