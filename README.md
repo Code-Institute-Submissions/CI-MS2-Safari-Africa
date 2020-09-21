@@ -1,6 +1,6 @@
 # Safari Africa
 
-![Image]()
+![Image](assets/img/readme-hero.png)
 
 [LIVE SITE ON GITHUB PAGES](https://jimlynx.github.io/CI-MS2-Safari-Africa/)
 
