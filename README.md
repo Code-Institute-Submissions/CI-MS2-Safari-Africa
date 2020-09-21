@@ -4,7 +4,7 @@
 
 [LIVE SITE ON GITHUB PAGES](https://jimlynx.github.io/CI-MS2-Safari-Africa/)
 
-The aim of this project is to highlight the a selection of Game Reserves in each of the 4 prominent Safari destination countries in Southern Africa.
+The aim of this project is to highlight a selection of Game Reserves in each of the 4 prominent Safari destination countries in Southern Africa.
 
 ### Table of Contents
 
@@ -20,7 +20,7 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 > - [Version Control](#version-control)
 > - [Deployment](#deployment)
 > - [Credits](#credits)
-> - [Acknowledgments](#acknowledgements)
+> - [Acknowledgments](#acknowledgments)
 > - [Support](#support)
 
 ![Image]()
@@ -29,7 +29,7 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 
 ### Overview
 
-> The aim of this project is to showcase Safari and Game Reserve destinations to promote tourism back to the areas after the Covid lockdowns.
+> The aim of this project is to showcase Safari and Game Reserve destinations to promote tourism back to the areas after the COVID-19 lock-downs.
 
 ---
 
@@ -40,7 +40,7 @@ The aim of this project is to highlight the a selection of Game Reserves in each
 > - _"I want to be able to subscribe to a mailing list about future projects"_
 > - _"I want to get in touch with some unanswered questions about reserves"_
 > - _"I want to be able to join a community forum or social media group to see some of the past safaris run, and get regular updates"_
-> - _"I and interested in taking part in a trip, but would like to see some reviews first"_
+> - _"I am interested in taking part in a trip, but would like to see some reviews first"_
 
 ---
 
@@ -65,34 +65,32 @@ This website project will target a large demographic of individuals and families
 >
 > - Designed site with Mobile-first approach.
 > - Display interactive maps for each country and each reserve within each country
-> - Email Contact form provided with option to sign up for mailing list.
-> - Easy reference to Social Media from anywhere on the site.
+> - Contact form provided with option to sign up for mailing list.
 > - Relevant Social Media icons in the footer and links in reserve pages.
 > - Fixed navigation bar providing user easy navigation reference.
-> - Fixed footer providing quick reference to Social Media links.
 > - Review API (Stretch goal)
 
 #### 2. Scope
 
 > - Provides a clean UX for users with easy navigation.
-> - Fits in with my current skill-set of HTML, CSS, Javascript and API use.
-> - Quickly defines the content and focus on the maps, subscribing to a mailing list and getting in touch via email or social media.
-> - I've included some Javascript animations to subtly enhance the overall experience without overpowering the page.
+> - Fits in with my current skill-set of HTML, CSS, JavaScript and API use.
+> - Quickly defines the content and focus on images and maps, subscribing to a mailing list and getting in touch via email or social media.
+> - I've included some JavaScript animations to subtly enhance the overall experience without overpowering the page.
 
 #### 3. Structure
 
 > The main focus of the structure is to allow Users to quickly assimilate the information, maps and imagery.
 > Short, focused paragraphs of content information to provide enough information, yet not overwhelm.
 > A selection of quality images to showcase the game reserves.
-> Points of contact are provided via email contact form and links to Social Media in Footer.
+> Points of contact are provided via email contact form (with newsletter subscription option) and links to Social Media in Footer.
 
 #### 4. Skeleton
 
 > - [Wireframes](assets/docs/wireframes.pdf): One-page website with **4** main sections.
 > - Fixed navigation bar - Menu headings pointing to each of the 4 pages.
-> - Home, About, Countries and Contact pages> -
+> - Home, About, Reserves and Contact pages
 > - Footer with Copyright info and Social Media icons
-> - (Add Country info via API - stretch goal dependant on time)
+> - (Add Country info via API - stretch goal dependent on time) - Stretch goal completed - Country REST API Info presented on About section.
 > - (Review API section - stretch goal)
 
 ---
@@ -101,7 +99,7 @@ This website project will target a large demographic of individuals and families
 
 > ###### Colours
 >
-> Nature/safari' colours to fit in with the theme of wildlife conservation
+> Nature/Safari colours to fit in with the theme of wildlife conservation
 >
 > - Insert Colour palette
 >
@@ -125,7 +123,7 @@ This website project will target a large demographic of individuals and families
 
 ##### Existing Features
 
-> - Designed with HTML5, CSS3, Javascript and Bootstrap.
+> - Designed with HTML5, CSS3, JavaScript and Bootstrap.
 > - Home/Landing page with 4 pages in total.
 > - Fixed navigation allows the user to easily navigate, regardless of which page visited.
 > - Fixed footer allows the user quick accessibility to social media links.
@@ -145,17 +143,17 @@ This website project will target a large demographic of individuals and families
 >
 > ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593529419/Logos/CSS3-50_slrv0x.png) [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 >
-> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1597668963/Logos/js50_fcj8kt.png) [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1597668963/Logos/js50_fcj8kt.png) [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-##### 2. Integrations
+##### 2. Integration
 
-> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593528776/Logos/Bootstrap-50_khpj57.png) [Bootstrap](https://getbootstrap.com/) - by linking via [BootstrapCDN](https://www.bootstrapcdn.com/) to HTML Doc.
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593528776/Logos/Bootstrap-50_khpj57.png) [Bootstrap](https://getbootstrap.com/) - by linking via [Bootstrap CDN](https://www.bootstrapcdn.com/) to HTML Doc.
 >
 > ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593528776/Logos/fontawesome-50_r5df5h.png) [FontAwesome](https://fontawesome.com/) Icons for Social Media links in Footer.
 >
 > ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593528776/Logos/GoogleFonts-50_mx57p6.png) [Google Fonts](https://fonts.google.com/) - Overall Typography import.
 >
-> Jquery
+> jQuery
 >
 > LeafletJS - Maps
 
@@ -198,7 +196,8 @@ This website project will target a large demographic of individuals and families
 > - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 > - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 > - [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
-> - [Bootsrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
+> - [Bootstrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
+> - [Tim Nelson's Github for LeafletJS]()
 
 ---
 
@@ -210,10 +209,10 @@ This website project will target a large demographic of individuals and families
 
 ### Project barriers and solutions
 
-> - Map pins were not removing after clicking reserve, then country. Had a screenshare session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Updated: Tim found a fix for the existing code without necessitating marker clusters.
-> - Exisiting layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for country and reserve main buttons.
-> - As above, found that when selecting a reserve (and then trying to scroll down to the info (under map)) was tricky on mbile as the map is touch-responsive. This was interfering with usability and UX and became fiddly. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
-> - Was having issues with the live webcam player for Namibia, (which the only available source is non-Youtube based). Replaced with livestream from a South African waterhole for this section.
+> - Map pins were not removing after clicking reserve, then country. Had a screen-share session with Tim Nelson to try and resolve this. Need to research using Marker Clusters with LeafetJS - Updated: Tim found a fix for the existing code without necessitating marker clusters.
+> - Existing layout for Country/Reserve section with maps was not as expected on mobile view. UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for country and reserve main buttons.
+> - As above, found that when selecting a reserve (and then trying to scroll down to the info (under map)) was tricky on mobile as the map is touch-responsive. This was interfering with usability and UX and became fiddly. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
+> - Was having issues with the live webcam player for Namibia, (which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section.
 
 ---
 
@@ -223,7 +222,7 @@ This website project will target a large demographic of individuals and families
 >
 > CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation
 >
-> Javascript - JSHINT
+> JavaScript - JSHINT
 >
 > TAGS - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
 
@@ -245,11 +244,11 @@ This project has been deployed on GitHub Pages with the following process:
 > - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/JimLynx/CI-MS2-Safari-Africa).
 > - Under the Settings section of the GitHub repository, scrolled down to GitHub Pages section.
 > - Under 'Source' drop-down, the 'Master branch' was selected.
-> - Once selected, this publishes the project to GitHub Pages and displays the site url.
+> - Once selected, this publishes the project to GitHub Pages and displays the site URL.
 > - There is no difference between the deployed version and the development version.
 > - The code can be run locally through clone or download.
 > - You can do this by opening the repository, clicking on the green 'Code' button and selecting either 'clone or download'.
-> - The Clone option provides a url, which you can use on your desktop IDE.
+> - The Clone option provides a URL, which you can use on your desktop IDE.
 > - The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine.
 
 ### Credits
@@ -274,11 +273,11 @@ This project has been deployed on GitHub Pages with the following process:
 > ##### Code Snippets
 >
 > - CSS: Main Country and Reserve Button styling - https://www.bestcssbuttongenerator.com/#/11*
-> - Javascript: Handle active class with # - https://stackoverflow.com/a/48310836/14197670
-> - Function by W3SCHOOLS - smoothy scrolling (using Jquery)
+> - JavaScript: Handle active class with # - https://stackoverflow.com/a/48310836/14197670
+> - Function by W3SCHOOLS - smooth scrolling (using Jquery)
 > - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
-> - HTML, CSS & Javascript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
-> - Javascript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
+> - HTML, CSS & JavaScript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
+> - JavaScript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
 > - Contact form 'success' popup Modal (HTML & CSS) taken from [Tutorial Republic's CodeLab](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup)
 > - iframe element 'stop on click' function help from John Traas (CI student) and final solution (due to stopVideo method no longer working on iframes) from [Stack Overflow](https://stackoverflow.com/a/30358006/14197670)
 
@@ -289,7 +288,7 @@ This project has been deployed on GitHub Pages with the following process:
 > I would like to thank:
 >
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
-> - **Tim Nelson** for his wealth of knowledge on Leaflet JS and taking the time to walk me through bugs experienced.
+> - **Tim Nelson** for his wealth of knowledge on LeafletJS and taking the time to walk me through bugs experienced.
 > - **James Lowe** for his help and patience in helping me with the country API.
 > - **John Traas** for his help with overcominmg the barrier with videos not stopping on button click and contact modal apperaring after invalid form entries.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
