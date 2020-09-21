@@ -153,9 +153,11 @@ This website project will target a large demographic of individuals and families
 >
 > ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593528776/Logos/GoogleFonts-50_mx57p6.png) [Google Fonts](https://fonts.google.com/) - Overall Typography import.
 >
-> jQuery
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1600683635/Logos/jquery-50.png) [jQuery](https://jquery.com/) - JavaScript library
 >
-> LeafletJS - Maps
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1600683868/Logos/LeafletJS-50.png) [LeafletJS](https://leafletjs.com/) - Interative Maps API
+>
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1600684023/Logos/rest-50.png) [REST Countries](https://restcountries.eu/) - REST Country info API  
 
 ##### 3. Workspace, version control and Repository storage
 
@@ -197,7 +199,7 @@ This website project will target a large demographic of individuals and families
 > - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 > - [Balsamiq](https://balsamiq.com/wireframes/) - Wireframing design tool.
 > - [Bootstrap Grid Explanation by Anna Greaves](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
-> - [Tim Nelson's Github for LeafletJS]()
+> - [Tim Nelson's Github for LeafletJS](https://github.com/TravelTimN/ci-ifd-lead/tree/master/week4-leafletjs)
 
 ---
 
