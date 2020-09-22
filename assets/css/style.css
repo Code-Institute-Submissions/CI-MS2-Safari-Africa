@@ -537,6 +537,12 @@ footer {
   color: var(--primary1);
 }
 
+.copyright:hover,
+.social i:hover {
+  color: var(--secondary1);
+  transform: rotate(15deg);
+}
+
 /* --- RESPONSIVE RULES --- */
 
 @media only screen and (min-width: 375px) {
