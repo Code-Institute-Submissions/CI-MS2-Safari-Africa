@@ -34,7 +34,6 @@ body {
   https://www.publicdomainpictures.net/en/view-image.php?image=129300&picture=seamless-zebra-pattern */
   background-size: contain;
   max-width: 100vw;
-
   overflow-x: hidden;
 }
 
@@ -128,6 +127,11 @@ https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
 
 .row {
   --bs-gutter-x: none;
+}
+
+.jumbotron {
+  background-color: transparent;
+
 }
 
 .jumbotron p {
@@ -239,7 +243,7 @@ strong {
 }
 
 .dropdown-item,
-.dropdown-toggle {
+.dropdown-main {
   display: block;
   font-family: "Crete Round", serif;
   font-size: 0.9rem;
@@ -256,18 +260,22 @@ strong {
   box-shadow: var(--box-shadow);
 }
 
-.dropdown-main:hover {
+.dropdown-main:hover,
+.dropdown-item:hover,
+.api-button:hover {
   color: var(--off-white);
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
   background-color: #634b30;
+}
+
+.dropdown-main:focus,
+.api-button:focus {
   outline: 5px auto orange;
 }
 
-.dropdown-main:focus {
-  outline: 5px auto orange;
-}
-
-.dropdown-item:hover {
+.dropdown-main:hover,
+.dropdown-item:hover,
+.api-button:hover {
   color: yellow;
 }
 
