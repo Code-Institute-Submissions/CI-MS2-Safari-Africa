@@ -329,7 +329,7 @@ strong {
   height: 275px;
   width: 275px;
   margin: 25px auto;
-  padding: 0; 
+  padding: 0;
   z-index: 0;
 }
 
@@ -483,20 +483,18 @@ footer {
   height: 2.8rem;
   background-color: #343a40;
   display: flex;
-  overflow: hidden;
+  margin-bottom: -1px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 /*--- Copyright ---*/
 .copyright {
-  display: flex;
-  align-items: center;
-  width: 60%;
+  width: 100%;
   font-size: 0.8rem;
   color: var(--primary1);
 }
@@ -515,12 +513,13 @@ footer {
 }
 
 /*--- Social Media icons ---*/
+
 .social {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 40%;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
 }
 
 .social i {
@@ -586,6 +585,9 @@ footer {
   .copyright i {
     font-size: 1.1rem;
   }
+  .social li {    
+    margin: 0px 10px;
+  }
   .social i {
     font-size: 1.6rem;
   }
@@ -603,6 +605,9 @@ footer {
   .cam-contain img {
     margin-left: auto;
   }
+  .social li {    
+    margin: 0px 15px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -613,7 +618,7 @@ footer {
     font-size: 1.9rem;
   }
   .footer-container {
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.3rem;
   }
   .footer-img {
     margin-top: -50px;
@@ -633,5 +638,8 @@ footer {
   .footer-img {
     margin-top: -85px;
     margin-bottom: -50px;
+  }
+  .social li {    
+    margin: 0px 20px;
   }
 }
