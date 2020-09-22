@@ -1,18 +1,36 @@
-#preloader{
-    position: fixed;
-    top: 0;
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* CREDIT: Animation across screen adapted from https://codepen.io/empreintes/pen/jyWQym */
+.imgload {
+  position: absolute;
+  height: 86px;
+  width: 120px;
+  top: 50%;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes run {
+  0% {
     left: 0;
-      width: 100%;
-    height: 100vh;  
-    background-color: var(--primary1);
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    z-index: 999;
   }
-  
-  #preloader img{
-    height: 86px;  
-    width: 120px;    
+  50% {
+    left: 100%;
   }
-  
+  100% {
+    left: 0;
+  }
+}
