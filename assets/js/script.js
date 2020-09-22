@@ -31,8 +31,8 @@ $(document).ready(function () {
 
   // Function to ease in/out preloader
   setTimeout(function () {  
-    $('#preloader').fadeIn('slow');
-    $('#preloader').fadeOut(2900);
+    $('#preloader').fadeIn(50);
+    $('#preloader').fadeOut(2800);
   });
   
   /*
