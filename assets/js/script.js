@@ -1,5 +1,5 @@
 /*
-CREDIT: Handle active class with #
+CREDIT: Handle active class for Bootstrap navbar one page website
 https://stackoverflow.com/a/48310836/14197670 
 */
 window.addEventListener("hashchange", function () {
@@ -11,7 +11,7 @@ window.addEventListener("hashchange", function () {
 //--- END CREDIT ---
 
 $(document).ready(function () {
-  //CREDIT: Function by W3SCHOOLS - smoothy scrolling (using Jquery)
+  //CREDIT: Function by W3SCHOOLS - smooth scrolling (using Jquery)
   $("a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -29,6 +29,12 @@ $(document).ready(function () {
   });
   //--- END CREDIT ---
 
+  // Function to ease in/out preloader
+  setTimeout(function () {  
+    $('#preloader').fadeIn('slow');
+    $('#preloader').fadeOut(2900);
+  });
+  
   /*
   CREDIT: Image slideshow inspiration from 
   https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ 
@@ -41,7 +47,7 @@ $(document).ready(function () {
       .fadeIn(5000)
       .end()
       .appendTo("#intro-gallery");
-  }, 8000);
+  }, 7000);
   //--- END CREDIT ---
 
   // Function to stop iframe videos playing when button is clicked
@@ -59,7 +65,6 @@ $(document).ready(function () {
     });
   });
 });
-//--- END CREDIT ---
 
 // Close mobile dropdown menu after item clicked
 window.onclick = function (e) {
