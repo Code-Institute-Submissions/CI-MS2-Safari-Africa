@@ -505,6 +505,7 @@ footer {
   width: 100%;
   font-size: 0.8rem;
   color: var(--primary1);
+  transition: transform .2s;
 }
 
 .copyright i {
@@ -535,12 +536,16 @@ footer {
   margin: 5px;
   padding: 5px;
   color: var(--primary1);
+  transition: transform .2s;
 }
 
 .copyright:hover,
 .social i:hover {
-  color: var(--secondary1);
-  transform: rotate(15deg);
+  color: var(--secondary1);  
+}
+
+.social i:hover {
+  transform: scale(1.2);
 }
 
 /* --- RESPONSIVE RULES --- */
