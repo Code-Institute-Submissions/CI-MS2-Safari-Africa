@@ -23,6 +23,11 @@
   animation-duration: 10s;
 }
 
+#preloader h6 {
+  position: absolute;
+  top: 75%;
+}
+
 @keyframes running {
   0% {
     left: -20%;
