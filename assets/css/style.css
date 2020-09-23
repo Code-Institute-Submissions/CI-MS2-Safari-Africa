@@ -111,7 +111,6 @@ https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -131,7 +130,6 @@ https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
 
 .jumbotron {
   background-color: transparent;
-
 }
 
 .jumbotron p {
@@ -212,8 +210,6 @@ strong {
 .dropdown-menu {
   position: absolute;
   transform: translate3d(5px, 29px, 0px);
-  top: 0px;
-  left: 0px;
   will-change: transform;
   top: 100%;
   left: 0;
@@ -265,7 +261,6 @@ strong {
 .api-button:hover {
   color: var(--off-white);
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
-  background-color: #634b30;
 }
 
 .dropdown-main:focus,
@@ -316,20 +311,30 @@ strong {
 
 /* --- MAIN COUNTRY/RESERVE MAP--- */
 
-.img-contain,
+.img-contain {
+  display: none;
+  padding: 0 5px;
+}
 .cam-contain {
   display: flex;
   justify-content: center;
   margin: 10px 0;
+  
+  padding: 0 5px;
 }
 
 .align {
-  width: auto;
-  height: auto;
-  max-width: inherit;
+  width: 100%;
+  object-fit: cover;
+  /* height: auto; */
+  /* max-width: -webkit-fill-available; */
   border: 1px solid var(--secondary2);
   padding: 10px;
   margin: 5px 10px;
+}
+
+.video-player {
+  max-width: 280px;
 }
 
 #map,
@@ -505,7 +510,7 @@ footer {
   width: 100%;
   font-size: 0.8rem;
   color: var(--primary1);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .copyright i {
@@ -536,12 +541,12 @@ footer {
   margin: 5px;
   padding: 5px;
   color: var(--primary1);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .copyright:hover,
 .social i:hover {
-  color: var(--secondary1);  
+  color: var(--secondary1);
 }
 
 .social i:hover {
@@ -567,15 +572,12 @@ footer {
     box-shadow: none;
     margin: 0;
   }
-
   .card-text {
     font-size: 0.9rem;
   }
-
   .api-info {
     padding: 5px 20px;
   }
-
   body {
     font-size: 1rem;
     letter-spacing: 2px;
@@ -586,6 +588,15 @@ footer {
   .api-button {
     font-size: 1rem;
     min-width: 150px;
+  }
+  .img-contain {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .cam-contain {
+    justify-content: flex-end;
   }
   .align {
     max-width: 95%;
@@ -604,7 +615,7 @@ footer {
   .copyright i {
     font-size: 1.1rem;
   }
-  .social li {    
+  .social li {
     margin: 0px 10px;
   }
   .social i {
@@ -624,7 +635,7 @@ footer {
   .cam-contain img {
     margin-left: auto;
   }
-  .social li {    
+  .social li {
     margin: 0px 15px;
   }
 }
@@ -658,7 +669,7 @@ footer {
     margin-top: -85px;
     margin-bottom: -50px;
   }
-  .social li {    
-    margin: 0px 20px;
+  .social li {
+    margin: 0 20px;
   }
 }
