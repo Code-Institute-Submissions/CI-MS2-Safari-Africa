@@ -32,7 +32,7 @@ $(document).ready(function () {
   // Function to ease in/out preloader
   setTimeout(function () {  
     $('#preloader').fadeIn(.1);
-    $('#preloader').fadeOut(5000);
+    $('#preloader').delay(2000).fadeOut(4000);
   });
   
   /*
