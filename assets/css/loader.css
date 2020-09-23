@@ -19,18 +19,18 @@
   top: 50%;
   position: absolute;
   animation: linear infinite alternate;
-  animation-name: run;
+  animation-name: running;
   animation-duration: 10s;
 }
 
-@-webkit-keyframes run {
+@keyframes running {
   0% {
-    left: 0;
+    left: -20%;
   }
   50% {
     left: 100%;
   }
   100% {
-    left: 0;
+    left: 120%;
   }
 }
