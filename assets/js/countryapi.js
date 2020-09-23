@@ -20,30 +20,36 @@ axios
         // send an api request that uses the 'data-country' data attribute
         axios
           .get(`${API_URL}${event.target.dataset["country"]}`)
-          // Then when the data is recieved
-          .then((res) => { //Possibility to add more country info 
-            // Name
-            document.querySelector(".countryheading").innerHTML = res.data["name"];
-            // Capital
-            document.querySelector(".capitaltext").innerHTML = res.data["capital"];
-            // Population
-            //CREDIT: Refactored population number with Intl.NumberFormat() constructor - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
-            let population = `${Intl.NumberFormat().format(
-              res.data["population"]
-            )} (2018) World Bank`;
-            document.querySelector(".poptext").innerHTML = population;
-            // Languages
-            const langlist = document.querySelector(".langList");
+          .then((res) => {            
+            document.querySelector(".countryHeading").innerHTML = res.data["name"]; // Country Name heading            
+            document.querySelector(".capitalText").innerHTML = res.data["capital"]; // Capital City
+            document.querySelector(".phoneText").innerHTML = `+${res.data["callingCodes"]}`; // Dialling Code
+
+            const localCurrency = document.querySelector(".currencyText"); // Currencies
+            currencyData = res.data["currencies"];
+            localCurrency.innerHTML = "";
+            for (currency in currencyData) {
+              let currency_item1 = `${currencyData[currency]["name"]}`;
+              let currency_item2 = `${currencyData[currency]["symbol"]}`;              
+              let currency_item3 = `${currencyData[currency]["code"]}`;
+              localCurrency.insertAdjacentHTML("beforeend", `${currency_item1} (${currency_item2} or ${currency_item3})<br>`);
+            }
+
+            document.querySelector(".timeText").innerHTML = res.data["timezones"]; // Int. Time Zone            
+            /*CREDIT: Refactored population number with Intl.NumberFormat() constructor
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat*/
+            let population = `${Intl.NumberFormat().format(res.data["population"])} (2018) World Bank`; // Population
+            document.querySelector(".populationText").innerHTML = population;
+            
+            const languageList = document.querySelector(".langList"); // Language List
             langData = res.data["languages"];
-            langlist.innerHTML = "";
+            languageList.innerHTML = "";
             for (language in langData) {
               let language_item = `<li>${langData[language]["name"]}</li>`;
-              langlist.insertAdjacentHTML("beforeend", language_item);
+              languageList.insertAdjacentHTML("beforeend", language_item);
             }
-            // Flags
-            document
-              .querySelector(".container-image")
-              .setAttribute("src", res.data["flag"]);
+            
+            document.querySelector(".container-image").setAttribute("src", res.data["flag"]); // Flags
           });
       });
     }
