@@ -6,32 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Safari Africa" content="Showcasing Southern African Game Reserves" />
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script>
-        (function () {
-            emailjs.init("user_Jeq5zw3EDsSsfZu4lu7eA");
-        })();
-    </script>
-
     <title>Safari Africa</title>
 </head>
 
 <body>
 
     <div id="preloader">
+        <!-- CREDIT: gif image from https://icons8.com/preloaders/en/people_and_animals -->
         <img class="imgload" src="assets/img/preload.gif" alt="Preload animation of antelop running">
     </div>
 
     <!--NAVIGATION-->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="siteNav">
         <div class="container">
             <a class="navbar-brand" href="#">Safari Africa</a>
@@ -59,7 +50,6 @@
     </nav>
 
     <!--INTRO-SECTION-->
-
     <section id="intro">
         <!-- CREDIT: Image slideshow 
         inspiration from 
@@ -104,7 +94,6 @@
     </section>
 
     <!--ABOUT-SECTION-->
-
     <section id="about">
         <div class="container mt-3 heading-container">
             <h1>About Us</h1>
@@ -165,7 +154,6 @@
     </section>
 
     <!--SECTION RESERVES-->
-
     <section id="reserves">
         <div class="container mt-3 heading-container">
             <h1>Top 3 Game Reserves by Country</h1>
@@ -308,8 +296,9 @@
                                 </button>
                                 <div class="reserve-menu dropdown-menu" aria-labelledby="kenya">
                                     <button type="button" class="dropdown-item reserve-button"
-                                        data-reserve="reserve-10">Maasai
-                                        Mara Nature Reserve</button>
+                                        data-reserve="reserve-10">
+                                        Maasai Mara Nature Reserve
+                                    </button>
                                     <button type="button" class="dropdown-item reserve-button"
                                         data-reserve="reserve-11">Amboseli
                                         National Park</button>
@@ -322,20 +311,17 @@
                     </div>
 
                     <!--*end* COUNTRY INFO-->
-
                     <div class="maprow row">
-                        <!--RESERVE INFO-->
 
+                        <!--RESERVE INFO-->
                         <div class="col-md-6 reserve-info">
                             <!--Reserve info placeholder-->
-
                             <div id="reserve-0" class="reserve-section">
                                 <div class="reserve-placeholder">
 
                                     <img src="assets/img/white-leopard.png" alt="Drawing of a leopard">
                                 </div>
                             </div>
-
                             <!--South Africa Reserves-->
                             <div id="reserve-1" class="reserve-section hidden">
                                 <h5>Kruger National Park</h5>
@@ -442,10 +428,7 @@
                             </div>
                             <!--Botswana Reserves-->
                             <div id="reserve-4" class="reserve-section hidden">
-                                <h5>
-                                    Chobe
-                                    National Park
-                                </h5>
+                                <h5>Chobe National Park</h5>
                                 <div>
                                     <p>
                                         Chobe National Park is a true wildlife paradise and one of the best national
@@ -477,7 +460,6 @@
                                     </p>
                                 </div>
                             </div>
-
                             <div id="reserve-5" class="reserve-section hidden">
                                 <h5>Central
                                     Kalahari Game Reserve
@@ -523,8 +505,7 @@
                                 </div>
                             </div>
                             <div id="reserve-6" class="reserve-section hidden">
-                                <h5>Moremi
-                                    Game Reserve</h5>
+                                <h5>Moremi Game Reserve</h5>
                                 <div>
                                     <p>
                                         A 100 years after explorer David Livingstone called this land ‘country full
@@ -600,8 +581,7 @@
                                 </div>
                             </div>
                             <div id="reserve-8" class="reserve-section hidden">
-                                <h5>Skeleton
-                                    Coast National Park</h5>
+                                <h5>Skeleton Coast National Park</h5>
                                 <div>
                                     <p>
                                         The Skeleton Coast Park, is now acknowledged as one of Namibia’s greatest
@@ -765,6 +745,7 @@
                             </div>
                         </div>
                         <!--*end* RESERVE INFO-->
+
                         <!--MAP-->
                         <div class="col-md-6 map-col">
                             <div id="map">
@@ -774,12 +755,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!--SECTION CONTACT-->
-
     <section id="contact">
         <div class="container mt-3 heading-container">
             <h1>Contact us</h1>
@@ -834,8 +813,9 @@
             </div>
         </div>
     </section>
-    <img class="footer-img" src="assets/img/footer.png" alt="Silhouette landscape of elephants walking under a tree">
+
     <!--FOOTER-->
+    <img class="footer-img" src="assets/img/footer.png" alt="Silhouette landscape of elephants walking under a tree">
     <footer>
         <div class="container footer-container">
             <div class="copyright">
@@ -863,10 +843,16 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/sendemail.js"></script>
     <script src="assets/js/countryapi.js"></script>
     <script src="assets/js/map.js"></script>
+    <script>
+        (function () {
+            emailjs.init("user_Jeq5zw3EDsSsfZu4lu7eA");
+        })();
+    </script>
 </body>
 
 </html>
