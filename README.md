@@ -161,7 +161,7 @@ This website project will target a large demographic of individuals and families
 
 ##### 3. Workspace, version control and Repository storage
 
-> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518541/Logos/gitpod-50_qaxo1q.png) [GitPod](https://github.com/mkuti/corklagos-venture/blob/master/gitpod.io) - Main workspace IDE (Integrated Development Environment)
+> ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1600764509/Logos/VS-50.png) [VSCode](https://code.visualstudio.com/) - Main workspace IDE (Integrated Development Environment)
 >
 > ![Image](https://res.cloudinary.com/jimlynx/image/upload/v1593518772/Logos/git-50_znskan.png) [Git](https://git-scm.com/) - Distributed Version Control tool to store versions of files and track changes.
 >
@@ -177,7 +177,7 @@ This website project will target a large demographic of individuals and families
 ##### 5. IDE Extensions used in GitPod
 
 > - Auto Close Tag
-> - Auto Nametag
+> - Auto Rename Nametag
 > - Bracket Pair Colorizer
 > - Code Spellchecker
 > - Prettier - Code Formatter
@@ -213,7 +213,8 @@ This website project will target a large demographic of individuals and families
 > - Existing layout for Country/Reserve section with maps was not as expected on mobile view as the UX was difficult to navigate. Overcame this by creating a new branch and testing a new layout using dropdown buttons for the main country and reserve buttons.
 > - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 > - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
-
+> - Had an issue with slideshow images all showing for 1 second before loading first image. After not finding a resolution and trying various functions, I over came this by designing a pre-loading animation. This not only resolved the issue, but added a good intro and UX to the site.
+>
 ---
 
 ### Code validity
@@ -261,6 +262,7 @@ This project has been deployed on GitHub Pages with the following process:
 > - Africa outline image from [Pintrest](https://www.pinterest.ie/pin/77616793558531466/)
 > - Combination of above 2 images into final product - self-made on Photoshop
 > - Reserve placeholder image and footer (edited for needs) taken image from [PNGFuel](https://www.pngfuel.com/)
+> - Preload antelope animation .gif from [Icons8](https://icons8.com/preloaders/en/people_and_animals)
 
 > ##### Content
 >
@@ -287,6 +289,7 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > I would like to thank:
 >
+> - My mentor, **Mark Railton** for his guidance and advice on this project before submission.
 > - **Bim Williams** and **JoWings** for their continued support and guidance.
 > - **Tim Nelson** for his wealth of knowledge on LeafletJS and taking the time to walk me through bugs experienced.
 > - **James Lowe** for his help and patience in helping me with the country API.
