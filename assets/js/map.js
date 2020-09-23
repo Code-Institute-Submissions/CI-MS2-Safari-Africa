@@ -8,14 +8,14 @@ let mapTileLayers = L.tileLayer(
   Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)*/
   let map = L.map("map", {
     layers: [mapTileLayers], // variable from above
-    center: [-29.28864, 25.025732], // central lat-lng once loaded
-    zoom: 6, // smaller numbers = zoomOut // larger numbers = zoomIn
-    minZoom: 4, // max zoomOut permitted
+    center: [-0, 20], // central lat-lng once loaded
+    zoom: 0, // smaller numbers = zoomOut // larger numbers = zoomIn
+    minZoom: 2.3, // max zoomOut permitted
     maxZoom: 18, // max zoomIn permitted
     maxBounds: [
       // stops map from infinite scrolling at edges
-      [-38, -2],
-      [6, 57],
+      [38, 50], //north east boundary
+      [-35, -20], //south west boundary
     ],
     maxBoundsViscosity: 0.5, // elastic bounce-back of map edges
   });
@@ -68,7 +68,7 @@ let mapTileLayers = L.tileLayer(
       location: "South Africa",
       website: "",
       center: [-29.28864, 25.025732],
-      zoom: 5.5,
+      zoom: 5,
     },
     {
       location: "Botswana",
@@ -80,13 +80,13 @@ let mapTileLayers = L.tileLayer(
       location: "Namibia",
       website: "",
       center: [-22.101561, 17.195369],
-      zoom: 6,
+      zoom: 4.8,
     },
     {
       location: "Kenya",
       website: "",
       center: [0.501555, 37.930799],
-      zoom: 6,
+      zoom: 5.7,
     },
     // end of Initial Country Objects
   
