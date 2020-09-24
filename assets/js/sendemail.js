@@ -9,8 +9,10 @@ function sendMail(contactForm) {
     })
         .then(
             // Function to activate success modal
-            function (response) {
-                successModal();
+            function () {
+                let sentButton = document.getElementById('submit-btn');
+                sentButton.style.backgroundColor = "green";
+                sentButton.innerHTML = "Sent!";
             },
             // On error, using standard browser alert
             function (error) {
@@ -19,9 +21,4 @@ function sendMail(contactForm) {
             // Clear form after submission
             document.getElementById('contactForm').reset();
     return false;
-}
-
-// Function to show success modal
-function successModal(e) {
-    $("#emailSuccess").modal("show");
 }
