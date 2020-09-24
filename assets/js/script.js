@@ -1,15 +1,4 @@
-/*
-CREDIT: Handle active class for Bootstrap navbar one page website
-https://stackoverflow.com/a/48310836/14197670 
-*/
-window.addEventListener("hashchange", function () {
-  document.querySelector(".active").classList.remove("active");
-  document
-    .querySelector('[href="' + window.location.hash + '"]')
-    .classList.add("active");
-});
-//--- END CREDIT ---
-
+//jQUERY - Start
 $(document).ready(function () {
   //CREDIT: Function by W3SCHOOLS - smooth scrolling (using Jquery)
   $("a").on("click", function (event) {
@@ -29,7 +18,12 @@ $(document).ready(function () {
   });
   //--- END CREDIT ---
 
-  // Function to ease in/out preloader
+  // Add/remove active class on nav-items
+  $(".nav-link").on("click", function(e){
+    $("a.nav-link").removeClass("active");
+    $(this).addClass("active");
+  });
+  // Ease in/out preloader
   setTimeout(function () {  
     $('#preloader').fadeIn(.1);
     $('#preloader').delay(2000).fadeOut(4000);
@@ -65,6 +59,7 @@ $(document).ready(function () {
     });
   });
 });
+//jQUERY - End
 
 // Close mobile dropdown menu after item clicked
 window.onclick = function (e) {
