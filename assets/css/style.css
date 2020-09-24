@@ -178,13 +178,6 @@ strong {
   padding: 0.25rem 1rem;
   -webkit-box-shadow: inset 0px 1px 0px 0px #a6827e;
   box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(5%, #7d5d3b),
-    to(#634b30)
-  );
   background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
   background-color: #7d5d3b;
@@ -199,12 +192,14 @@ strong {
 }
 
 .flag-container {
+  display: -moz-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center;  
+  max-height: fit-content;
 }
 
 .flag-container img {
@@ -282,13 +277,6 @@ strong {
   padding: 0.25rem 1rem;
   -webkit-box-shadow: inset 0px 1px 0px 0px #a6827e;
   box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(5%, #7d5d3b),
-    to(#634b30)
-  );
   background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
   background-color: #7d5d3b;
@@ -302,13 +290,6 @@ strong {
 .dropdown-item:hover,
 .api-button:hover {
   color: var(--off-white);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(5%, #634b30),
-    to(#7d5d3b)
-  );
   background: -o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
 }
@@ -451,100 +432,6 @@ label,
   margin-top: 15px;
   width: 100px;
 }
-
-/* CREDIT - (customised) Success modal popup - https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup */
-.modal-confirm {
-  /* color: #636363; */
-  width: 300px;
-  margin: 30px auto;
-}
-.modal-confirm .modal-content {
-  padding: 20px;
-  border-radius: 5px;
-  border: none;
-}
-.modal-header {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.modal-confirm .modal-header {
-  border-bottom: none;
-  position: relative;
-}
-.modal-confirm h4 {
-  text-align: center;
-  font-size: 26px;
-  margin: 30px 0 -15px;
-}
-.modal-confirm .form-control,
-.modal-confirm .btn {
-  min-height: 40px;
-  border-radius: 3px;
-}
-.modal-confirm .close {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-.modal-confirm .modal-footer {
-  border: none;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 13px;
-}
-.modal-confirm .icon-box {
-  color: var(--off-white);
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: -70px;
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  z-index: 9;
-  background: #82ce34;
-  padding: 15px;
-  text-align: center;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-.modal-confirm .icon-box i {
-  font-size: 58px;
-  position: relative;
-  top: 3px;
-  color: var(--off-white);
-}
-.modal-confirm.modal-dialog {
-  margin-top: 80px;
-}
-.modal-confirm .btn {
-  color: var(--off-white);
-  border-radius: 4px;
-  background: #82ce34;
-  text-decoration: none;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  line-height: normal;
-  border: none;
-}
-.modal-confirm .btn:hover,
-.modal-confirm .btn:focus {
-  background: #6fb32b;
-  outline: none;
-}
-
-.text-center {
-  margin: 0;
-}
-
-.modal-content {
-  background-color: var(--primary1);
-}
-/* END CREDIT */
 
 /* --- FOOTER --- */
 
