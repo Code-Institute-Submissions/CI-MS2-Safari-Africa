@@ -169,10 +169,10 @@ This website project will target a large demographic of individuals and families
 
 ##### 4. Other
 
-> [Autoprefixer](https://autoprefixer.github.io/) Parses CSS and adds vendor prefixes.
-> [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) Mobile-friendly check on site.
-> [Website Page Test](https://www.webpagetest.org/) Runs a website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds.
-> [Online-Spellcheck](https://www.online-spellcheck.com/) Online spelling and grammar checks.
+> - [Autoprefixer](https://autoprefixer.github.io/) Parses CSS and adds vendor prefixes.
+> - [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) Mobile-friendly check on site.
+> - [Website Page Test](https://www.webpagetest.org/) Runs a website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds.
+> - [Online-Spellcheck](https://www.online-spellcheck.com/) Online spelling and grammar checks.
 
 ##### 5. IDE Extensions used in GitPod
 
@@ -280,7 +280,6 @@ This project has been deployed on GitHub Pages with the following process:
 > - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
 > - HTML, CSS & JavaScript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
 > - JavaScript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
-> - Contact form 'success' popup Modal (HTML & CSS) taken from [Tutorial Republic's CodeLab](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap-3&file=simple-success-confirmation-popup)
 > - iframe element 'stop on click' function help from John Traas (CI student) and final solution (due to stopVideo method no longer working on iframes) from [Stack Overflow](https://stackoverflow.com/a/30358006/14197670)
 
 ---
