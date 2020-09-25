@@ -17,12 +17,11 @@
 /* --- SITE COLOURS ---*/
 
 :root {
-  /*colours*/
-  --primary1: #f7ebd2;
-  --prim-opaque: #f7ebd2d2;
-  --primary2: #b9b6ae;
-  --secondary1: #629048;
-  --secondary2: #442424;
+  --main-bg: #f7ebd2;
+  --main-bg-opaque: #f7ebd2d2;  
+  --bg-grey: #343a40;
+  --links: #629048;
+  --main-text: #442424;
   --off-white: #fbf9f1;
   --box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
 }
@@ -40,7 +39,7 @@ body {
   font-family: "ABeeZee", sans-serif;
   font-size: 0.8rem;
   font-weight: 200;
-  color: var(--secondary2);
+  color: var(--main-text);
   letter-spacing: 1px;
   background-image: url(../img/zebra-bg.png);
   /*CREDIT: Background Image
@@ -70,11 +69,11 @@ h6 {
 .navbar .navbar-brand {
   font-size: 1.8rem;
   letter-spacing: 2px;
-  color: var(--primary1);
+  color: var(--main-bg);
 }
 
 .navbar .navbar-nav .nav-item .active {
-  color: var(--primary1);
+  color: var(--main-bg);
 }
 
 .nav-link,
@@ -92,7 +91,7 @@ section {
 .about-container,
 .reserve-container,
 .contact-container {
-  background-color: var(--prim-opaque);
+  background-color: var(--main-bg-opaque);
   padding: 16px;
   min-height: 70vh;
   border-radius: 8px;
@@ -103,7 +102,7 @@ section {
 }
 
 .heading-container h1 {
-  background-color: var(--prim-opaque);
+  background-color: var(--main-bg-opaque);
   border-radius: 8px;
   padding: 9px;
   -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
@@ -232,7 +231,7 @@ strong {
   left: 0;
   z-index: 1;
   display: none;
-  background-color: var(--primary1);
+  background-color: var(--main-bg);
   width: 95%; /*Change with .dropdown-main width for mobile*/
   padding: 0.5rem 0;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -319,7 +318,7 @@ strong {
 
 /*--- Reserve Section ---*/
 .reserve-section a {
-  color: var(--secondary1);
+  color: var(--links);
   text-decoration: none;
   text-transform: capitalize;
   font-weight: bold;
@@ -348,7 +347,6 @@ strong {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 10px 0;
-
   padding: 0 5px;
 }
 
@@ -356,7 +354,7 @@ strong {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border: 1px solid var(--secondary2);
+  border: 1px solid var(--main-text);
   padding: 10px;
   margin: 5px 10px;
 }
@@ -395,7 +393,7 @@ strong {
 }
 
 .contact-container {
-  background-color: var(--prim-opaque);
+  background-color: var(--main-bg-opaque);
   background-size: cover;
 }
 
@@ -418,6 +416,10 @@ label,
   margin: 10px 0 0 0;
 }
 
+.btn-secondary {
+background-color: var(--bg-grey);
+}
+
 #submit-btn {
   margin-top: 15px;
   width: 100px;
@@ -433,7 +435,7 @@ label,
 
 footer {
   height: 2.8rem;
-  background-color: #343a40;
+  background-color: var(--bg-grey);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +460,7 @@ footer {
 
 .copyright i {
   margin-right: 5px;
-  color: var(--primary1);
+  color: var(--main-bg);
 }
 
 .copyright img {
@@ -471,7 +473,7 @@ footer {
 
 .copyright a {
   text-decoration: none;
-  color: var(--primary1);
+  color: var(--main-bg);
 }
 
 /*--- Social Media icons ---*/
@@ -492,7 +494,7 @@ footer {
   font-size: 1rem;
   margin: 5px;
   padding: 5px;
-  color: var(--primary1);
+  color: var(--main-bg);
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   -o-transition: transform 0.2s;
@@ -502,7 +504,7 @@ footer {
 
 .copyright a:hover,
 .social i:hover {
-  color: var(--secondary1);
+  color: var(--links);
 }
 
 .social i:hover {
