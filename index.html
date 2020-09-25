@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Safari Africa" content="Showcasing Southern African Game Reserves" />
-    <link rel="stylesheet" type=" text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type=" text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type=" text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type=" text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" type=" text/css" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type=" text/css" href="assets/css/loader.css">
@@ -118,7 +120,12 @@
                     -Click a Country below for more info-
                 </p>
 
-                <div class="btn-container"></div>
+                <div class="container">
+
+                    <div class="btn-container row"></div>
+
+                </div>
+
                 <div class="container">
                     <div class="row ">
                         <div class="col-md-12">
@@ -130,8 +137,8 @@
                 <div class="container">
                     <div class="row country-row">
                         <div class="col-md-6 flag-container">
-                            <img src='assets/img/africa.png' alt="African map outline with elephant image"
-                                class="container-image" />
+                            <img class="container-image" src='assets/img/africa.png'
+                                alt="African map outline with elephant image" />
                         </div>
                         <div class="col-md-6 api-info">
                             <p><strong>Population:</strong><br><span class="populationText"></span></p>
@@ -139,8 +146,10 @@
                             <p><strong>Int. Dialling Code:</strong><br><span class="phoneText"></span></p>
                             <p><strong>Local Currency:</strong><br><span class="currencyText"></span></p>
                             <p><strong>Time-Zone:</strong><br><span class="timeText"></span></p>
-                            <p><strong>Official Languages:</strong><ul class="langList"></ul></p>
-                            
+                            <p><strong>Official Languages:</strong>
+                                <ul class="langList"></ul>
+                            </p>
+
                             <p class="card-text">
                                 <small class="text-muted">Info supplied by
                                     <a href="https://restcountries.eu/" target="_blank">REST Countries API
@@ -803,10 +812,10 @@
     <footer>
         <div class="container footer-container">
             <div class="copyright">
-                 <a href="https://github.com/JimLynx" target="_blank"><i class="far fa-copyright"></i>
-                JimLynx
-                <img src="assets/img/lynx-logo.png" alt="lynx logo" />
-            </a>
+                <a href="https://github.com/JimLynx" target="_blank"><i class="far fa-copyright"></i>
+                    JimLynx
+                    <img src="assets/img/lynx-logo.png" alt="lynx logo" />
+                </a>
             </div>
             <ul class="social">
                 <li>
@@ -841,4 +850,5 @@
         })();
     </script>
 </body>
+
 </html>
