@@ -6,11 +6,12 @@ axios
   .get(`${API_URL}?codes=zaf;bwa;nam;ken;`) //<= Possibility to add more country codes
   .then((res) => {
     const container = document.querySelector(".btn-container");
+    let containerButtons = "";
     for (i in res.data) {
-      let button = `<div class="api-button" type="button" data-country="${res.data[i]["alpha2Code"]}">${res.data[i]["name"]}</div>`;
-      // CREDIT: "insertAdjacentHTML & beforeend" parameters from Element.insertAdjacentHTML() - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
-      container.insertAdjacentHTML("beforeend", button);
+      let button = `<div class="col-6 col-lg-3"><div class="api-button" type="button" data-country="${res.data[i]["alpha2Code"]}">${res.data[i]["name"]}</div></div>`;
+      containerButtons += button;
     }
+    container.innerHTML=`${containerButtons}`
   })
   .then(() => {
     const buttons = document.querySelectorAll(".api-button");
