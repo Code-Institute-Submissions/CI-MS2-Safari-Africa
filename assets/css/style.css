@@ -192,6 +192,10 @@ strong {
   margin-bottom: 30px;
 }
 
+.card-text a {
+  color: var(--links);
+}
+
 .container-image {
   height: auto;
   width: 100%;
