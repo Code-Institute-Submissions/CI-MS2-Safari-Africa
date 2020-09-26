@@ -218,7 +218,7 @@ This website project will target a large demographic of individuals and families
 > - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 > - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
 > - Had an issue with slideshow images all showing for 1 second before loading first image. After not finding a resolution and trying various functions, I overcame this by designing a pre-loading animation. This not only resolved the issue, but added a good intro and UX to the site.
->
+> - Unsolved bug: see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser only. I have researched a fix for this but remains unsolved for now.
 ---
 
 ### Code validity
