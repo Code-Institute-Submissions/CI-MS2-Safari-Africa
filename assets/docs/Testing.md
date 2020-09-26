@@ -15,6 +15,8 @@
 >
 >  * General
 >    * Tested all variables by logging them to the console after each instance.
+>    * Site loaded in Opera web browser shows errors in console "Failed to load resource: net::ERR_FAILED". I researched this and turns out to be the JavaScript code inside the Youtube iframes. https://stackoverflow.com/a/27453371/14197670. It seems that this can be ignored.
+>    * Recieved warnings in console for 'Same-Site cookies. Researched online and discussed with mentor. These are apparently server-side issues and beyond the scope of the project. To be dealt with once skills develop.
 > * Navigation & Intro
 >   * Clicked on all navbar links to ensure smooth scrolling is consistent top to bottom, to each section and bottom to top.
 >   * Tested links from mobile view Hamburger menu icon, and menu closes when clicking on one of the menu items, as desired.
@@ -30,6 +32,7 @@
 >    * Started webcam feed for each country and ensured that it stopped/reset on button clicks from all other buttons and selections, except for the reserve buttons. This was specifically chosen to keep playing whilst looking at reserves in the same country.
 >    * Clicked all markers in the map (for each reserve in each country) and all display relevant information expected.
 >     * Further to above, each website URL on marker info opens in a new tab in the browser as expected.
+>     * iframes on small mobile view in the Safari browser seem to come out of the container. Reduced size of max-width of all iframes to 95%.
 >  * Contact section
 >    * Tested completed form submission and modal appears confirming email has been sent.
 >    * Confirmed that form resets to blank fields after form submission has been completed.
