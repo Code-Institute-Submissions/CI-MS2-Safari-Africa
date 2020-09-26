@@ -116,7 +116,9 @@ This website project will target a large demographic of individuals and families
 >
 > Interactive maps with smooth transitions to each location
 > Additional reserve info on map markers
-
+>
+> ###### Design Choices
+> On the intro page, I have specifically decreased the image transition rate in the image carousel, to subtly show the zebra pattern beneath momentarily between each slide. I felt that vivid and immediate image transitions would break the consistency of the ux and theme.
 ---
 
 ### Features
@@ -131,7 +133,9 @@ This website project will target a large demographic of individuals and families
 
 ##### Features Left to Implement when skills develop
 
-> -
+> - Add review section. This was intended as a stretch goal, but due to being fictional company, there would be no review content.
+> - After agreeing to subscription to newsletter in contact form, I'd like to include an automatic response of a first newsletter. As a ficitonal company,there is no newsletter at this point.
+) - Once skills develop, I would like to add a reservation/booking system for accommodation, park entry etc. 
 
 ---
 
@@ -222,8 +226,6 @@ This website project will target a large demographic of individuals and families
 > HTML - [W3C](https://validator.w3.org/) - Markup Validation
 >
 > CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation
->
-> JavaScript - JSHINT
 >
 > TAGS - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
 
