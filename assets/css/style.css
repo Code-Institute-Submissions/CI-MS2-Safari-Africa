@@ -160,26 +160,12 @@ strong {
   margin-bottom: 20px;
 }
 
+/*Button styling adapted from https://www.bestcssbuttongenerator.com/#/11**/
 .api-button {
   display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  font-family: "Crete Round", serif;
   font-size: 0.7rem;
-  color: var(--off-white);
-  -webkit-box-shadow: inset 0px 1px 0px 0px #a6827e;
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
-  background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #7d5d3b), to(#634b30));
-  background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-  background-color: #7d5d3b;
-  border-radius: 3px;
-  border: 1px solid #54381e;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
   width: 100px;
   height: 30px;
-  text-align: center;
   line-height: 30px;
   margin: 5px;
 }
@@ -262,14 +248,28 @@ strong {
   width: 95%;
   margin: 12px auto;
   padding: 0.25rem 1rem;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #a6827e;
-  box-shadow: inset 0px 1px 0px 0px #a6827e;
+}
+
+.dropdown-item,
+.dropdown-main,
+.api-button {
+  font-family: "Crete Round", serif;
+  color: var(--off-white);
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #7d5d3b),
+    to(#634b30)
+  );
   background: -o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #7d5d3b), to(#634b30));
   background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
   background-color: #7d5d3b;
   border-radius: 3px;
   border: 1px solid #54381e;
+  cursor: pointer;
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
 }
@@ -277,21 +277,21 @@ strong {
 .dropdown-main:hover,
 .dropdown-item:hover,
 .api-button:hover {
-  color: var(--off-white);
+  color: yellow;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #634b30),
+    to(#7d5d3b)
+  );
   background: -o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #634b30), to(#7d5d3b));
   background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
 }
 
 .dropdown-main:focus,
 .api-button:focus {
   outline: 5px auto orange;
-}
-
-.dropdown-main:hover,
-.dropdown-item:hover,
-.api-button:hover {
-  color: yellow;
 }
 
 .dropdown-item {
@@ -357,7 +357,6 @@ strong {
   padding: 10px;
   margin: 5px 10px;
 }
-
 
 #map,
 .reserve-placeholder img {
