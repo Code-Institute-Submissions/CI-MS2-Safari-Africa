@@ -82,11 +82,12 @@ This website project will target a large demographic of individuals and families
 > The main focus of the structure is to allow Users to quickly assimilate the information, maps and imagery.
 > Short, focused paragraphs of content information to provide enough information, yet not overwhelm.
 > A selection of quality images to showcase the game reserves.
+> Brief introduction information for each country.
 > Points of contact are provided via email contact form (with newsletter subscription option) and links to Social Media in Footer.
 
 #### 4. Skeleton
 
-> - [Wireframes](assets/docs/wireframes.pdf): One-page website with **4** main sections.
+> - [Wireframes](assets/docs/wireframes-V2.pdf): One-page website with **4** main sections.
 > - Fixed navigation bar - Menu headings pointing to each of the 4 pages.
 > - Home, About, Reserves and Contact pages
 > - Footer with Copyright info and Social Media icons
@@ -118,7 +119,8 @@ This website project will target a large demographic of individuals and families
 > Additional reserve info on map markers
 >
 > ###### Design Choices
-> On the intro page, I have specifically decreased the image transition rate in the image carousel, to subtly show the zebra pattern beneath momentarily between each slide. I felt that vivid and immediate image transitions would break the consistency of the ux and theme.
+> * On the intro page, I have specifically decreased the image transition rate in the image carousel, to subtly show the zebra pattern beneath momentarily between each slide. I felt that vivid and immediate image transitions would break the consistency of the ux and theme.
+> * Original layout from wireframe 'felt' different on screen to how I had first imagined it; and as a result, I decided on an alternative layout midway through the project. The original version can be found  [HERE](assets/docs/wireframes.pdf)
 ---
 
 ### Features
@@ -128,14 +130,17 @@ This website project will target a large demographic of individuals and families
 > - Designed with HTML5, CSS3, JavaScript and Bootstrap.
 > - Home/Landing page with 4 pages in total.
 > - Fixed navigation allows the user to easily navigate, regardless of which page visited.
-> - Fixed footer allows the user quick accessibility to social media links.
+> - About section outlining project focus; and REST Country API use for general country information.
+> - Country/Reserve section with live webcam feeds and dropdowns for reserve info and map locations.
+> - Footer with social media links.
 > - Contact Form with radio buttons.
 
 ##### Features Left to Implement when skills develop
 
 > - Add review section. This was intended as a stretch goal, but due to being fictional company, there would be no review content.
-> - After agreeing to subscription to newsletter in contact form, I'd like to include an automatic response of a first newsletter. As a ficitonal company,there is no newsletter at this point.
-) - Once skills develop, I would like to add a reservation/booking system for accommodation, park entry etc. 
+> - After agreeing to subscription to newsletter in contact form, I'd like to include an automatic response of a first newsletter. As a ficitonal company, there is no newsletter at this point.
+> - Once skills develop, I would like to add a reservation/booking system for accommodation, park entry etc. 
+> - Make site further scalable by using more HTML text as JSON objects, such as reserve information.
 
 ---
 
@@ -218,7 +223,7 @@ This website project will target a large demographic of individuals and families
 > - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 > - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
 > - Had an issue with slideshow images all showing for 1 second before loading first image. After not finding a resolution and trying various functions, I overcame this by designing a pre-loading animation. This not only resolved the issue, but added a good intro and UX to the site.
-> - Unsolved bug: see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser only. I have researched a fix for this but remains unsolved for now.
+> - Unsolved bug: see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser. I have researched a fix for this, but remains unsolved for now.
 ---
 
 ### Code validity
@@ -226,6 +231,8 @@ This website project will target a large demographic of individuals and families
 > HTML - [W3C](https://validator.w3.org/) - Markup Validation
 >
 > CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation
+>
+> JavaScript - [JSHINT](https://jshint.com/) - JavaScript code warning & error check
 >
 > TAGS - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates all tags are opening and closing correctly.
 
@@ -276,7 +283,9 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > ##### Code Snippets
 >
-> - CSS: Main Country and Reserve Button styling - https://www.bestcssbuttongenerator.com/#/11*
+> - CSS: Main Country and Reserve Button styling adapted from [Button Generator](https://www.bestcssbuttongenerator.com/#/11*)
+> - Dropdown buttons adapted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/dropdowns/)
+> - Navigation bar adapted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/)
 > - Function by W3SCHOOLS - smooth scrolling (using Jquery)
 > - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
 > - HTML, CSS & JavaScript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
