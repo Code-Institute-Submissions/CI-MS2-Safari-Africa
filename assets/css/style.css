@@ -290,7 +290,7 @@ strong {
 .dropdown-main:focus,
 .dropdown-item:focus,
 .api-button:focus {
-  outline: 5px auto orange;  
+  outline: 5px auto orange;
 }
 
 .dropdown-item {
@@ -333,6 +333,11 @@ strong {
 }
 
 /* --- MAIN COUNTRY/RESERVE MAP--- */
+
+.cam-row {
+  justify-content: center;
+}
+
 .img-contain {
   display: none;
   padding: 0 5px;
@@ -347,7 +352,10 @@ strong {
   justify-content: center;
   margin: 10px 0;
   padding: 0 5px;
-  height: 160px;
+}
+.video-player {
+  height: 100%;
+  margin: 5px;
 }
 
 .align {
@@ -553,6 +561,18 @@ footer {
     font-size: 1rem;
     min-width: 150px;
   }
+  .cam-contain {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: auto;
+  }
+  .video-player {
+      width: 100%;
+      height: auto;
+      margin: 5px;
+    }
+  
   .img-contain {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -562,13 +582,6 @@ footer {
     justify-content: center;
     margin: 10px 0;
   }
-  .cam-contain {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-      height: auto;
-    }
-  
   #contactForm {
     width: 75%;
     margin: 50px auto;
