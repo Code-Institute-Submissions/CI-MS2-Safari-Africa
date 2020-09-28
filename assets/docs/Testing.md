@@ -31,11 +31,13 @@
 >    * Started webcam feed for each country and ensured that it stopped/reset on button clicks from all other buttons and selections, except for the reserve buttons. This was specifically chosen to keep playing whilst looking at reserves in the same country.
 >    * Clicked all markers in the map (for each reserve in each country) and all display relevant information expected.
 >     * Further to above, each website URL on marker info opens in a new tab in the browser as expected.
->     * iframes on small mobile view in the Safari browser seem to come out of the container. Reduced size of max-width of all iframes to 95%. Update: this has not corrected the issue. Further research indicated that this is a known issue with iframes and Safari [See here](https://stackoverflow.com/questions/23083462/how-to-get-an-iframe-to-be-responsive-in-ios-safari). Have logged as unsolved bug and documented in the Readme.md file under [Project barriers](https://github.com/JimLynx/CI-MS2-Safari-Africa#project-barriers-and-solutions).
+>     * iframes on small mobile view in the Safari browser seem to come out of the container. Reduced size of max-width of all iframes to 95%. Update: this has not corrected the issue. Further research indicated that this is a known issue with iframes and Safari [SEE HERE](https://stackoverflow.com/questions/23083462/how-to-get-an-iframe-to-be-responsive-in-ios-safari). Have logged as unsolved bug and documented in the Readme.md file under [Project barriers](https://github.com/JimLynx/CI-MS2-Safari-Africa#project-barriers-and-solutions).
 >  * Contact section
 >    * Tested completed form submission and modal appears confirming email has been sent.
 >    * Confirmed that form resets to blank fields after form submission has been completed.
-
+>  * Passed all code through [JSHINT](https://jshint.com/) and the following were rectified as a result. 
+>    * Changed country api values to dot notation.
+>    * Added let keyword to api variables for better practice (i.e. _for (let language in langData)_, instead of _for (language in langData)_)
 >
 > ### GENERAL (Site Testing on live page)
 > 
