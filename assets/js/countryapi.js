@@ -7,7 +7,7 @@ axios
   .then((res) => {
     const container = document.querySelector(".btn-container");
     let containerButtons = "";
-    for (i in res.data) {
+    for (let i in res.data) {
       let button = `<div class="col-6 col-lg-3"><div class="api-button" type="button" data-country="${res.data[i].alpha2Code}">${res.data[i].name}</div></div>`;
       containerButtons += button;
     }
@@ -15,21 +15,21 @@ axios
   })
   .then(() => {
     const buttons = document.querySelectorAll(".api-button");
-    for (i = 0; i < buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) {
       // add a click event listener to the button
       buttons[i].addEventListener("click", (event) => {
         // send an api request that uses the 'data-country' data attribute
         axios
-          .get(`${API_URL}${event.target.dataset["country"]}`)
+          .get(`${API_URL}${event.target.dataset.country}`)
           .then((res) => {            
             document.querySelector(".countryHeading").innerHTML = res.data.name; // Country Name heading            
             document.querySelector(".capitalText").innerHTML = res.data.capital; // Capital City
             document.querySelector(".phoneText").innerHTML = `+${res.data.callingCodes}`; // Dialling Code
 
             const localCurrency = document.querySelector(".currencyText"); // Currencies
-            currencyData = res.data.currencies;
+            let currencyData = res.data.currencies;
             localCurrency.innerHTML = "";
-            for (currency in currencyData) {
+            for (let currency in currencyData) {
               let currency_item1 = `${currencyData[currency].name}`;
               let currency_item2 = `${currencyData[currency].symbol}`;              
               let currency_item3 = `${currencyData[currency].code}`;
@@ -44,9 +44,9 @@ axios
             document.querySelector(".populationText").innerHTML = population;
             
             const languageList = document.querySelector(".langList"); // Language List
-            langData = res.data.languages;
+            let langData = res.data.languages;
             languageList.innerHTML = "";
-            for (language in langData) {
+            for (let language in langData) {
               let language_item = `<li>${langData[language].name}</li>`;
               languageList.insertAdjacentHTML("beforeend", language_item);
             }
