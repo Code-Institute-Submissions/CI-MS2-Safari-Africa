@@ -4,7 +4,7 @@
 
 [LIVE SITE ON GITHUB PAGES](https://jimlynx.github.io/CI-MS2-Safari-Africa/)
 
-The aim of this project is to highlight a selection of Game Reserves in each of the 4 prominent Safari destination countries in Southern Africa.
+The aim of this project is to highlight a selection of Game Reserves in each of the 4 prominent Safari destination countries in Africa. The project is scalable, and more countries and reserves can be added in future.
 
 ### Table of Contents
 
@@ -46,7 +46,7 @@ The aim of this project is to highlight a selection of Game Reserves in each of 
 
 ### UX
 
-This website project will target a large demographic of individuals and families from all walks of life, hence an overall simple, yet effective website is aimed at. The priority focus is on information, maps, subscribing to a mailing list, contact and social media links.
+This website project will target a large demographic of individuals and families from all walks of life, hence an overall simple, yet effective website is aimed at. The priority focus is on information, images, maps, subscribing to a mailing list, contact and social media links.
 
 ---
 
@@ -56,7 +56,7 @@ This website project will target a large demographic of individuals and families
 >
 > ##### Project Goals:
 >
-> - Showcase the top 3 game reserves in 4 of Southern Africa's most well-renowned Safari destination countries.
+> - Showcase the top 3 game reserves in 4 of Africa's most well-renowned Safari destination countries.
 > - Promoting game reserves by showcasing the best they have to offer.
 > - Obtaining subscriptions for mailing list, thereby increasing customer databases.
 > - Direction to Facebook Group links for each reserve, expanding on their group numbers.
@@ -223,7 +223,7 @@ This website project will target a large demographic of individuals and families
 > - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 > - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
 > - Had an issue with slideshow images all showing for 1 second before loading first image. After not finding a resolution and trying various functions, I overcame this by designing a pre-loading animation. This not only resolved the issue, but added a good intro and UX to the site.
-> - Unsolved bug: see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser. I have researched a fix for this, but remains unsolved for now.
+> - Unsolved bug: see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser. Overcame this by creating a new testing branch for the bug and after 2 attempts with different approaches, I resolved this issue.
 ---
 
 ### Code validity
@@ -286,8 +286,8 @@ This project has been deployed on GitHub Pages with the following process:
 > - CSS: Main Country and Reserve Button styling adapted from [Button Generator](https://www.bestcssbuttongenerator.com/#/11*)
 > - Dropdown buttons adapted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/dropdowns/)
 > - Navigation bar adapted from [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/)
-> - Function by W3SCHOOLS - smooth scrolling (using Jquery)
-> - Tim Nelson - Showing only map tiles for Southern Africa (avoid loading world map)
+> - Smooth scrolling (using Jquery) from [W3SCHOOLS](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)
+> - Tim Nelson - Showing only map tiles for Africa (avoid loading world map)
 > - HTML, CSS & JavaScript: Intro carousel & transition function from [CSS Tricks](https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/)
 > - JavaScript: find by location in array of objects [Stack Overflow](https://stackoverflow.com/a/35398031/13484385*/)
 > - iframe element 'stop on click' function help from John Traas (CI student) and final solution (due to stopVideo method no longer working on iframes) from [Stack Overflow](https://stackoverflow.com/a/30358006/14197670)
