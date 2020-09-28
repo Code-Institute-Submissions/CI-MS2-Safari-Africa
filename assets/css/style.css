@@ -347,6 +347,7 @@ strong {
   justify-content: center;
   margin: 10px 0;
   padding: 0 5px;
+  height: 160px;
 }
 
 .align {
@@ -515,6 +516,15 @@ footer {
     height: 300px;
     width: 300px;
   }
+  .cam-contain {
+    height: 185px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .cam-contain {
+    height: 205px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -556,8 +566,9 @@ footer {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-  }
-
+      height: auto;
+    }
+  
   #contactForm {
     width: 75%;
     margin: 50px auto;
