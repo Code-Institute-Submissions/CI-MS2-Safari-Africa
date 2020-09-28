@@ -14,7 +14,7 @@
 >
 >  * General
 >    * Tested all variables by logging them to the console after each instance.
->    * Site loaded in Opera web browser shows errors in console "Failed to load resource: net::ERR_FAILED". I researched this and turns out to be the JavaScript code inside the Youtube iframes. https://stackoverflow.com/a/27453371/14197670. It seems that this can be ignored.
+>    * Site loaded in Opera web browser shows errors in console "Failed to load resource: net::ERR_FAILED". I researched this and turns out to be the JavaScript code inside the Youtube iframes. Ref: [Stack Overflow](https://stackoverflow.com/a/27453371/14197670). It seems that this can be ignored.
 >    * Received warnings in console for 'Same-Site cookies'. Researched online and discussed with mentor. These are apparently server-side issues and beyond the scope of the project. To be dealt with once skills develop.
 > * Navigation & Intro
 >   * Clicked on all navbar links to ensure smooth scrolling is consistent top to bottom, to each section and bottom to top.
