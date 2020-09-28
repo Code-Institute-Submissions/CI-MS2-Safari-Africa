@@ -8,7 +8,7 @@ function sendMail(contactForm) {
         "subscribe": contactForm.subscribe.value
     })
         .then(
-            // Function to activate success modal
+            // Change button text to green and display 'sent' message
             function () {
                 let sentButton = document.getElementById('submit-btn');
                 sentButton.style.backgroundColor = "green";
