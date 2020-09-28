@@ -87,7 +87,7 @@ This website project will target a large demographic of individuals and families
 
 #### 4. Skeleton
 
-> - [Wireframes](assets/docs/wireframes-V2.pdf): One-page website with **4** main sections.
+> - [Wireframes](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/docs/Wireframes-V2.pdf): One-page website with **4** main sections.
 > - Fixed navigation bar - Menu headings pointing to each of the 4 pages.
 > - Home, About, Reserves and Contact pages
 > - Footer with Copyright info and Social Media icons
@@ -120,7 +120,7 @@ This website project will target a large demographic of individuals and families
 >
 > ###### Design Choices
 > * On the intro page, I have specifically decreased the image transition rate in the image carousel, to subtly show the zebra pattern beneath momentarily between each slide. I felt that vivid and immediate image transitions would break the consistency of the ux and theme.
-> * Original layout from wireframe 'felt' different on screen to how I had first imagined it; and as a result, I decided on an alternative layout midway through the project. The original version can be found  [HERE](assets/docs/wireframes.pdf)
+> * Original layout from wireframe 'felt' different on screen to how I had first imagined it; and as a result, I decided on an alternative layout midway through the project. [Original Wireframe](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/docs/Wireframes.pdf)
 ---
 
 ### Features
@@ -214,7 +214,7 @@ This website project will target a large demographic of individuals and families
 
 ### Testing
 
-> Testing documentation can be found on a separate document [HERE](assets/docs/Testing.md)
+> Testing documentation can be found on a separate document [HERE](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/docs/Testing.md)
 
 ### Project barriers and solutions
 
@@ -223,8 +223,8 @@ This website project will target a large demographic of individuals and families
 > - As above, found that when selecting a reserve (and then trying to scroll down to the info (under the map) it was finicky on mobile as the map is touch-responsive. This was interfering with usability and UX. Simply moved the map under the reserve info, which resolved the issue along with the dropdown box layout.
 > - Was having issues with the live webcam player for Namibia, (for which the only available source is non-Youtube based). Replaced with live-stream from a South African waterhole for this section (to be looked and and try to resolve after project submission).
 > - Had an issue with slideshow images all showing for 1 second before loading first image. After not finding a resolution and trying various functions, I overcame this by designing a pre-loading animation. This not only resolved the issue, but added a good intro and UX to the site.
-> - ~~Unsolved bug:~~ see [Testing](assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser. UPDATE: Overcame this by creating a new testing branch for the bug and after 2 attempts with different approaches, I resolved this issue.
-> - Unsolved bug: Country Buttons on About section have transparent background on focus. This seems to only appear with [Samsung](assets/img/testing/button-samsung.jpg) phones. Checked on an iphone and [Huawei](assets/img/testing/button-huawei) phones and this problem does not present itself.
+> - ~~Unsolved bug:~~ see [Testing](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/docs/Testing.md). iframe comes out of container on small mobile view on Safari browser. UPDATE: Overcame this by creating a new testing branch for the bug and after 2 attempts with different approaches, I resolved this issue.
+> - Unsolved bug: Country Buttons on About section have transparent background on focus. This seems to only appear with [Samsung](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/img/testing/button-samsung.jpg) phones. Checked on an iphone and [Huawei](https://github.com/JimLynx/CI-MS2-Safari-Africa/blob/master/assets/img/testing/button-huawei.jpg) phones and this problem does not present itself.
 ---
 
 ### Code validity
