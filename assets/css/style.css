@@ -571,8 +571,8 @@ footer {
       width: 100%;
       height: auto;
       margin: 5px;
-    }
-  
+      border: none;
+    }  
   .img-contain {
     display: -webkit-box;
     display: -ms-flexbox;
