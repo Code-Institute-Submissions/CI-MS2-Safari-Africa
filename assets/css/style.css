@@ -241,9 +241,7 @@ strong {
 .dropdown-item,
 .dropdown-main {
   display: block;
-  font-family: "Crete Round", serif;
   font-size: 0.9rem;
-  color: var(--off-white);
   text-align: center;
   width: 95%;
   margin: 12px auto;
@@ -290,8 +288,9 @@ strong {
 }
 
 .dropdown-main:focus,
+.dropdown-item:focus,
 .api-button:focus {
-  outline: 5px auto orange;
+  outline: 5px auto orange;  
 }
 
 .dropdown-item {
@@ -338,6 +337,7 @@ strong {
   display: none;
   padding: 0 5px;
 }
+
 .cam-contain {
   display: -webkit-box;
   display: -ms-flexbox;
